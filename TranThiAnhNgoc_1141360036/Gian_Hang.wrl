@@ -1,0 +1,41 @@
+#VRML V2.0 utf8
+
+DEF gianHangTo Group {
+	children [
+		Transform {
+			children [
+				DEF tuong Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.8 0.8 0.8
+						}
+					}
+					geometry Box {
+						size 5 5 0.2
+					}
+				}
+			]
+		}
+		#Ben trai
+		Transform {
+			rotation 0 1 0 1.57079633
+			translation	-2.5 0 -2.5
+			children [
+				USE	tuong
+			]
+		}
+
+		#Ben phai
+		Transform {
+			rotation 0 1 0 1.57079633
+			translation	2.5 0 -2.5
+			children [
+				USE	tuong
+			]
+		}
+	]
+}
+
+NavigationInfo {
+	type "EXAMINE"
+}
