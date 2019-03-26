@@ -15,7 +15,7 @@ Group {
 					geometry Box {
 						size 10 0.2 10
 					}
-				}
+				}		  
 			]
 		}
 		
@@ -23,7 +23,17 @@ Group {
 		Transform {	
 			scale 1 1 1
 			translation 0 0 0.3
-			children [Inline {url "Day_Gian_Hang.wrl"}]
+			children [
+				Inline {url "Day_Gian_Hang.wrl"}
+				Transform {
+					translation	-4.3 0.3 -0.5
+					scale 0.3 0.3 0.3
+					rotation 0 1 0 1.57
+					children [
+						Inline {url	"Ghe.wrl"}
+					]
+				}
+			]
 		}
 
 		#Day hang ben trai

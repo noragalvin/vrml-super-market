@@ -1,0 +1,335 @@
+#VRML V2.0 utf8
+DEF	CauThangFull Group { children [
+DEF	BacThangFull Transform {
+
+	children [
+		DEF Bac1 Transform {
+   translation 0 .5 -.5
+   children	DEF	BacThang Shape {
+	geometry Box {size 25 2 1}
+	appearance Appearance {
+		material Material {
+			diffuseColor .38 .38 .42
+			specularColor .53 .53 .53
+			ambientIntensity .0933
+			shininess .93
+		}
+	}
+}
+
+}
+DEF Bac2 Transform {
+   translation 0 1.5 -1.5
+   children	USE	BacThang
+}
+DEF Bac3 Transform {
+   translation 0 2.5 -2.5
+   children	USE	BacThang
+}
+DEF Bac4 Transform {
+   translation 0 3.5 -3.5
+   children	USE	BacThang
+}
+DEF Bac5 Transform {
+   translation 0 4.5 -4.5
+   children	USE	BacThang
+}
+DEF Bac6 Transform {
+   translation 0 5.5 -5.5
+   children	USE	BacThang
+}
+DEF Bac7 Transform {
+   translation 0 6.5 -6.5
+   children	USE	BacThang
+}
+DEF Bac8 Transform {
+   translation 0 7.5 -7.5
+   children	USE	BacThang
+}
+DEF Bac9 Transform {
+   translation 0 8.5 -8.5
+   children	USE	BacThang
+}
+DEF Bac10 Transform {
+   translation 0 9.5 -9.5
+   children	USE	BacThang
+}
+DEF Bac11 Transform {
+   translation 0 10.5 -10.5
+   children	USE	BacThang
+}
+DEF Bac12 Transform {
+   translation 0 11.5 -11.5
+   children	USE	BacThang
+}
+DEF Bac13 Transform {
+   translation 0 12.5 -12.5
+   children	USE	BacThang
+}
+
+DEF Bac14 Transform {
+   translation 0 13.5 -13.5
+   children	USE	BacThang
+}
+	]
+}
+
+DEF Bac15 Transform {
+   translation 0 14.5 -14.5
+   children	USE	BacThang
+}
+DEF Bac16 Transform {
+   translation 0 15.5 -15.5
+   children	USE	BacThang
+}
+
+
+DEF	Bac17 Transform	{
+	translation -12.5 16 -24.75
+	children	Shape {
+		appearance Appearance {
+		material Material {
+			diffuseColor .38 .38 .42
+			specularColor .53 .53 .53
+			ambientIntensity .0933
+			shininess .93
+		}
+	}
+		geometry Box {size 50 1 19.5}
+	}
+}
+Transform {
+translation	-25 15.5 -15
+rotation 1 0 0 1.57
+children USE BacThangFull
+
+}
+#Transform {
+#translation	-25 26.5 1.5 
+#children USE BacThang
+#}
+#Transform {
+#translation	-25 27.5 2.5 
+#children USE BacThang
+#}
+
+DEF	TayVin Group { children	[
+DEF ConTien Transform {
+	translation	-11.75 3.5 -.25
+	children Shape {
+		geometry Cylinder {radius 0.25 height 4}	
+		appearance Appearance {
+			material Material {
+				diffuseColor .88 .15 .01
+				specularColor .19 .03 .03
+				ambientIntensity .0833
+				shininess .08
+			}
+		}
+	}
+}
+DEF ConTien2 Transform {
+   translation 0 1 -1.3
+   children	USE	ConTien
+}
+DEF ConTien3 Transform {
+   translation 0 2 -2.3
+   children	USE	ConTien
+}
+DEF ConTien4 Transform {
+   translation 0 3 -3.3
+   children	USE	ConTien
+}
+DEF ConTien5 Transform {
+   translation 0 4 -4.3
+   children	USE	ConTien
+}
+DEF ConTien6 Transform {
+   translation 0 5 -5.3
+   children	USE	ConTien
+}
+DEF ConTien7 Transform {
+   translation 0 6 -6.3
+   children	USE	ConTien
+}
+DEF ConTien8 Transform {
+   translation 0 7 -7.3
+   children	USE	ConTien
+}
+DEF ConTien9 Transform {
+   translation 0 8 -8.3
+   children	USE	ConTien
+}
+DEF ConTien10 Transform {
+   translation 0 9 -9.3
+   children	USE	ConTien
+}
+DEF ConTien11 Transform {
+   translation 0 10 -10.3
+   children	USE	ConTien
+}
+DEF ConTien12 Transform {
+   translation 0 11 -11.3
+   children	USE	ConTien
+}
+
+DEF ConTien13 Transform {
+   translation 0 12 -12.3
+   children	USE	ConTien
+}
+DEF ConTien14 Transform {
+   translation 0 13 -13.3
+   children	USE	ConTien
+}
+DEF ConTien15 Transform {
+   translation 0 14 -14.3
+   children	USE	ConTien
+}
+DEF ConTien16 Transform {
+   translation 0 15 -15.3
+   children	USE	ConTien
+}
+
+DEF	TayNam Transform {
+	translation	-11.75 5.75 -.25
+	children Shape {geometry Sphere {radius 0.5}
+	appearance Appearance {
+		material Material {
+			diffuseColor .79 .25 0
+			specularColor .63 .19 .03
+			ambientIntensity .0867
+			shininess .55
+		}
+	}
+}
+}
+Transform {
+translation	0 10 0
+children DEF	ThanhNgang Transform {
+	translation	-11.75 3 -8
+	rotation 1 0 0 -0.78539816339
+	children Shape {
+		appearance Appearance {
+		material Material {
+			diffuseColor .61 .61 .61
+			specularColor .77 .76 .76
+			ambientIntensity .14
+			shininess .9
+		}
+	}
+		geometry Cylinder {radius 0.25 height 21.5}
+	}
+}
+}
+Transform {
+translation	-12.25 20.25 -15.55
+ rotation 0 0 1 1.57
+children Shape {
+	
+	geometry Cylinder {radius 0.25 height 1.5}
+	appearance Appearance {
+		material Material {
+			diffuseColor .61 .61 .61
+			specularColor .77 .76 .76
+			ambientIntensity .14
+			shininess .9
+		}
+	}
+}
+}
+Transform {
+translation	-1 14.5 -15
+children USE ConTien
+}
+
+Transform {
+translation	-1 15.5 -14
+children USE ConTien
+}
+Transform {
+translation	-1 16.5 -13
+children USE ConTien
+}
+Transform {
+translation	-1 17.5 -12
+children USE ConTien
+}
+Transform {
+translation	-1 18.5 -11
+children USE ConTien
+}
+Transform {
+translation	-1 19.5 -10
+children USE ConTien
+}
+Transform {
+translation	-1 20.5 -9
+children USE ConTien
+}
+
+Transform {
+translation	-1 21.5 -8
+children USE ConTien
+}
+Transform {
+translation	-1 22.5 -7
+children USE ConTien
+}
+Transform {
+translation	-1 23.5 -6
+children USE ConTien
+}
+Transform {
+translation	-1 24.5 -5
+children USE ConTien
+}
+Transform {
+translation	-1 25.5 -4
+children USE ConTien
+}
+Transform {
+translation	-1 26.5 -3
+children USE ConTien
+}
+Transform {
+translation	-1 27.5 -2
+children USE ConTien
+}
+Transform {
+translation	-1 28.5 -1
+children USE ConTien
+}
+Transform {
+	translation	-12.75 27.5 -8
+	rotation 1 0 0 0.78539816339
+	children Shape{ 
+			appearance Appearance {
+		material Material {
+			diffuseColor .61 .61 .61
+			specularColor .77 .76 .76
+			ambientIntensity .14
+			shininess .9
+		}
+	}
+		geometry Cylinder {radius 0.25 height 21} }
+}
+
+Transform {
+translation	-12.25 34.75 -.55
+rotation 0 0 1 1.570796327
+children Shape {
+		appearance Appearance {
+		material Material {
+			diffuseColor .61 .61 .61
+			specularColor .77 .76 .76
+			ambientIntensity .14
+			shininess .9
+		}
+	}
+	geometry Cylinder {height 1.5 radius 0.25}
+}
+}
+]}
+#
+
+]}

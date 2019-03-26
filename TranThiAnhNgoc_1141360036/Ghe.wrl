@@ -1,0 +1,83 @@
+#VRML V2.0 utf8
+DEF	GheFull Transform {children [
+ DEF	matghe Shape {
+	geometry Box {size 1.2 0.06 1.1}
+	appearance Appearance {
+		material Material {
+			diffuseColor 0 .35 .25
+			specularColor 0 .27 .51
+			ambientIntensity .0533
+			shininess .06
+		}
+	}
+}
+Transform {
+	translation	0.5 -0.4 0.5
+	children [
+DEF	changhe Shape {
+	geometry Box {size 0.06 0.8 0.07}
+	appearance Appearance {
+		material Material {
+		}
+	}
+}
+]
+}
+Transform {
+	translation	 -0.5 -0.4 0.5
+	children [USE changhe ]
+}
+Transform {
+	translation	 -0.5 -0.4 -0.5
+	children [USE changhe ]
+}
+Transform {
+	translation	 0.5 -0.4 -0.5
+	children [USE changhe ]
+}
+Transform {
+	translation	  -0.5 0.4 -0.5
+	children [
+DEF thanhghe Shape	{
+	geometry Box {size 0.06 1.2 0.07}
+	appearance Appearance {
+		material Material {
+		}
+	}
+}
+]
+}
+Transform {
+	translation	 0.5 0.4 -0.5
+	children [USE thanhghe ]
+}
+Transform {
+	translation	  -0.01 0.7 -0.5
+	children [
+DEF	tuaghe Shape {
+	geometry Box {size 1 0.6 0.07}
+	appearance Appearance {
+		material Material {
+			diffuseColor 0 .35 .25
+			specularColor 0 .27 .51
+			ambientIntensity .0533
+			shininess .06
+		}
+	}
+}
+]
+}
+]}
+DEF	dichchuyenghe PlaneSensor {
+
+enabled TRUE
+
+offset 0 0 0
+
+autoOffset TRUE
+
+maxPosition 1 0
+
+minPosition -1 0
+}	
+ROUTE dichchuyenghe.translation_changed TO GheFull.translation
