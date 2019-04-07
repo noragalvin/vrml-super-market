@@ -70,12 +70,12 @@ Group {
 					url	"quay_thu_ngan.wrl"
 				}
 				Transform {
-					translation	-1 -1 -1
+					translation	-1 1 -1
 					scale 0.5 0.5 0.5
 					rotation 0 0 1 0
 					children [
 						Inline {
-							url	"nguoi.wrl"
+							url	"nguoi_phuc_vu.wrl"
 						}
 					]
 				}
@@ -92,12 +92,12 @@ Group {
 					url	"quay_thu_ngan.wrl"
 				}
 				Transform {
-					translation	-1 -1 -1
+					translation	-1 1 -1
 					scale 0.5 0.5 0.5
 					rotation 0 0 1 0
 					children [
 						Inline {
-							url	"nguoi.wrl"
+							url	"nguoi_phuc_vu.wrl"
 						}
 					]
 				}
@@ -114,12 +114,12 @@ Group {
 					url	"quay_thu_ngan.wrl"
 				}
 				Transform {
-					translation	-1 -1 -1
+					translation	-1 1 -1
 					scale 0.5 0.5 0.5
 					rotation 0 0 1 0
 					children [
 						Inline {
-							url	"nguoi.wrl"
+							url	"nguoi_phuc_vu.wrl"
 						}
 					]
 				}
@@ -237,15 +237,7 @@ Group {
 				}
 			]
 		}
-
-		Transform {
-			translation	0 0 0
-			children [
-				Inline {
-					url	"NguoiPhucVu2.wrl"
-				}
-			]
-		}
+	   
 
 	]
 }

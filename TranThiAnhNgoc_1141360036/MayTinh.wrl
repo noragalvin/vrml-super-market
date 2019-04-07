@@ -1,0 +1,98 @@
+#VRML V2.0 utf8
+Transform {
+scale 1 0.9 0.5 
+children  DEF	ChanMay Shape {
+	appearance Appearance {
+			material Material {
+				diffuseColor 0 0 0
+				specularColor .63 .92 1
+				ambientIntensity 0
+			}
+		}
+	geometry Cylinder {height 0.1 radius 0.6}
+}
+}
+Transform {
+	translation	0 0.11 0
+	scale 1 1 0.3
+	children DEF Truc Shape	{
+		geometry Cylinder {height 0.3 radius 0.2}
+		appearance Appearance {
+			material Material {
+				diffuseColor 0 0 0
+				specularColor .63 .92 1
+				ambientIntensity 0
+			}
+		}
+	}
+}
+Transform {
+	translation	0 0.3 0
+	children DEF thanhngang Shape {
+		geometry Box {size 2 0.1 0.1}
+		appearance Appearance {
+			material Material {
+				diffuseColor 0 0 0
+				specularColor .63 .92 1
+				ambientIntensity 0
+			}
+		}
+	}
+}
+Transform {
+	translation	0 1.4 0
+	children USE thanhngang
+}
+Transform {
+	translation	-1 0.85 0
+	children DEF thanhdoc Shape {
+		geometry Box {size 0.1 1.2 0.1}
+		appearance Appearance {
+			material Material {
+				diffuseColor 0 0 0
+				specularColor .63 .92 1
+				ambientIntensity 0
+			}
+		}
+	}
+}
+Transform {
+	translation	1 0.85 0
+	children USE thanhdoc
+}
+Transform {
+	translation	0 0.85 0
+	children DEF manhinh Shape {
+		appearance Appearance {
+
+            material Material {}
+
+            texture ImageTexture {
+
+				url "images/ManHinh.jpg"
+
+				repeatS FALSE
+
+				repeatT FALSE
+
+}
+
+  }
+
+
+		geometry Box {size 1.9 1 0.1}
+	}
+}
+Transform {
+	translation	0 0.85 -0.05
+	children DEF manhinh Shape {
+		geometry Box {size 1.9 1 0.01}
+		appearance Appearance {
+			material Material {
+				diffuseColor 0 0 0
+				specularColor .63 .92 1
+				ambientIntensity 0
+			}
+		}
+	}
+}

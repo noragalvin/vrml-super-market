@@ -1,0 +1,113 @@
+#VRML V2.0 utf8
+
+DEF	BanPhim Shape {
+	geometry Box {size 2 0.01 1.3}
+	appearance Appearance {
+		material Material {
+			ambientIntensity 0
+		}
+		 texture ImageTexture {
+
+url "images/MatTruoc.jpg"
+
+repeatS FALSE
+
+repeatT FALSE
+
+}
+
+
+	}
+}
+DEF	MatDuoi Transform {
+translation	0 -0.06 0
+children Shape {geometry Box {size 2 0.1 1.3}
+appearance Appearance {
+	material Material {
+		ambientIntensity 0
+		shininess 0
+	}
+}
+}
+}
+DEF	CanhSau Transform {
+	translation	0 -0.01 -.65
+	scale 1.4 0.09 0.1
+	children Shape {
+		geometry Cylinder { radius .6}
+		appearance Appearance {
+			material Material {
+				diffuseColor 0 0 0
+				specularColor .29 .3 .29
+				ambientIntensity 0
+				shininess .08
+			}
+		}
+	}
+}
+DEF	MatTren Transform {
+translation	0 0.6 -.75
+rotation 1 0 0 -1.8
+children[ Shape {geometry Box {size 2 0.1 1.3}
+appearance Appearance {
+	material Material {
+		ambientIntensity 0
+		shininess 0
+	}
+}
+}
+
+Transform {
+translation	0 0.05 0
+children
+
+DEF	MatSau Shape {
+	geometry Box {size 2 0.01 1.3}
+	appearance Appearance {
+		material Material {
+			ambientIntensity 0
+		}
+		 texture ImageTexture {
+
+url "images/LapTop.jpg"
+
+repeatS FALSE
+
+repeatT FALSE
+
+}
+
+
+	}
+}
+
+
+}
+Transform {
+translation	0 -0.05 0
+children
+
+DEF	ManHinh Shape {
+	geometry Box {size 2 0.01 1.3}
+	appearance Appearance {
+		material Material {
+			ambientIntensity 0
+		}
+		 texture ImageTexture {
+
+url "images/ManHinh.jpg"
+
+repeatS FALSE
+
+repeatT FALSE
+
+}
+
+
+	}
+}
+
+
+}
+]
+}

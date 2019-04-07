@@ -1,0 +1,90 @@
+#VRML V2.0 utf8
+
+
+
+Group {
+	children [
+		#San Nha Tang 2
+		Transform {
+			children [
+				Transform {
+					translation	-3.75 0 -2.5
+					children [
+						Shape  {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.97 1 0.62
+								}
+							}
+							geometry Box {
+								size 2.5 0.2 15
+							}
+						}
+					]
+				}	
+		  
+				Transform {
+					translation	3.75 0 -2.5
+					children [
+						Shape  {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.97 1 0.62
+								}
+							}
+							geometry Box {
+								size 2.5 0.2 15
+							}
+						}
+					]
+				}	
+			  
+				Transform {
+					translation	0 0 4
+					children [
+						Shape  {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0.97 1 0.62
+								}
+							}
+							geometry Box {
+								size 10 0.2 2.5
+							}
+						}
+					]
+				}  
+			]
+		}
+		
+		#Day hang ben Phai
+		Transform {	
+			scale 1 1 1
+			translation 0 0 -4.5
+			children [
+				Inline {url "Day_Gian_Hang_Phai.wrl"}		   
+			]
+		}
+
+		#Day hang ben Trai
+		Transform {	
+			rotation 0 1 0 3.14159265
+			scale 1 1 1
+			translation 0 0 0
+			children [Inline {url "Day_Gian_Hang_Trai.wrl"}]
+		}
+
+		#Day hang ben truoc
+		Transform {	
+			rotation 0 1 0 -1.57
+			scale 1 1 1
+			translation -0.2 0 0.2
+			children [Inline {url "Day_Gian_Hang_Truoc.wrl"}]
+		}
+		 
+	]
+}
+
+NavigationInfo {
+	type "EXAMINE"
+}

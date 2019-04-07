@@ -18,23 +18,27 @@ DirectionalLight {
 
 NavigationInfo {
 	avatarSize [0 0.7 0.2]
+	type "FLY"
 }
 Viewpoint {
-	position 0 1 20
+	position 0 5 0
+	orientation	0 1 0 1.57
 }
+
+
 
 Transform {
 	children [
 		Inline	{
-			url	"BuiNgocMinh_1141360038/san_nha.wrl"
+			url	"BuiNgocMinh_1141360038/main.wrl"
 		}
 	]
 }
 Transform {
-	translation	0 3.2 0
+	translation	0 4 0
 	children [
 		Inline {
-			url	"TranThiAnhNgoc_1141360036/San_Nha_Tang_2.wrl"
+			url	"TranThiAnhNgoc_1141360036/Main.wrl"
 		}
 	]
 }
