@@ -3,6 +3,7 @@
 Group {
 	children [
 		Transform {
+			translation	0 0 -2.5
 			children [
 				Shape {
 					appearance Appearance {
@@ -11,7 +12,7 @@ Group {
 						}
 					}
 					geometry Box {
-						size 10 1 10
+						size 10 1 15
 					}
 				}
 			]
@@ -47,6 +48,107 @@ Group {
 				}
 			]
 		}
+
+		#Cua ra vao
+		Transform {
+			scale 0.12 0.275 0.2
+			translation	2.5 0 5
+			children [
+				Inline {
+					url	"cua_ra_vao.wrl"
+				}
+			]
+		}
+
+
+		# quay hoa qua
+		Transform {
+			translation	0 0 -4	
+			scale	1 1 1   
+			children [
+				Inline {
+					url	"day_hoa_qua.wrl"
+				}
+			]
+		}	
+
+		# quay banh keo
+		Transform {
+			translation	0 0 0
+			scale	1 1 1	  
+			rotation 0 1 0 3.14159265
+			children [
+				Inline {
+					url	"day_banh_keo.wrl"
+				}
+			]
+		}
+
+		# quay dong lanh
+		Transform {
+			translation	-4.5 0.5 0
+			scale 0.5 0.8 0.5		   
+			children [
+				Inline {
+					url	"day_dong_lanh.wrl"
+				}
+				Transform {
+					translation	0 0.2 -4
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 1 1 0.6
+								}
+							}
+							geometry Box {
+								size 1 0.4 12
+							}
+						}
+					]
+				}
+			]
+		}
+
+		# quay banh keo
+		Transform {
+			translation	4.5 0.5 -4
+			scale 0.5 0.8 0.5
+			rotation 0 1 0 3.14	   
+			children [
+				Inline {
+					url	"day_banh_keo_to.wrl"
+				}
+				Transform {
+					translation	0 0.2 -4
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 1 1 0.6
+								}
+							}
+							geometry Box {
+								size 1 0.4 12
+							}
+						}
+					]
+				}
+			]
+		}
+
+		#cau thang
+		Transform {
+			translation	0 0.5 -6.5
+			scale 0.1 0.1 0.1
+			rotation 0 0 1 0
+			children [
+				Inline {
+					url	"cau_thang.wrl"
+				}
+			]
+		}
+
 	]
 }
 

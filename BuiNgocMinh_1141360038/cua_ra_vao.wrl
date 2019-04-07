@@ -1,0 +1,170 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		DEF CuaRaVao Transform {
+			translation	-20.925 6 0.1
+			children [
+				DEF	CuaTrai2 Transform {
+					children[
+						DEF CuaTrai Transform {
+							children [
+								Transform {
+									translation	-5.23125 0 0
+									children [
+										Shape {
+											geometry Box {
+												size 10.4625 12 0.2
+											}
+											appearance DEF MauKinh Appearance {
+												material Material {
+													diffuseColor 1 1 1
+													specularColor 1 1 1
+													emissiveColor 1 1 1
+													transparency .5
+												}
+											}
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+				DEF	CuaPhai2 Transform {
+					children[
+						DEF CuaPhai Transform {
+							children [
+								Transform {
+									translation	5.23125 0 0
+									children [
+										Shape {
+											geometry Box {
+												size 10.4625 12 0.2
+											}
+											appearance USE MauKinh
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+
+				DEF MatKinhTrai Transform {
+					translation	-15.69375 0 0
+					children [
+						Shape {
+							geometry Box {
+								size 10.4625 12 0.2
+							}
+							appearance USE MauKinh
+						}
+					]
+				}
+				DEF MatKinhPhai Transform {
+					translation	15.69375 0 0
+					children [
+						Shape {
+							geometry Box {
+								size 10.4625 12 0.2
+							}
+							appearance USE MauKinh
+						}
+					]
+				}
+
+				DEF	ProximityCua ProximitySensor {
+					center 0 0 0
+					enabled	TRUE
+					size 41.85 12 40
+				}
+
+				DEF	TimeOpen TimeSensor	{
+					cycleInterval 1
+					enabled	TRUE
+					loop FALSE
+					startTime 1
+					stopTime 0
+				}
+
+				DEF	TimeClose TimeSensor	{
+					cycleInterval 1
+					enabled	TRUE
+					loop FALSE
+					startTime 1
+					stopTime 0
+				}
+
+				DEF	OpenCuaTrai PositionInterpolator {
+					key	[0 1]
+					keyValue [0 0 0,-10.4625 0 0]
+				}
+				DEF	OpenCuaPhai PositionInterpolator {
+					key	[0 1]
+					keyValue [0 0 0,10.4625 0 0]
+				}
+
+				DEF	CloseCuaTrai PositionInterpolator {
+					key	[0 1]
+					keyValue [-10.4625 0 0 , 0 0 0]
+				}
+
+				DEF	CloseCuaPhai PositionInterpolator {
+					key	[0 1]
+					keyValue [10.4625 0 0, 0 0 0]
+				}
+
+
+
+				DEF Time2 TimeSensor {
+					cycleInterval 120
+					loop TRUE
+				}
+				DEF	PositionCuaTrai2 PositionInterpolator {
+					key	[
+						0.000, 0.040, 0.060, 0.080
+						0.920, 0.940, 0.960
+					]
+					keyValue [
+						0 0 0, 0 0 0, -10.4625 0 0, 0 0 0,
+						0 0 0, -10.4625 0 0, 0 0 0
+					]
+				}
+				DEF	PositionCuaPhai2 PositionInterpolator {
+					key	[
+						0.000, 0.040, 0.060, 0.080
+						0.920, 0.940, 0.960
+					]
+					keyValue [
+						0 0 0, 0 0 0, 10.4625 0 0, 0 0 0,
+						0 0 0, 10.4625 0 0, 0 0 0
+					]
+				}
+
+
+
+			]
+
+			ROUTE ProximityCua.enterTime TO TimeOpen.set_startTime
+			ROUTE ProximityCua.exitTime TO TimeClose.set_startTime
+
+			ROUTE TimeOpen.fraction_changed	TO OpenCuaTrai.set_fraction
+			ROUTE TimeOpen.fraction_changed	TO OpenCuaPhai.set_fraction
+			ROUTE TimeClose.fraction_changed TO CloseCuaTrai.set_fraction
+			ROUTE TimeClose.fraction_changed TO CloseCuaPhai.set_fraction
+
+			ROUTE OpenCuaTrai.value_changed	TO CuaTrai.set_translation
+			ROUTE OpenCuaPhai.value_changed	TO CuaPhai.set_translation
+			ROUTE CloseCuaTrai.value_changed TO CuaTrai.set_translation
+			ROUTE CloseCuaPhai.value_changed TO CuaPhai.set_translation	
+
+
+			ROUTE Time2.fraction_changed TO PositionCuaTrai2.set_fraction
+			ROUTE PositionCuaTrai2.value_changed TO	CuaTrai2.set_translation
+			ROUTE Time2.fraction_changed TO PositionCuaPhai2.set_fraction
+			ROUTE PositionCuaPhai2.value_changed TO	CuaPhai2.set_translation
+		}
+
+	]
+}

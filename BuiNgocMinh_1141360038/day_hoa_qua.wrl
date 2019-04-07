@@ -1,0 +1,56 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		Transform {
+			scale 0.2 0.2 0.2	   
+			rotation 0 1 0 1.57
+			translation	0.2 1 0
+			children [
+				Inline {
+					url "quay_hoa_qua.wrl"
+				}
+			]
+		}	
+		Transform {
+			scale 0.2 0.2 0.2
+			rotation 0 1 0 1.57
+			translation	0.2 1 1
+			children [
+				Inline {
+					url "quay_hoa_qua1.wrl"
+				}
+			]
+		} 
+	   Transform {
+			scale 0.2 0.2 0.2	   
+			rotation 0 1 0 1.57
+			translation	0.2 1 2
+			children [
+				Inline {
+					url "quay_hoa_qua2.wrl"
+				}
+			]
+		}	
+		Transform {
+			scale 0.2 0.2 0.2
+			rotation 0 1 0 1.57
+			translation	0.2 1 3
+			children [
+				Inline {
+					url "quay_hoa_qua3.wrl"
+				}
+			]
+		}
+		Transform {
+			scale 0.2 0.2 0.2
+			rotation 0 1 0 1.57
+			translation	0.2 1 4
+			children [
+				Inline {
+					url "quay_hoa_qua4.wrl"
+				}
+			]
+		}
+	]
+}

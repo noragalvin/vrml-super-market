@@ -1,0 +1,96 @@
+#VRML V2.0 utf8
+Transform {
+	translation	0 -0.275 2.02
+	children [
+		DEF khoi Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.89 0.87 0.725
+				}
+			}
+			geometry Box {
+				size 3.2 0.05 0.06
+			}
+		}
+	]
+}
+
+#Bac thang
+Transform {
+	translation	 0 -0.225 1.97
+	children [
+		USE	khoi
+	]
+}
+Transform {
+	translation	 0 -0.175 1.92
+	children [
+		USE	khoi
+	]
+}
+Transform {
+	translation	 0 -0.125 1.87
+	children [
+		USE	khoi
+	]
+}
+Transform {
+	translation	 0 -0.075 1.82
+	children [
+		USE	khoi
+	]
+}
+Transform {
+	translation	 0 -0.025 1.77
+	children [
+		USE	khoi
+	]
+}
+Transform {
+	translation	 0 0.025 1.72
+	children [
+		USE	khoi
+	]
+}
+Transform {
+	translation	 0 0.075 1.67
+	children [
+		USE	khoi
+	]
+}
+Transform {
+	translation	 0 0.125 1.62
+	children [
+		USE	khoi
+	]
+}
+Transform {
+	translation	 0 0.175 1.57
+	children [
+		USE	khoi
+	]
+}
+Transform {
+	translation	 0 0.225 1.52
+	children [
+		USE	khoi
+	]
+}
+Transform {
+	translation	 0 0.275 1.47
+	children [
+		USE	khoi
+	]
+}
+Transform {
+	translation	 0 0.325 1.42
+	children [
+		USE	khoi
+	]
+}
+Transform {
+	translation	 0 0.375 1.37
+	children [
+		USE	khoi
+	]
+}
