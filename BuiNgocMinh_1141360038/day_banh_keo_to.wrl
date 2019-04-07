@@ -34,6 +34,16 @@ Transform {
 					url "banhkeoto1.wrl"
 				}
 			]
-		}	
+		}
+		Transform {
+			scale 0.8 0.3 0.3
+			rotation 0 1 0 1.57
+			translation	0.2 1 -12
+			children [
+				Inline {
+					url "banhkeoto2.wrl"
+				}
+			]
+		}	  	
 	]
 }

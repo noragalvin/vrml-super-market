@@ -1,0 +1,654 @@
+#VRML V2.0 utf8
+
+DEF Nguoi Transform {
+	translation	0 3.15 0
+	children [
+		## Phần trên gồm đầu + cổ + thân
+		DEF PhanTren Transform{
+			translation	0 0 -0.4
+			children [
+				Transform {
+					translation	0 0 0.4
+					children [
+						DEF Than Transform {
+							children [
+								Transform {
+									children [
+										Shape {
+											geometry Extrusion {
+												creaseAngle 1
+												crossSection [
+													## Đường tròn bán kính 0.8 tâm (0,0)
+													## Góc phần tư thứ nhất
+													0.800 0.000 , 0.788 0.139 , 0.752 0.274 , 0.693 0.400 , 0.613 0.514 , 0.514 0.613 , 0.400 0.693 , 0.274 0.752 , 0.139 0.788 ,  
+													## Góc phần tư thứ hai
+													0.000 0.800 , -0.139 0.788 , -0.274 0.752 , -0.400 0.693 , -0.514 0.613 , -0.613 0.514 , -0.693 0.400 , -0.752 0.274 , -0.788 0.139 , 
+													## Góc phần tư thứ ba
+													-0.800 0.000 , -0.788 -0.139 , -0.752 -0.274 , -0.693 -0.400 , -0.613 -0.514 , -0.514 -0.613 , -0.400 -0.693 , -0.274 -0.752 , -0.139 -0.788 ,
+													## Góc phần tư thứ tư
+													-0.000 -0.800 , 0.139 -0.788 , 0.274 -0.752 , 0.400 -0.693 , 0.514 -0.613 , 0.613 -0.514 , 0.693 -0.400 , 0.752 -0.274 , 0.788 -0.139 ,
+								    				0.800 -0.000 , 
+												]
+												spine [
+													0 0 0,  0 0.02 0, 0 0.12 0, 0 0.22 0, 0 0.32 0,
+													0 1.15 0, 0 2.3 0, 0 2.5 0, 
+												]
+
+												scale [
+													0.1 0.05, 0.4 0.2, 0.8 0.4, 0.9 0.45,
+													1 0.5, 0.92 0.5, 1 0.5, 0.3 0.3,
+												]
+												solid FALSE
+											}
+											appearance Appearance {
+												material Material {
+													diffuseColor .8 0 0
+													specularColor .1 .1 .1
+													ambientIntensity .0667
+													emissiveColor .1 0 0
+												}
+											}
+										}
+									]
+								}
+							]
+						}
+
+						DEF	Co Transform {
+							translation	0 2.5 -0.24 
+							children [
+								Transform {
+									translation	0 0 0.24
+									children [
+										Shape {
+											geometry Extrusion {
+												creaseAngle 1
+												crossSection [
+													## Đường tròn bán kính 0.24 tâm (0,0)
+													## 0.24 = 0.8*0.3
+													## Góc phần tư thứ nhất
+													0.240 0.000 , 0.236 0.042 , 0.226 0.082 , 0.208 0.120 , 0.184 0.154 , 0.154 0.184 , 0.120 0.208 , 0.082 0.226 , 0.042 0.236 , 
+													## Góc phần tư thứ hai
+													0.000 0.240 , -0.042 0.236 , -0.082 0.226 , -0.120 0.208 , -0.154 0.184 , -0.184 0.154 , -0.208 0.120 , -0.226 0.082 , -0.236 0.042 , 
+													## Góc phần tư thứ ba
+													-0.240 0.000 , -0.236 -0.042 , -0.226 -0.082 , -0.208 -0.120 , -0.184 -0.154 , -0.154 -0.184 , -0.120 -0.208 , -0.082 -0.226 , -0.042 -0.236 , 
+													## Góc phần tư thứ tư
+													-0.000 -0.240 , 0.042 -0.236 , 0.082 -0.226 , 0.120 -0.208 , 0.154 -0.184 , 0.184 -0.154 , 0.208 -0.120 , 0.226 -0.082 , 0.236 -0.042 ,
+										    		0.240 -0.000 ,  
+												]
+												spine [0 0 0, 0 0.1 0]
+												solid FALSE
+											}
+											appearance DEF MauDaNguoi Appearance {
+												material Material {
+													diffuseColor .76 .73 .54
+													specularColor .38 .38 .27
+													ambientIntensity .0533
+													shininess .19
+													emissiveColor .18 .17 .13
+												}
+											}
+										}
+										Transform {
+											translation	0 0.4 0
+											children [
+												Shape {
+													geometry Extrusion {
+														creaseAngle	1
+														crossSection [
+															## Bán kính 0.4 tâm (-0.4,0)
+															## Góc phần tư thứ tư
+															-0.400 -0.400 , -0.331 -0.394 , -0.263 -0.376 , -0.200 -0.346 , -0.143 -0.306 , -0.094 -0.257 , -0.054 -0.200 , -0.024 -0.137 , -0.006 -0.069 ,
+															## Góc phần tư thứ nhất
+															0.000 0.000 , -0.006 0.069 , -0.024 0.137 , -0.054 0.200 , -0.094 0.257 , -0.143 0.306 , -0.200 0.346 , -0.263 0.376 , -0.331 0.394 , -0.400 0.400 , 
+														]
+														spine [
+															## Bán kính 0.4 tâm (0,0)
+															## Góc phần tư thứ nhất
+															0.400 0 0.000 , 0.394 0 0.069 , 0.376 0 0.137 , 0.346 0 0.200 , 0.306 0 0.257 , 0.257 0 0.306 , 0.200 0 0.346 , 0.137 0 0.376 , 0.069 0 0.394 , 
+															## Góc phần tư thứ hai
+															0.000 0 0.400 , -0.069 0 0.394 , -0.137 0 0.376 , -0.200 0 0.346 , -0.257 0 0.306 , -0.306 0 0.257 , -0.346 0 0.200 , -0.376 0 0.137 , -0.394 0 0.069 ,
+															## Góc phần tư thứ ba
+															-0.400 0 0.000 , -0.394 0 -0.069 , -0.376 0 -0.137 , -0.346 0 -0.200 , -0.306 0 -0.257 , -0.257 0 -0.306 , -0.200 0 -0.346 , -0.137 0 -0.376 , -0.069 0 -0.394 , 
+															## Góc phần tư thứ tư
+															-0.000 0 -0.400 , 0.069 0 -0.394 , 0.137 0 -0.376 , 0.200 0 -0.346 , 0.257 0 -0.306 , 0.306 0 -0.257 , 0.346 0 -0.200 , 0.376 0 -0.137 , 0.394 0 -0.069 ,
+															0.400 0 -0.000 , 
+														]
+														solid FALSE
+														beginCap FALSE
+														endCap FALSE
+
+													}
+													appearance USE MauDaNguoi
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+
+						DEF	TayPhai Transform {
+							translation	-0.8 2.14 0
+							children[					
+								Transform {	
+									children [
+										DEF DotTayPhaiTren Transform {
+											children [
+												Transform {
+													children [
+														Shape {
+															geometry Extrusion {
+																creaseAngle 1
+																crossSection [
+																	## Bán kính 0.16 tâm (0,0)
+																	## Góc phần tư thứ nhất
+																	0.160 0.000 , 0.158 0.028 , 0.150 0.055 , 0.139 0.080 , 0.123 0.103 , 0.103 0.123 , 0.080 0.139 , 0.055 0.150 , 0.028 0.158 , 
+																	## Góc phần tư thứ hai
+																	0.000 0.160 , -0.028 0.158 , -0.055 0.150 , -0.080 0.139 , -0.103 0.123 , -0.123 0.103 , -0.139 0.080 , -0.150 0.055 , -0.158 0.028 , 
+																	## Góc phần tư thứ ba
+																	-0.160 0.000 , -0.158 -0.028 , -0.150 -0.055 , -0.139 -0.080 , -0.123 -0.103 , -0.103 -0.123 , -0.080 -0.139 , -0.055 -0.150 , -0.028 -0.158 , 
+																	## Góc phần tư thứ tư
+																	-0.000 -0.160 , 0.028 -0.158 , 0.055 -0.150 , 0.080 -0.139 , 0.103 -0.123 , 0.123 -0.103 , 0.139 -0.080 , 0.150 -0.055 , 0.158 -0.028 , 
+																	0.160 -0.000 ,  
+																]
+																spine [
+																	0.05 0 0,
+
+																	## Góc phần tư thứ hai bán kính 0.15 tâm (0,-0.15) quay ngược chiều kim đồng hồ
+																	0.000 0.000 0 , -0.026 -0.002 0 , -0.051 -0.009 0 , -0.075 -0.020 0 , -0.096 -0.035 0 , -0.115 -0.054 0 , -0.130 -0.075 0 , -0.141 -0.099 0 , -0.148 -0.124 0 , -0.150 -0.150 0 ,
+
+																	-0.2 -1 0,
+
+																	-0.2 -1.02 0,
+																]
+			
+																solid FALSE
+															}
+															appearance Appearance {
+																material Material {
+																	diffuseColor .54 0 0
+																	specularColor .59 0 .13
+																	ambientIntensity .0467
+																	shininess .06
+																}
+															}
+														}
+													]
+												}
+											]
+										}
+										DEF DotTayPhaiDuoi Transform {
+											translation	-0.2 -1 -0.16
+											children [
+												Transform {
+													translation	0 0 0.16
+													children [
+														Shape {
+															geometry Extrusion {
+																creaseAngle 1
+																crossSection [
+																	## Bán kính 0.16 tâm (0,0)
+																	## Góc phần tư thứ nhất
+																	0.160 0.000 , 0.158 0.028 , 0.150 0.055 , 0.139 0.080 , 0.123 0.103 , 0.103 0.123 , 0.080 0.139 , 0.055 0.150 , 0.028 0.158 , 
+																	## Góc phần tư thứ hai
+																	0.000 0.160 , -0.028 0.158 , -0.055 0.150 , -0.080 0.139 , -0.103 0.123 , -0.123 0.103 , -0.139 0.080 , -0.150 0.055 , -0.158 0.028 , 
+																	## Góc phần tư thứ ba
+																	-0.160 0.000 , -0.158 -0.028 , -0.150 -0.055 , -0.139 -0.080 , -0.123 -0.103 , -0.103 -0.123 , -0.080 -0.139 , -0.055 -0.150 , -0.028 -0.158 , 
+																	## Góc phần tư thứ tư
+																	-0.000 -0.160 , 0.028 -0.158 , 0.055 -0.150 , 0.080 -0.139 , 0.103 -0.123 , 0.123 -0.103 , 0.139 -0.080 , 0.150 -0.055 , 0.158 -0.028 , 
+																	0.160 -0.000 ,  
+																]
+																spine [
+																	0 0 0,
+																	0 -1 0,
+																]
+																solid FALSE
+															}
+															appearance Appearance {
+																material Material {
+																	diffuseColor .54 0 0
+																	specularColor .59 0 .13
+																	ambientIntensity .0467
+																	shininess .06
+																}
+															}
+														}
+														Transform {
+															scale 0.5 1 0.7
+															translation	0 -1 0
+															children [
+																Shape {
+																	geometry Sphere {
+																		radius 0.2
+																	}
+																	appearance USE MauDaNguoi
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+
+						DEF	TayTrai Transform {
+							translation	0.8 2.14 0
+							children[				
+								Transform {
+									children [
+										DEF DotTayTraiTren Transform {
+											children [
+												Transform {
+													children [
+														Shape {
+															geometry Extrusion {
+																creaseAngle 1
+																crossSection [
+																	## Bán kính 0.16 tâm (0,0)
+																	## Góc phần tư thứ nhất
+																	0.160 0.000 , 0.158 0.028 , 0.150 0.055 , 0.139 0.080 , 0.123 0.103 , 0.103 0.123 , 0.080 0.139 , 0.055 0.150 , 0.028 0.158 , 
+																	## Góc phần tư thứ hai
+																	0.000 0.160 , -0.028 0.158 , -0.055 0.150 , -0.080 0.139 , -0.103 0.123 , -0.123 0.103 , -0.139 0.080 , -0.150 0.055 , -0.158 0.028 , 
+																	## Góc phần tư thứ ba
+																	-0.160 0.000 , -0.158 -0.028 , -0.150 -0.055 , -0.139 -0.080 , -0.123 -0.103 , -0.103 -0.123 , -0.080 -0.139 , -0.055 -0.150 , -0.028 -0.158 , 
+																	## Góc phần tư thứ tư
+																	-0.000 -0.160 , 0.028 -0.158 , 0.055 -0.150 , 0.080 -0.139 , 0.103 -0.123 , 0.123 -0.103 , 0.139 -0.080 , 0.150 -0.055 , 0.158 -0.028 , 
+																	0.160 -0.000 ,  
+																]
+																spine [
+																	-0.05 0 0,
+
+																	## Góc phần tư thứ hai bán kính 0.15 tâm (0,-0.15) quay ngược chiều kim đồng hồ
+																	0.000 0.000 0 , 0.026 -0.002 0 , 0.051 -0.009 0 , 0.075 -0.020 0 , 0.096 -0.035 0 , 0.115 -0.054 0 , 0.130 -0.075 0 , 0.141 -0.099 0 , 0.148 -0.124 0, 0.150 -0.150 0, 
+
+																	0.2 -1 0,
+
+																	0.2 -1.02 0,
+																]
+																solid FALSE
+															}
+															appearance Appearance {
+																material Material {
+																	diffuseColor .54 0 0
+																	specularColor .59 0 .13
+																	ambientIntensity .0467
+																	shininess .06
+																}
+															}
+														}
+													]
+												}
+											]
+										}
+										DEF DotTayTraiDuoi Transform {
+											translation	0.2 -1 -0.16
+											children [
+												Transform {
+													translation	0 0 0.16
+													children [
+														Shape {
+															geometry Extrusion {
+																creaseAngle 1
+																crossSection [
+																	## Bán kính 0.16 tâm (0,0)
+																	## Góc phần tư thứ nhất
+																	0.160 0.000 , 0.158 0.028 , 0.150 0.055 , 0.139 0.080 , 0.123 0.103 , 0.103 0.123 , 0.080 0.139 , 0.055 0.150 , 0.028 0.158 , 
+																	## Góc phần tư thứ hai
+																	0.000 0.160 , -0.028 0.158 , -0.055 0.150 , -0.080 0.139 , -0.103 0.123 , -0.123 0.103 , -0.139 0.080 , -0.150 0.055 , -0.158 0.028 , 
+																	## Góc phần tư thứ ba
+																	-0.160 0.000 , -0.158 -0.028 , -0.150 -0.055 , -0.139 -0.080 , -0.123 -0.103 , -0.103 -0.123 , -0.080 -0.139 , -0.055 -0.150 , -0.028 -0.158 , 
+																	## Góc phần tư thứ tư
+																	-0.000 -0.160 , 0.028 -0.158 , 0.055 -0.150 , 0.080 -0.139 , 0.103 -0.123 , 0.123 -0.103 , 0.139 -0.080 , 0.150 -0.055 , 0.158 -0.028 , 
+																	0.160 -0.000 ,  
+																]
+																spine [
+																	0 0 0,
+																	0 -1 0,
+																]
+			
+																solid FALSE
+															}
+															appearance Appearance {
+																material Material {
+																	diffuseColor .54 0 0
+																	specularColor .59 0 .13
+																	ambientIntensity .0467
+																	shininess .06
+																}
+															}
+														}
+														Transform {
+															scale 0.5 1 0.7
+															translation	0 -1 0
+															children [
+																Shape {
+																	geometry Sphere {
+																		radius 0.2
+																	}
+																	appearance USE MauDaNguoi
+																}
+															]
+														}
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+
+		DEF	ChanPhai Transform {		
+			children [
+				Transform {			
+					translation	-0.4 0 0
+					children [
+						DEF DotChanPhaiTren Transform {	
+							children [
+								Transform {
+									children [
+										Shape {
+											geometry Extrusion {
+												creaseAngle 1
+												crossSection [
+													## Bán kính 0.4 tâm (0,0)
+													## Góc phần tư thứ nhất
+													0.400 0.000 , 0.394 0.069 , 0.376 0.137 , 0.346 0.200 , 0.306 0.257 , 0.257 0.306 , 0.200 0.346 , 0.137 0.376 , 0.069 0.394 ,
+													## Góc phần tư thứ hai
+													0.000 0.400 , -0.069 0.394 , -0.137 0.376 , -0.200 0.346 , -0.257 0.306 , -0.306 0.257 , -0.346 0.200 , -0.376 0.137 , -0.394 0.069 , 
+													## Góc phần tư thứ ba
+													-0.400 0.000 , -0.394 -0.069 , -0.376 -0.137 , -0.346 -0.200 , -0.306 -0.257 , -0.257 -0.306 , -0.200 -0.346 , -0.137 -0.376 , -0.069 -0.394 ,
+													## Góc phần tư thứ tư
+													-0.000 -0.400 , 0.069 -0.394 , 0.137 -0.376 , 0.200 -0.346 , 0.257 -0.306 , 0.306 -0.257 , 0.346 -0.200 , 0.376 -0.137 , 0.394 -0.069 ,
+													 0.400 -0.000 ,  
+												]
+												spine [ 
+													0 0.32 0, 0 0.3 0, 0 0.2 0, 0 0.1 0,
+													0 0 0,0 -1.5 0,   
+													0 -1.6 0, 0 -1.7 0, 0 -1.8 0, 0 -1.82 0]
+												scale [
+													0.1 0.08, 0.4 0.32, 0.8 0.64, 0.9 0.72,
+													1 0.8, 0.8 0.8,   
+													0.72 0.72, 0.68 0.68, 0.32 0.32, 0.08 0.08]
+												solid FALSE
+											}
+											appearance DEF MauQuan Appearance {
+												material Material {
+													diffuseColor 0 0 0
+													specularColor .29 .3 .29
+													ambientIntensity 0
+													shininess .08
+												}
+											}
+										}
+									]
+								}
+							]
+						}
+
+						DEF DotChanPhaiDuoi Transform {
+							translation	0 -1.5 0
+							children [
+								Transform {
+									children [
+										Shape {
+											geometry Extrusion {
+												creaseAngle 1
+												crossSection [
+													## Bán kính 0.32 tâm (0,0)
+													## Góc phần tư thứ nhất
+													0.320 0.000 , 0.315 0.056 , 0.301 0.109 , 0.277 0.160 , 0.245 0.206 , 0.206 0.245 , 0.160 0.277 , 0.109 0.301 , 0.056 0.315 ,  
+													## Góc phần tư thứ hai
+													0.000 0.320 , -0.056 0.315 , -0.109 0.301 , -0.160 0.277 , -0.206 0.245 , -0.245 0.206 , -0.277 0.160 , -0.301 0.109 , -0.315 0.056 , 
+													## Góc phần tư thứ ba
+													-0.320 0.000 , -0.315 -0.056 , -0.301 -0.109 , -0.277 -0.160 , -0.245 -0.206 , -0.206 -0.245 , -0.160 -0.277 , -0.109 -0.301 , -0.056 -0.315 , 
+													## Góc phần tư thứ tư
+													-0.000 -0.320 , 0.056 -0.315 , 0.109 -0.301 , 0.160 -0.277 , 0.206 -0.245 , 0.245 -0.206 , 0.277 -0.160 , 0.301 -0.109 , 0.315 -0.056 , 0.320 -0.000 ,  
+												]
+												spine [
+													0 0.32 0, 0 0.3 0, 0 0.2 0, 0 0.1 0 ,
+													0 0 0,0 -1.5 0
+												]
+												scale [0.1 0.1,0.4 0.4, 0.85 0.85, 0.9 0.9 ,1 1, 0.7 0.7]
+												solid FALSE
+											}
+											appearance USE MauQuan
+										}
+
+										Transform {
+											translation	0 -1.5 0 
+											children [
+												Shape {
+													geometry Extrusion {
+														creaseAngle	1
+														crossSection [
+															## Bán kính 0.15 tâm (0,0.4)
+															0.000 0.550 , -0.026 0.548 , -0.051 0.541 , -0.075 0.530 , -0.096 0.515 , -0.115 0.496 , -0.130 0.475 , -0.141 0.451 , -0.148 0.426 , -0.150 0.400 , 
+
+															## Bán kính 0.224 tâm (0,0)
+															## Góc phần tư thứ ba
+															-0.224 0.000 , -0.221 -0.039 , -0.210 -0.077 , -0.194 -0.112 , -0.172 -0.144 , -0.144 -0.172 , -0.112 -0.194 , -0.077 -0.210 , -0.039 -0.221 , 
+															## Góc phần tư thứ tư
+															-0.000 -0.224 , 0.039 -0.221 , 0.077 -0.210 , 0.112 -0.194 , 0.144 -0.172 , 0.172 -0.144 , 0.194 -0.112 , 0.210 -0.077 , 0.221 -0.039 , 0.224 -0.000 , 
+
+															0.150 0.400 , 0.148 0.426 , 0.141 0.451 , 0.130 0.475 , 0.115 0.496 , 0.096 0.515 , 0.075 0.530 , 0.051 0.541 , 0.026 0.548 , 0.000 0.550 , 
+														]
+														spine [0 0 0, 0 -0.05 0, 0 -0.15 0]
+														scale [0.8 0.8, 1 1, 1 1]
+														solid FALSE
+													}
+													appearance DEF MauGiay Appearance {
+														material Material {
+															ambientIntensity .04
+															diffuseColor .28 .1 .08
+															specularColor .31 .14 .27
+															shininess .1
+														}
+													}
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+
+					]
+				}
+			]
+		}
+
+		DEF	ChanTrai Transform {		
+			children [
+				Transform {			
+					translation	0.4 0 0
+					children [
+						DEF DotChanTraiTren Transform {	
+							children [
+								Transform {
+									children [
+										Shape {
+											geometry Extrusion {
+												creaseAngle 1
+												crossSection [
+													## Bán kính 0.4 tâm (0,0)
+													## Góc phần tư thứ nhất
+													0.400 0.000 , 0.394 0.069 , 0.376 0.137 , 0.346 0.200 , 0.306 0.257 , 0.257 0.306 , 0.200 0.346 , 0.137 0.376 , 0.069 0.394 ,
+													## Góc phần tư thứ hai
+													0.000 0.400 , -0.069 0.394 , -0.137 0.376 , -0.200 0.346 , -0.257 0.306 , -0.306 0.257 , -0.346 0.200 , -0.376 0.137 , -0.394 0.069 , 
+													## Góc phần tư thứ ba
+													-0.400 0.000 , -0.394 -0.069 , -0.376 -0.137 , -0.346 -0.200 , -0.306 -0.257 , -0.257 -0.306 , -0.200 -0.346 , -0.137 -0.376 , -0.069 -0.394 ,
+													## Góc phần tư thứ tư
+													-0.000 -0.400 , 0.069 -0.394 , 0.137 -0.376 , 0.200 -0.346 , 0.257 -0.306 , 0.306 -0.257 , 0.346 -0.200 , 0.376 -0.137 , 0.394 -0.069 ,
+													 0.400 -0.000 ,  
+												]
+												spine [ 
+													0 0.32 0, 0 0.3 0, 0 0.2 0, 0 0.1 0,
+													0 0 0,0 -1.5 0,   
+													0 -1.6 0, 0 -1.7 0, 0 -1.8 0, 0 -1.82 0]
+												scale [
+													0.1 0.08, 0.4 0.32, 0.8 0.64, 0.9 0.72,
+													1 0.8, 0.8 0.8,   
+													0.72 0.72, 0.68 0.68, 0.32 0.32, 0.08 0.08]
+												solid FALSE
+											}
+											appearance USE MauQuan
+										}
+									]
+								}
+							]
+						}
+
+						DEF DotChanTraiDuoi Transform {
+							translation	0 -1.5 0
+							children [
+								Transform {
+									children [
+										Shape {
+											geometry Extrusion {
+												creaseAngle 1
+												crossSection [
+													## Bán kính 0.32 tâm (0,0)
+													## Góc phần tư thứ nhất
+													0.320 0.000 , 0.315 0.056 , 0.301 0.109 , 0.277 0.160 , 0.245 0.206 , 0.206 0.245 , 0.160 0.277 , 0.109 0.301 , 0.056 0.315 ,  
+													## Góc phần tư thứ hai
+													0.000 0.320 , -0.056 0.315 , -0.109 0.301 , -0.160 0.277 , -0.206 0.245 , -0.245 0.206 , -0.277 0.160 , -0.301 0.109 , -0.315 0.056 , 
+													## Góc phần tư thứ ba
+													-0.320 0.000 , -0.315 -0.056 , -0.301 -0.109 , -0.277 -0.160 , -0.245 -0.206 , -0.206 -0.245 , -0.160 -0.277 , -0.109 -0.301 , -0.056 -0.315 , 
+													## Góc phần tư thứ tư
+													-0.000 -0.320 , 0.056 -0.315 , 0.109 -0.301 , 0.160 -0.277 , 0.206 -0.245 , 0.245 -0.206 , 0.277 -0.160 , 0.301 -0.109 , 0.315 -0.056 , 0.320 -0.000 ,  
+												]
+												spine [
+													0 0.32 0, 0 0.3 0, 0 0.2 0, 0 0.1 0 ,
+													0 0 0,0 -1.5 0
+												]
+												scale [0.1 0.1,0.4 0.4, 0.85 0.85, 0.9 0.9 ,1 1, 0.7 0.7]
+												solid FALSE
+											}
+											appearance USE MauQuan
+										}
+
+										Transform {
+											translation	0 -1.5 0 
+											children [
+												Shape {
+													geometry Extrusion {
+														creaseAngle	1
+														crossSection [
+															## Bán kính 0.15 tâm (0,0.4)
+															0.000 0.550 , -0.026 0.548 , -0.051 0.541 , -0.075 0.530 , -0.096 0.515 , -0.115 0.496 , -0.130 0.475 , -0.141 0.451 , -0.148 0.426 , -0.150 0.400 , 
+
+															## Bán kính 0.224 tâm (0,0)
+															## Góc phần tư thứ ba
+															-0.224 0.000 , -0.221 -0.039 , -0.210 -0.077 , -0.194 -0.112 , -0.172 -0.144 , -0.144 -0.172 , -0.112 -0.194 , -0.077 -0.210 , -0.039 -0.221 , 
+															## Góc phần tư thứ tư
+															-0.000 -0.224 , 0.039 -0.221 , 0.077 -0.210 , 0.112 -0.194 , 0.144 -0.172 , 0.172 -0.144 , 0.194 -0.112 , 0.210 -0.077 , 0.221 -0.039 , 0.224 -0.000 , 
+
+															0.150 0.400 , 0.148 0.426 , 0.141 0.451 , 0.130 0.475 , 0.115 0.496 , 0.096 0.515 , 0.075 0.530 , 0.051 0.541 , 0.026 0.548 , 0.000 0.550 , 
+														]
+														spine [0 0 0, 0 -0.05 0, 0 -0.15 0]
+														scale [0.8 0.8, 1 1, 1 1]
+														solid FALSE
+													}
+													appearance USE MauGiay
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+
+					]
+				}
+			]
+		}
+
+
+
+
+
+
+
+
+
+		DEF Time TimeSensor {
+			cycleInterval 10
+			enabled	TRUE
+			loop TRUE
+		}
+
+		DEF	OrientationChanTrai OrientationInterpolator {
+			key	[0 1]
+			keyValue [
+				1 0 0 0,1 0 0 -0.85
+			]
+		}
+
+		DEF	OrientationChanPhai OrientationInterpolator {
+			key	[0 1]
+			keyValue [
+				1 0 0 0,1 0 0 -0.85 
+			]
+		}
+
+		DEF	OrientationChanTrai2 OrientationInterpolator {
+			key	[0 1]
+			keyValue [
+				0 1 0 0, 0 1 0 -1.5
+			]
+		}
+
+		DEF	OrientationChanPhai2 OrientationInterpolator {
+			key	[0 1]
+			keyValue [
+				0 1 0 0, 0 1 0 1.5
+			]
+		}
+		
+		DEF	OrientationChanTraiDuoi OrientationInterpolator	{
+			key	[0 1]
+			keyValue [1 0 0 0,1 0 0 0.85]
+		}
+
+		DEF	OrientationChanPhaiDuoi OrientationInterpolator	{
+			key	[0 1]
+			keyValue [1 0 0 0,1 0 0 0.85]
+		}
+
+	
+		DEF	PositionPhanTren PositionInterpolator {
+			key	[0 0.1]
+			keyValue [0 0.35 -0.4,         0 -1.5 -2]
+		}
+
+
+
+	]
+
+
+
+#	ROUTE Time.fraction_changed TO OrientationChanTrai.set_fraction
+#	ROUTE Time.fraction_changed	TO OrientationChanPhai.set_fraction
+#	ROUTE Time.fraction_changed TO OrientationChanTrai2.set_fraction
+#	ROUTE Time.fraction_changed	TO OrientationChanPhai2.set_fraction
+#	ROUTE Time.fraction_changed	TO OrientationChanTraiDuoi.set_fraction
+#	ROUTE Time.fraction_changed	TO OrientationChanPhaiDuoi.set_fraction
+
+#	ROUTE OrientationChanTrai.value_changed	TO ChanTrai.set_rotation
+#	ROUTE OrientationChanPhai.value_changed	TO ChanPhai.set_rotation
+#	ROUTE OrientationChanTrai2.value_changed	TO ChanTrai.set_rotation
+#	ROUTE OrientationChanPhai2.value_changed	TO ChanPhai.set_rotation
+#	ROUTE OrientationChanPhaiDuoi.value_changed	TO DotChanPhaiDuoi.set_rotation
+#	ROUTE OrientationChanTraiDuoi.value_changed	TO DotChanTraiDuoi.set_rotation
+	
+	
+}

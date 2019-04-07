@@ -20,13 +20,21 @@ NavigationInfo {
 	avatarSize [0 0.7 0.2]
 }
 Viewpoint {
-	position 0 1 5
+	position 0 1 20
 }
 
 Transform {
 	children [
 		Inline	{
 			url	"BuiNgocMinh_1141360038/san_nha.wrl"
+		}
+	]
+}
+Transform {
+	translation	0 3.2 0
+	children [
+		Inline {
+			url	"TranThiAnhNgoc_1141360036/San_Nha_Tang_2.wrl"
 		}
 	]
 }

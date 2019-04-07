@@ -253,6 +253,7 @@ DEF ConTien16-1 Transform {
    translation 24 15 -15.3
    children	USE	ConTien
 }
+# ngang
 DEF ConTien16-1 Transform {
    translation 24 15 -16.3
    children	USE	ConTien
@@ -321,25 +322,77 @@ DEF ConTien16-1 Transform {
    translation 24 15 -32.3
    children	USE	ConTien
 }
-
-Transform {
-	translation	24 10 0
-	children DEF	ThanhNgang Transform {
-		translation	-11.75 3 -8
-		rotation 1 0 0 -0.78539816339
-		children Shape {
-			appearance Appearance {
-			material Material {
-				diffuseColor .61 .61 .61
-				specularColor .77 .76 .76
-				ambientIntensity .14
-				shininess .9
-			}
-		}
-			geometry Cylinder {radius 0.25 height 21.5}
-		}
-	}
+#ngang doi dien
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -16.3
+   children	USE	ConTien
 }
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -17.3
+   children	USE	ConTien
+}
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -18.3
+   children	USE	ConTien
+}
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -19.3
+   children	USE	ConTien
+}
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -20.3
+   children	USE	ConTien
+}
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -21.3
+   children	USE	ConTien
+}
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -22.3
+   children	USE	ConTien
+}
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -23.3
+   children	USE	ConTien
+}
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -24.3
+   children	USE	ConTien
+}
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -25.3
+   children	USE	ConTien
+}
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -26.3
+   children	USE	ConTien
+}
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -27.3
+   children	USE	ConTien
+}
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -28.3
+   children	USE	ConTien
+}
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -29.3
+   children	USE	ConTien
+}
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -30.3
+   children	USE	ConTien
+}
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -31.3
+   children	USE	ConTien
+}
+DEF ConTien16-1 Transform {
+   translation -25.5 15 -32.3
+   children	USE	ConTien
+}
+
+
 
 
 DEF	TayNam Transform {
@@ -372,6 +425,24 @@ children DEF	ThanhNgang Transform {
 		geometry Cylinder {radius 0.25 height 21.5}
 	}
 }
+}
+Transform {
+	translation	24 10 0
+	children DEF	ThanhNgang1 Transform {
+		translation	-11.75 3 -8
+		rotation 1 0 0 -0.78539816339
+		children Shape {
+			appearance Appearance {
+			material Material {
+				diffuseColor .61 .61 .61
+				specularColor .77 .76 .76
+				ambientIntensity .14
+				shininess .9
+			}
+		}
+			geometry Cylinder {radius 0.25 height 21.5}
+		}
+	}
 }
 Transform {
 translation	-12.25 20.25 -15.55

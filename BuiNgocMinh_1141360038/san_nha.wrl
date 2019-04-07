@@ -60,10 +60,76 @@ Group {
 			]
 		}
 
+		# quay thu ngan	1
+		Transform {
+			translation	-2 0.7 3
+			scale 0.3 0.3 0.3
+			rotation 0 1 0 1.57
+			children [
+				Inline {
+					url	"quay_thu_ngan.wrl"
+				}
+				Transform {
+					translation	-1 -1 -1
+					scale 0.5 0.5 0.5
+					rotation 0 0 1 0
+					children [
+						Inline {
+							url	"nguoi.wrl"
+						}
+					]
+				}
+			]
+		}
+
+		# quay thu ngan	2
+		Transform {
+			translation	0 0.7 3
+			scale 0.3 0.3 0.3
+			rotation 0 1 0 1.57
+			children [
+				Inline {
+					url	"quay_thu_ngan.wrl"
+				}
+				Transform {
+					translation	-1 -1 -1
+					scale 0.5 0.5 0.5
+					rotation 0 0 1 0
+					children [
+						Inline {
+							url	"nguoi.wrl"
+						}
+					]
+				}
+			]
+		}
+
+		# quay thu ngan	3
+		Transform {
+			translation	2 0.7 3
+			scale 0.3 0.3 0.3
+			rotation 0 1 0 1.57
+			children [
+				Inline {
+					url	"quay_thu_ngan.wrl"
+				}
+				Transform {
+					translation	-1 -1 -1
+					scale 0.5 0.5 0.5
+					rotation 0 0 1 0
+					children [
+						Inline {
+							url	"nguoi.wrl"
+						}
+					]
+				}
+			]
+		}
+
 
 		# quay hoa qua
 		Transform {
-			translation	0 0 -4	
+			translation	2 0 -4	
 			scale	1 1 1   
 			children [
 				Inline {
@@ -74,7 +140,30 @@ Group {
 
 		# quay banh keo
 		Transform {
-			translation	0 0 0
+			translation	2 0 0
+			scale	1 1 1	  
+			rotation 0 1 0 3.14159265
+			children [
+				Inline {
+					url	"day_banh_keo.wrl"
+				}
+			]
+		}
+
+		# quay hoa qua
+		Transform {
+			translation	-2 0 -4	
+			scale	1 1 1   
+			children [
+				Inline {
+					url	"day_hoa_qua.wrl"
+				}
+			]
+		}	
+
+		# quay banh keo
+		Transform {
+			translation	-2 0 0
 			scale	1 1 1	  
 			rotation 0 1 0 3.14159265
 			children [
@@ -93,7 +182,7 @@ Group {
 					url	"day_dong_lanh.wrl"
 				}
 				Transform {
-					translation	0 0.2 -4
+					translation	0 0.2 -6
 					children [
 						Shape {
 							appearance Appearance {
@@ -102,7 +191,7 @@ Group {
 								}
 							}
 							geometry Box {
-								size 1 0.4 12
+								size 1 0.4 16
 							}
 						}
 					]
@@ -112,7 +201,7 @@ Group {
 
 		# quay banh keo
 		Transform {
-			translation	4.5 0.5 -4
+			translation	4.5 0.5 -6
 			scale 0.5 0.8 0.5
 			rotation 0 1 0 3.14	   
 			children [
@@ -120,7 +209,7 @@ Group {
 					url	"day_banh_keo_to.wrl"
 				}
 				Transform {
-					translation	0 0.2 -4
+					translation	0 0.2 -6
 					children [
 						Shape {
 							appearance Appearance {
@@ -129,7 +218,7 @@ Group {
 								}
 							}
 							geometry Box {
-								size 1 0.4 12
+								size 1 0.4 16
 							}
 						}
 					]
@@ -145,6 +234,15 @@ Group {
 			children [
 				Inline {
 					url	"cau_thang.wrl"
+				}
+			]
+		}
+
+		Transform {
+			translation	0 0 0
+			children [
+				Inline {
+					url	"NguoiPhucVu2.wrl"
 				}
 			]
 		}
