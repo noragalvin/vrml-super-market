@@ -1,0 +1,93 @@
+#VRML V2.0 utf8
+Transform
+{
+	translation	0 -2 0
+	children
+	[
+		Inline
+		{
+			 url "khay.wrl"
+		}
+	]
+}
+Transform
+{
+	translation	0 -4 0
+	children
+	[
+		DEF	tao
+		Inline
+		{
+			url	"quaTao.wrl"
+		}
+	]
+}
+Transform
+{
+	translation	0.7 -4 0
+	children [USE tao ]
+}
+Transform
+{
+	translation	1.4 -4 0
+	children [USE tao ]
+}
+Transform
+{
+	translation	-0.7 -4 0
+	children [USE tao ]
+}
+Transform
+{
+	translation	-1.4 -4 0
+	children [USE tao ]
+}
+Transform
+{
+	translation	0.7 -4 0.7
+	children [USE tao ]
+}
+Transform
+{
+	translation	1.4 -4 0.7
+	children [USE tao ]
+}
+ Transform
+{
+	translation	-0.7 -4 0.7
+	children [USE tao ]
+}
+Transform
+{
+	translation	-1.4 -4 0.7
+	children [USE tao ]
+}
+Transform
+{
+	translation	0 -4 0.7
+	children [USE tao ]
+}
+Transform
+{
+	translation	0 -4 -0.7
+	children [USE tao ]
+}
+Transform
+{
+	translation	0.7 -4 -0.7
+	children [USE tao ]
+}
+Transform
+{
+	translation	1.4 -4 -0.7
+	children [USE tao ]
+}
+Transform
+{
+	translation	-0.7 -4 -0.7
+	children [USE tao ]
+}Transform
+{
+	translation	-1.4 -4 -0.7
+	children [USE tao ]
+}

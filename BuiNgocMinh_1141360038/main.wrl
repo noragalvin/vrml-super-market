@@ -129,8 +129,9 @@ Group {
 
 		# quay hoa qua
 		Transform {
-			translation	2 0 -4	
+			translation	3 0 0	
 			scale	1 1 1   
+			rotation 0 1 0 3.14159265
 			children [
 				Inline {
 					url	"day_hoa_qua.wrl"
@@ -140,9 +141,9 @@ Group {
 
 		# quay banh keo
 		Transform {
-			translation	2 0 0
+			translation	2 0 -4
 			scale	1 1 1	  
-			rotation 0 1 0 3.14159265
+			
 			children [
 				Inline {
 					url	"day_banh_keo.wrl"
@@ -152,8 +153,9 @@ Group {
 
 		# quay hoa qua
 		Transform {
-			translation	-2 0 -4	
+			translation	-2 0 0	
 			scale	1 1 1   
+			rotation 0 1 0 3.14159265
 			children [
 				Inline {
 					url	"day_hoa_qua.wrl"
@@ -163,15 +165,17 @@ Group {
 
 		# quay banh keo
 		Transform {
-			translation	-2 0 0
+			translation	-3 0 -4
 			scale	1 1 1	  
-			rotation 0 1 0 3.14159265
+			
 			children [
 				Inline {
 					url	"day_banh_keo.wrl"
 				}
 			]
 		}
+
+		
 
 		# quay dong lanh
 		Transform {

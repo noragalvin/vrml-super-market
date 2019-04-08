@@ -1,0 +1,103 @@
+#VRML V2.0 utf8
+
+Transform
+{
+	scale 8 8 8
+	translation	0 5 0
+	children
+	[
+		Inline
+		{
+			url	"khay.wrl"
+		}
+	]
+}
+Transform
+{
+	translation	0 -5.5 0
+	children 
+	[	 DEF buoi
+		Transform
+		{
+			children
+			[
+				Inline
+				{
+					url	"buoi.wrl"
+				}
+			]
+		}
+	]
+	}
+	Transform
+	{	  	translation	8 -5.5 0
+		children
+		[
+			USE	buoi
+		]
+	}
+		Transform
+	{	  	translation	8 -5.5 8
+		children
+		[
+			USE	buoi
+		]
+	}
+		Transform
+	{	  	translation	8 -5.5 -8
+		children
+		[
+			USE	buoi
+		]
+	}
+		Transform
+	{	  	translation	-8 -5.5 0
+		children
+		[
+			USE	buoi
+		]
+	}
+		Transform
+	{	  	translation	-8 -5.5 8
+		children
+		[
+			USE	buoi
+		]
+	}
+		Transform
+	{	  	translation	-8 -5.5 -8
+		children
+		[
+			USE	buoi
+		]
+	}
+
+#		Transform
+#	{	  	translation	0 -5.5 -8
+#		children
+#		[
+#			USE	buoi
+#		]
+#	}
+		Transform
+	{	  	translation	0 -5.5 8
+		children
+		[
+			USE	buoi
+		]
+	}
+
+		Transform
+	{	  	translation	0 -5.5 -8
+		children
+		[
+			USE	buoi
+		]
+	}
+		Transform
+	{	  	translation	-8 -5.5 -8
+		children
+		[
+			USE	buoi
+		]
+	}

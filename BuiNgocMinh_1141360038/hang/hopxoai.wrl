@@ -1,0 +1,117 @@
+#VRML V2.0 utf8
+
+Transform
+{
+	children [	   DEF xoai
+Transform 
+{
+	rotation 1 0 0 1.54
+	scale 0.008 0.008 0.008
+	children
+	[
+		Inline
+		{
+			url	"xoai-3.wrl"
+		}
+	]
+}
+]}
+Transform
+{
+	translation	0 -2 0
+
+	children
+	[
+		Inline
+		{
+			url	"\New folder (2)\btl\item\hop.wrl"
+		}
+	]
+}
+Transform
+{
+	  translation 0.6 0 0
+	  children
+	  [
+		  USE xoai
+	  ]
+}
+Transform
+{
+	  translation 1.2 0 0
+	  children
+	  [
+		  USE xoai
+	  ]
+}
+Transform
+{
+	  translation -0.6 0 0
+	  children
+	  [
+		  USE xoai
+	  ]
+}
+Transform
+{
+	  translation -1.2 0 0
+	  children
+	  [
+		  USE xoai
+	  ]
+}
+Transform
+{
+	  translation 0 0 0.8
+	  rotation 0 1 0 1.57
+	  children
+	  [
+		  USE xoai
+	  ]
+}
+Transform
+{
+	  translation 1 0 0.8
+	  rotation 0 1 0 1.57
+	  children
+	  [
+		  USE xoai
+	  ]
+}
+Transform
+{
+	  translation -1 0 0.8
+	  rotation 0 1 0 1.57
+	  children
+	  [
+		  USE xoai
+	  ]
+}
+
+Transform
+{
+	  translation 0 0 -0.8
+	  rotation 0 1 0 1.57
+	  children
+	  [
+		  USE xoai
+	  ]
+}
+Transform
+{
+	  translation 1 0 -0.8
+	  rotation 0 1 0 1.57
+	  children
+	  [
+		  USE xoai
+	  ]
+}
+Transform
+{
+	  translation -1 0 -0.8
+	  rotation 0 1 0 1.57
+	  children
+	  [
+		  USE xoai
+	  ]
+}

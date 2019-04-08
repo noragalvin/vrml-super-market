@@ -20,7 +20,7 @@ Transform {
 			translation	0.2 1 1
 			children [
 				Inline {
-					url "quay_banh_keo.wrl"
+					url "quay_banh_keo1.wrl"
 				}
 			]
 		} 
@@ -30,7 +30,7 @@ Transform {
 			translation	0.2 1 2
 			children [
 				Inline {
-					url "quay_banh_keo.wrl"
+					url "quay_banh_keo2.wrl"
 				}
 			]
 		}	
@@ -40,7 +40,7 @@ Transform {
 			translation	0.2 1 3
 			children [
 				Inline {
-					url "quay_banh_keo.wrl"
+					url "quay_banh_keo3.wrl"
 				}
 			]
 		}
@@ -50,7 +50,7 @@ Transform {
 			translation	0.2 1 4
 			children [
 				Inline {
-					url "quay_banh_keo.wrl"
+					url "quay_banh_keo4.wrl"
 				}
 			]
 		}

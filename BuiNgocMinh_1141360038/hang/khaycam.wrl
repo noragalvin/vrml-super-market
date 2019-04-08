@@ -1,0 +1,99 @@
+#VRML V2.0 utf8
+
+Transform
+{
+	translation	0 -1 0
+	children
+	[
+		Inline
+		{
+			url	"khay.wrl"
+		}
+	]
+}
+Transform
+{
+	translation	0 -2.5 -0.8
+	children
+	[	   DEF cam
+		Inline
+		{
+			url	"QuaCam.wrl"
+		}
+	]
+}
+Transform
+{
+	translation	0 -2.5 0
+	children [USE cam ]
+}
+Transform
+{
+	translation	0 -2.5 0.8
+	children [USE cam ]
+}
+Transform
+{
+	translation	0.8 -2.5 -0.8
+	children [USE cam ]
+}
+Transform
+{
+	translation	1.6 -2.5 -0.8
+	children [USE cam ]
+}
+Transform
+{
+	translation	0.8 -2.5 0
+	children [USE cam ]
+}
+Transform
+{
+	translation	1.6 -2.5 0
+	children [USE cam ]
+}
+  Transform
+{
+	translation	0.8 -2.5 0.8
+	children [USE cam ]
+}
+   Transform
+{
+	translation	1.6 -2.5 0.8
+	children [USE cam ]
+}
+Transform
+{
+	translation	-0.8 -2.5 0
+	children [USE cam ]
+}
+Transform
+{
+	translation	1.6 -2.5 0
+	children [USE cam ]
+}
+Transform
+{
+	translation	-0.8 -2.5 -0.8
+	children [USE cam ]
+}
+Transform
+{
+	translation	-1.6 -2.5 -0.8
+	children [USE cam ]
+}
+Transform
+{
+	translation	-1.6 -2.5 0
+	children [USE cam ]
+}
+Transform
+{
+	translation	-0.8 -2.5 0.8
+	children [USE cam ]
+}
+Transform
+{
+	translation	-1.6 -2.5 0.8
+	children [USE cam ]
+}

@@ -1,0 +1,131 @@
+#VRML V2.0 utf8
+
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	0 -1.6 -0.5
+	children
+	[		  DEF xoai
+		Inline
+		{
+			url	"xoai-3.wrl"
+		}
+	]
+}
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	0 -1.6 1
+	children [USE xoai ]
+}
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	0.8 -1.6 1
+	children [USE xoai ]
+}
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	1.6 -1.6 1
+	children [USE xoai ]
+}
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	-0.8 -1.6 1
+	children [USE xoai ]
+}
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	-1.6 -1.6 1
+	children [USE xoai ]
+}
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	0.8 -1.6 -0.5
+	children [USE xoai ]
+}
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	1.6 -1.6 -0.5
+	children [USE xoai ]
+}
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	-0.8 -1.6 -0.5
+	children [USE xoai ]
+}
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	-1.6 -1.6 -0.5
+	children [USE xoai ]
+}
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	0 -0.9 1
+	children [USE xoai ]
+}
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	0.8 -0.9 1 
+	children [USE xoai ]
+}
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	0 -0.9 -0.5
+	children [USE xoai ]
+}
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	0.8 -0.9 -0.5
+	children [USE xoai ]
+}
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	-0.8 -0.9 -0.5
+	children [USE xoai ]
+}
+Transform
+{
+	scale 0.01 0.01 0.01
+	rotation 1 0 0 1.57
+	translation	-0.8 -0.9 1 
+	children [USE xoai ]
+}
+Transform
+{
+	
+	children 
+	[
+		  Inline
+		  {
+			  url "khay.wrl"
+		  }
+	]
+}

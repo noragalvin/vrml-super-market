@@ -1,0 +1,114 @@
+#VRML V2.0 utf8
+Transform
+{
+	translation	0 -1 0
+	children
+	[
+		Inline
+		{
+			url	"khay.wrl"
+		}
+	]
+}
+Transform
+{
+	translation	0 -2.6 -0.8
+	scale 0.35 0.35 0.35
+	children
+	[	   DEF le
+		Inline
+		{
+			url	"le.wrl"
+		}
+	]
+}
+Transform
+{
+	translation	0 -2.6 0
+	scale 0.35 0.35 0.35
+	children [USE le ]
+}
+Transform
+{
+	translation	0 -2.6 0.8
+	scale 0.35 0.35 0.35
+	children [USE le ]
+}
+Transform
+{
+	translation	0.8 -2.6 -0.8
+	scale 0.35 0.35 0.35
+	children [USE le ]
+}
+Transform
+{
+	translation	1.6 -2.6 -0.8
+	scale 0.35 0.35 0.35
+	children [USE le ]
+}
+Transform
+{
+	translation	0.8 -2.6 0
+	scale 0.35 0.35 0.35
+	children [USE le ]
+}
+Transform
+{
+	translation	1.6 -2.6 0
+	scale 0.35 0.35 0.35
+	children [USE le ]
+}
+  Transform
+{
+	translation	0.8 -2.6 0.8
+	scale 0.35 0.35 0.35
+	children [USE le ]
+}
+   Transform
+{
+	translation	1.6 -2.6 0.8
+	scale 0.35 0.35 0.35
+	children [USE le ]
+}
+Transform
+{
+	translation	-0.8 -2.6 0
+	scale 0.35 0.35 0.35
+	children [USE le ]
+}
+Transform
+{
+	translation	1.6 -2.6 0
+	scale 0.35 0.35 0.35
+	children [USE le ]
+}
+Transform
+{
+	translation	-0.8 -2.6 -0.8
+	scale 0.35 0.35 0.35
+	children [USE le ]
+}
+Transform
+{
+	translation	-1.6 -2.6 -0.8
+	scale 0.35 0.35 0.35
+	children [USE le ]
+}
+Transform
+{
+	translation	-1.6 -2.6 0
+	scale 0.35 0.35 0.35
+	children [USE le ]
+}
+Transform
+{
+	translation	-0.8 -2.6 0.8
+	scale 0.35 0.35 0.35
+	children [USE le ]
+}
+Transform
+{
+	translation	-1.6 -2.6 0.8
+	scale 0.35 0.35 0.35
+	children [USE le ]
+}

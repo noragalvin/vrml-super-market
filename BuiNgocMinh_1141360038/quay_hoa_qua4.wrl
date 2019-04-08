@@ -1,7 +1,5 @@
 #VRML V2.0 utf8
 
-#VRML V2.0 utf8
-
 Transform {	
 	rotation 1 0 0 -0.523598776
 	children [
@@ -9,26 +7,23 @@ Transform {
 			geometry Box {
 				size 5 2 3
 			}
-			appearance Appearance {
-				material Material {
-					diffuseColor 1 1 1
-				}	  
-			}
-		}
-		Transform {
-			
-			translation	0 0 1.5
-			children [
-				Shape {
-					geometry Box {
-						size 5 2 0.001
-					}
-					appearance Appearance {	  
-						texture	ImageTexture {
-							url	"images/hoa_qua4.jpg"
-						}					   
-					}
+			appearance DEF GO Appearance {	  
+				texture	ImageTexture {
+					url	"hang/anh/go.jpg"
+					repeatS	TRUE
+					repeatT	TRUE
 				}
+			}
+		} 
+		Transform {
+			rotation 0 0 1 0
+			translation	0 4 0
+			scale 1 1 1
+			children [
+				Inline {
+					url	"hang/khayle.wrl"
+				}
+				
 			]
 		}
 
@@ -41,6 +36,13 @@ Transform {
 						radius 0.3
 						height 3
 
+					}
+					appearance DEF CHAN Appearance {	  
+						texture	ImageTexture {
+							url	"hang/anh/maunendep.png"
+							repeatS	TRUE
+							repeatT	TRUE
+						}
 					}
 				}
 			]
@@ -56,6 +58,7 @@ Transform {
 						height 3
 
 					}
+					appearance USE CHAN
 				}
 			]
 		}
