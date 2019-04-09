@@ -1,0 +1,520 @@
+#VRML V2.0 utf8
+
+DEF CuaTuTrai Transform {
+	children [
+		DEF	cylsensor1 CylinderSensor {
+
+			 maxAngle 0
+			 minAngle -2
+			 enabled TRUE 
+		 }
+			 DEF cuat Transform {
+				 translation -4 0 0
+				 children [
+					 Transform {
+						 translation 2 0 0
+						 children [
+							 DEF khungcdcuap Transform {
+								 translation 2 0 0
+								 children [
+								 Shape {
+									 geometry Box {size 0.5 6 0.5}
+									 appearance Appearance {
+										 material Material {
+											 diffuseColor .27 .3 .3
+											 specularColor .49 .49 .49
+											 emissiveColor .27 .3 .3
+											 ambientIntensity 0
+											 shininess .1
+										 }
+									 }
+								 }
+								 	DEF thanhDoc1 Transform {
+								rotation 1 0 0 1.57
+								translation	0 0.5 0.3
+								children [
+									Shape {
+										geometry Cylinder {radius 0.05 height 0.2}
+										appearance Appearance {
+											material Material {
+												diffuseColor .23 .19 .16
+												specularColor .49 .49 .49
+												emissiveColor .23 .19 .16
+												ambientIntensity 0
+												shininess .1
+											}
+										}
+									}
+								]
+									 }
+							DEF thanhDoc2 Transform {
+								rotation 1 0 0 1.57
+								translation	0 -0.5 0.3
+								children [
+									Shape {appearance Appearance {
+											material Material {
+												diffuseColor .23 .19 .16
+												specularColor .49 .49 .49
+												emissiveColor .23 .19 .16
+												ambientIntensity 0
+												shininess .1
+											}
+										}
+										geometry Cylinder {radius 0.05 height 0.2}
+									}
+								]
+									 }
+							DEF	thanhNgang Transform {
+								scale 0.6 0.1 0.05
+								rotation 0 0 1 1.57
+								translation	0 0 0.4
+								children [
+									Shape {	appearance Appearance {
+											material Material {
+												diffuseColor .23 .19 .16
+												specularColor .49 .49 .49
+												emissiveColor .23 .19 .16
+												ambientIntensity 0
+												shininess .1
+											}
+										}
+										geometry Sphere {radius 1}}
+								]
+							}
+							 ]}
+							 DEF khungcdcuat Transform {
+								 translation -2 0 0
+								 children [
+								 Shape { appearance Appearance {
+										 material Material {
+											 diffuseColor .27 .3 .3
+											 specularColor .49 .49 .49
+											 emissiveColor .27 .3 .3
+											 ambientIntensity 0
+											 shininess .1
+										 }
+									 }
+									 geometry Box {size 0.5 6 0.5}
+								 }
+							 ]}
+							 DEF khungcrcuatren Transform {
+								 translation 0 3 0
+								 children [
+								 Shape {   appearance Appearance {
+										 material Material {
+											 diffuseColor .27 .3 .3
+											 specularColor .49 .49 .49
+											 emissiveColor .27 .3 .3
+											 ambientIntensity 0
+											 shininess .1
+										 }
+									 }
+									 geometry Box {size 4.5 0.5 0.5}
+								 }
+							 ]}
+							 DEF khungcrcuaduoi Transform {
+								 translation 0 -3 0
+								 children [
+								 Shape {   appearance Appearance {
+										 material Material {
+											 diffuseColor .27 .3 .3
+											 specularColor .49 .49 .49
+											 emissiveColor .27 .3 .3
+											 ambientIntensity 0
+											 shininess .1
+										 }
+									 }
+									 geometry Box {size 4.5 0.5 0.5}
+								 }
+							 ]}
+						 DEF cua1 Shape {
+							 appearance	Appearance {
+								 material Material {
+									 transparency 0.7
+								 }
+							 }
+							 geometry Box {
+								 size 4 6 0.5
+							 }
+						 }
+					 ]
+				 }
+			 ]
+		 }
+	 ]
+	 ROUTE cylsensor1.rotation_changed TO cuat.rotation
+ }
+
+DEF CuaTuPhai Transform {
+	children [
+		DEF	cylsensor2 CylinderSensor {
+
+			 maxAngle 2
+			 minAngle 0
+			 enabled TRUE 
+		 }
+			 DEF cuap Transform {
+				 translation 4.5 0 0
+				 children [
+					 Transform {
+						 translation -2 0 0
+						 children [
+							 DEF CDp Transform {
+								 translation 2 0 0
+								 children [
+								 Shape {   appearance Appearance {
+										 material Material {
+											 diffuseColor .27 .3 .3
+											 specularColor .49 .49 .49
+											 emissiveColor .27 .3 .3
+											 ambientIntensity 0
+											 shininess .1
+										 }
+									 }
+									 geometry Box {size 0.5 6 0.5}
+								 }
+							 ]}
+							 DEF CDt Transform {
+								 translation -2 0 0
+								 children [
+							DEF thanhDoc1 Transform {
+								rotation 1 0 0 1.57
+								translation	0 0.5 0.3
+								children [
+									Shape {
+										geometry Cylinder {radius 0.05 height 0.2}
+										appearance Appearance {
+											material Material {
+												diffuseColor .23 .19 .16
+												specularColor .49 .49 .49
+												emissiveColor .23 .19 .16
+												ambientIntensity 0
+												shininess .1
+											}
+										}
+									}
+								]
+									 }
+							DEF thanhDoc2 Transform {
+								rotation 1 0 0 1.57
+								translation	0 -0.5 0.3
+								children [
+									Shape {appearance Appearance {
+											material Material {
+												diffuseColor .23 .19 .16
+												specularColor .49 .49 .49
+												emissiveColor .23 .19 .16
+												ambientIntensity 0
+												shininess .1
+											}
+										}
+										geometry Cylinder {radius 0.05 height 0.2}
+									}
+								]
+									 }
+							DEF	thanhNgang Transform {
+								scale 0.6 0.1 0.05
+								rotation 0 0 1 1.57
+								translation	0 0 0.4
+								children [
+									Shape {	appearance Appearance {
+											material Material {
+												diffuseColor .23 .19 .16
+												specularColor .49 .49 .49
+												emissiveColor .23 .19 .16
+												ambientIntensity 0
+												shininess .1
+											}
+										}
+										geometry Sphere {radius 1}}
+								]
+							}
+								 Shape {
+									 appearance Appearance {
+										 material Material {
+											 diffuseColor .27 .3 .3
+											 specularColor .49 .49 .49
+											 emissiveColor .27 .3 .3
+											 ambientIntensity 0
+											 shininess .1
+										 }
+									 }
+									 geometry Box {size 0.5 6 0.5}
+								 }
+							 ]}
+							 DEF CRt Transform {
+								 translation 0 3 0
+								 children [
+								 Shape {  appearance Appearance {
+										 material Material {
+											 diffuseColor .27 .3 .3
+											 specularColor .49 .49 .49
+											 emissiveColor .27 .3 .3
+											 ambientIntensity 0
+											 shininess .1
+										 }
+									 }
+									 geometry Box {size 4.5 0.5 0.5}
+								 }
+							 ]}
+							 DEF CRd Transform {
+								 translation 0 -3 0
+								 children [
+								 Shape {  appearance Appearance {
+										 material Material {
+											 diffuseColor .27 .3 .3
+											 specularColor .49 .49 .49
+											 emissiveColor .27 .3 .3
+											 ambientIntensity 0
+											 shininess .1
+										 }
+									 }
+									 geometry Box {size 4.5 0.5 0.5}
+								 }
+							 ]}
+						 DEF cua2 Shape {
+							 appearance	Appearance {
+								 material Material {
+									 transparency 0.7
+								 }
+							 }
+							 geometry Box {
+								 size 4 6 0.5
+							 }
+						 }
+					 ]
+				 }
+			 ]
+		 }
+	 ]
+	 ROUTE cylsensor2.rotation_changed TO cuap.rotation
+ }
+ DEF NocTu Transform {
+	 translation 0.25 3.5 -2.7
+	 children [
+		 Shape {
+			 appearance Appearance {
+					material Material {
+					diffuseColor .27 .3 .3
+					specularColor .49 .49 .49
+					emissiveColor .27 .3 .3
+					ambientIntensity 0
+				 shininess .1
+										 }
+									 }
+			 geometry Box {size 9 0.5 6}	}
+	 ]
+ }
+ DEF NganGiua Transform {
+	 translation 0.25 0 -2.8
+	 children [
+
+		 Shape {
+			 appearance Appearance {
+						material Material {
+						diffuseColor .27 .3 .3
+						specularColor .49 .49 .49
+						emissiveColor .27 .3 .3
+						ambientIntensity 0
+						shininess .1
+										 }
+									 }
+			 geometry Box {size 9 0.5 5}	}
+	 ]
+ }
+  DEF DayTu Transform {
+	 translation 0.25 -3 -2.8
+	 children [
+
+		 Shape {
+			 appearance Appearance {
+						material Material {
+						diffuseColor .27 .3 .3
+						specularColor .49 .49 .49
+						emissiveColor .27 .3 .3
+						ambientIntensity 0
+						shininess .1
+										 }
+									 }
+			 geometry Box {size 9 0.5 5}	}
+	 ]
+ }
+ DEF MatSau Transform {
+	 translation .25 0 -5.5
+	 children [
+		 Shape { appearance Appearance {
+						material Material {
+						diffuseColor .27 .3 .3
+						specularColor .49 .49 .49
+						emissiveColor .27 .3 .3
+						ambientIntensity 0
+						shininess .1
+										 }
+									 }
+			 geometry Box {size 9 7.5 0.5}}
+]}
+DEF MatBenPhai Transform {
+	 translation 4.5 0 -2.5
+	 children [
+		 Shape { appearance Appearance {
+						material Material {
+						diffuseColor .27 .3 .3
+						specularColor .49 .49 .49
+						emissiveColor .27 .3 .3
+						ambientIntensity 0
+						shininess .1
+										 }
+									 }
+			 geometry Box {size 0.5 7.5 5.5}}
+]}
+DEF MatBenTrai Transform {
+	 translation -4 0 -2.5
+	 children [
+		 Shape { appearance Appearance {
+						material Material {
+						diffuseColor .27 .3 .3
+						specularColor .49 .49 .49
+						emissiveColor .27 .3 .3
+						ambientIntensity 0
+						shininess .1
+										 }
+									 }
+			 geometry Box {size 0.5 7.5 5.5}}
+]}
+DEF	ChanTu Transform {
+	translation	0.25 -5 -2.75
+	children [
+		Shape {
+			 appearance Appearance {
+						material Material {
+						diffuseColor .27 .3 .3
+						specularColor .49 .49 .49
+						emissiveColor .27 .3 .3
+						ambientIntensity 0
+						shininess .1
+										 }
+									 }
+			geometry Box {size 9 4 6} }
+	]
+}
+DEF Sach Transform {
+	children [
+Transform {
+	translation	-1.02 1.1 -4.5
+	children [
+		DEF	SachDo Shape {geometry Box {size 0.2 2.5 1.5}
+		appearance Appearance {
+			material Material {
+				diffuseColor .54 0 0
+				specularColor .59 0 .13
+				ambientIntensity .0467
+				shininess .06
+			}
+		}
+	}
+	]
+}
+Transform {
+	translation	-1.22 1.1 -4.5
+	children [
+		DEF	SachXanh Shape {geometry Box {size 0.2 2.5 1.5}
+		appearance Appearance {
+			material Material {
+				diffuseColor .11 .55 .09
+				specularColor .12 .06 .06
+				ambientIntensity .0633
+				shininess .09
+			}
+		}
+		
+	}
+	]
+}
+Transform {
+	translation	-1.42 1.1 -4.5
+	children [
+		DEF	SachVang Shape {geometry Box {size 0.2 2.5 1.5}
+		appearance Appearance {
+			material Material {
+				diffuseColor .8 .51 .09
+				specularColor .92 .43 .01
+				ambientIntensity .117
+				shininess .4
+			}
+		}
+		
+		
+	}
+	]
+}
+Transform {
+	translation	-1.62 1.1 -4.5
+	children [
+		DEF	SachTim Shape {geometry Box {size 0.2 2.5 1.5}
+		appearance Appearance {
+			material Material {
+				diffuseColor .6 .13 .41
+				specularColor .28 .04 .04
+				ambientIntensity .0433
+				shininess .13
+			}
+		}
+		
+		
+		
+	}
+	]
+}
+]}
+Transform {
+	translation	0.8 0 0
+	children [USE Sach ]
+}
+Transform {
+	translation	-1.2 0 0
+	children [USE Sach ]
+}
+Transform {
+	translation	-2 0 0
+	children [USE Sach ]
+}
+Transform {
+	translation	-2 -2.7 0	
+	children [USE Sach ]
+}
+Transform {
+	translation	-1.2 -2.7 0	
+	children [USE Sach ]
+}
+Transform {
+	translation	-0.4 -2.7 0	
+	children [USE Sach ]
+}
+Transform {
+	translation	0.4 -2.7 0	
+	children [USE Sach ]
+}
+Transform {
+	translation	.8 -2.7 0	
+	children [USE Sach ]
+}
+Transform {
+	translation	1.2 -2.7 0	
+	children [USE Sach ]
+}
+Transform {
+	translation	4.4 -2.7 0	
+	children [USE Sach ]
+}
+Transform {
+	translation	2 -2.7 0	
+	children [USE Sach ]
+}
+Transform {
+	translation	2.8 -2.7 0	
+	children [USE Sach ]
+}
+Transform {
+	translation	3.8 -2.7 0	
+	children [USE Sach ]
+}

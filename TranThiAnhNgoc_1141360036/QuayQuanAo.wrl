@@ -1,0 +1,214 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		#chan	
+		DEF	chan Transform  {
+			translation	0 0 0
+			rotation 0 0 1 0
+			children[
+				Shape {
+					geometry Cylinder {
+						bottom TRUE
+						height 4
+						radius 0.1
+						side TRUE
+						top	TRUE
+					}
+					appearance DEF maucot Appearance {
+						texture	ImageTexture {
+							url	"images/maunendep.png"
+						}
+					}
+				}
+				# cai cheo cheo giua thanh ngang va chan
+				Transform {
+					translation	0.5 2 -0.5
+					rotation 1 0 1 -1.2
+					children [
+						Shape {
+							geometry Cylinder {
+								bottom TRUE
+								height 1.5
+								radius 0.1
+								side TRUE
+								top	TRUE
+							}
+							appearance DEF maucot Appearance {
+								texture	ImageTexture {
+									url	"images/maunendep.png"
+								}
+							}
+						}
+				
+					]
+				}	
+				
+			]
+		}
+		Transform {	
+			translation	0 0 -2
+			rotation 0 1 0 -1.57
+			children [
+				USE	chan
+			]
+		}
+
+		Transform {	
+			translation	7 0 -2
+			rotation 0 1 0 3.14	 
+			children [
+				USE	chan
+			]
+		}
+
+		Transform {	
+			translation	7 0 0
+			rotation 0 1 0 1.57
+			children [
+				USE	chan
+			]
+		}
+
+		# thanh ngang
+		Transform {
+			translation	3.5 2.3 -1
+			rotation 0 0 1 1.57	  
+			children [
+				Shape {
+					geometry Cylinder {
+						bottom TRUE
+						height 5
+						radius 0.05
+						side TRUE
+						top	TRUE
+					}
+					appearance USE maucot
+				}
+				
+			]
+		}
+
+		#ao
+		Transform {
+			translation	1 -0.35	-1
+			rotation 0 1 0 1.57
+			scale 1 1 1
+			children [
+				Inline {
+					url	"Ao1.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	1.5 -0.35	-1
+			rotation 0 1 0 1.57
+			scale 1 1 1
+			children [
+				Inline {
+					url	"Ao1.wrl"
+				}
+			]
+		}
+		Transform {
+			translation	2 -0.35	-1
+			rotation 0 1 0 1.57
+			scale 1 1 1
+			children [
+				Inline {
+					url	"Ao1.wrl"
+				}
+			]
+		}
+
+		Transform {
+			translation	2.5 -0.35	-1
+			rotation 0 1 0 1.57
+			scale 1 1 1
+			children [
+				Inline {
+					url	"Ao1.wrl"
+				}
+			]
+		}
+
+		Transform {
+			translation	3 -0.35	-1
+			rotation 0 1 0 1.57
+			scale 1 1 1
+			children [
+				Inline {
+					url	"Ao1.wrl"
+				}
+			]
+		}
+
+		Transform {
+			translation	3.5 -0.35	-1
+			rotation 0 1 0 1.57
+			scale 1 1 1
+			children [
+				Inline {
+					url	"Ao1.wrl"
+				}
+			]
+		}
+
+		Transform {
+			translation 4 -0.35	-1
+			rotation 0 1 0 1.57
+			scale 1 1 1
+			children [
+				Inline {
+					url	"Ao2.wrl"
+				}
+			]
+		}
+
+		Transform {
+			translation 4.5 -0.35	-1
+			rotation 0 1 0 1.57
+			scale 1 1 1
+			children [
+				Inline {
+					url	"Ao2.wrl"
+				}
+			]
+		}
+
+		Transform {
+			translation 5 -0.35	-1
+			rotation 0 1 0 1.57
+			scale 1 1 1
+			children [
+				Inline {
+					url	"Ao2.wrl"
+				}
+			]
+		}
+
+		Transform {
+			translation 5.5 -0.35	-1
+			rotation 0 1 0 1.57
+			scale 1 1 1
+			children [
+				Inline {
+					url	"Ao2.wrl"
+				}
+			]
+		}
+
+		Transform {
+			translation 6 -0.35	-1
+			rotation 0 1 0 1.57
+			scale 1 1 1
+			children [
+				Inline {
+					url	"Ao2.wrl"
+				}
+			]
+		} 
+
+		 
+	]
+}

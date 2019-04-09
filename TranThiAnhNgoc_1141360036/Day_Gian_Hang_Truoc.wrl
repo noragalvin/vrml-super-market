@@ -8,7 +8,7 @@ DEF  gianHang Group {
 			rotation 0 1 0 1.57
 			scale 0.5 0.2 0.2
 			translation	5 0.5 -3
-			children [Inline {url "Gian_Hang.wrl"}]
+			children [Inline {url "Hang_Ghe.wrl"}]
 		}
 
 		#Gian hang nho ben phai	2
@@ -16,7 +16,7 @@ DEF  gianHang Group {
 			rotation 0 1 0 1.57
 			scale 0.3 0.2 0.2
 			translation	5 0.5 -1
-			children [Inline {url "Gian_Hang.wrl"}]
+			children [Inline {url "Hang_Sach2.wrl"}]
 		}
 
 		#Gian hang to ben phai 3
@@ -24,7 +24,7 @@ DEF  gianHang Group {
 			rotation 0 1 0 1.57
 			scale 0.5 0.2 0.2
 			translation	5 0.5 1
-			children [Inline {url "Gian_Hang.wrl"}]
+			children [Inline {url "Hang_Quan_Ao.wrl"}]
 		}
 
 		#Gian hang nho ben phai 4
@@ -32,7 +32,7 @@ DEF  gianHang Group {
 			rotation 0 1 0 1.57
 			scale 0.3 0.2 0.2
 			translation	5 0.5 3
-			children [Inline {url "Gian_Hang.wrl"}]
+			children [Inline {url "Hang_Quan.wrl"}]
 		}
 	]
 }

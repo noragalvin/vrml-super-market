@@ -1,0 +1,44 @@
+#VRML V2.0 utf8
+
+Shape {
+	geometry Extrusion {
+		crossSection [ -.01 -.01, -.01 .01, .01 .01, .01 -.01, -.01 -.01]
+		spine [	   #Độ cao chia thành 4 phần
+			0 0 0,
+			.5 .15 0,
+			.75 .3 0,
+			1 .6 0,
+			1.25 .6 0,
+			1.5 .6 0,
+			1.75 .3 0,
+			2 .15 0,
+			2.5 0 0,
+			0 0 0 
+		]		
+		beginCap TRUE	 #có nhìn thấy đáy
+		endCap TRUE	 #không nhìn thấy nắp bình hoa
+		solid TRUE	 #ánh sáng ở đáy
+	}
+}
+
+Transform {
+	translation	1.25 .5 0
+	children [
+		DEF moc Shape {
+			geometry Extrusion {
+				crossSection [ -.01 -.01, -.01 .01, .01 .01, .01 -.01, -.01 -.01]
+				spine [	   #Độ cao chia thành 4 phần
+					0 0 0,
+					0 .25 0,
+					.15 .3 0,
+				    .15 .5 0,
+					0 .55 0,
+					-.1 .5 0
+				]		
+				beginCap TRUE	 #có nhìn thấy đáy
+				endCap TRUE	 #không nhìn thấy nắp bình hoa
+				solid TRUE	 #ánh sáng ở đáy
+			}
+		}
+	]
+}

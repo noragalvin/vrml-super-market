@@ -161,7 +161,7 @@ DEF gianHangTo Group {
 					 children [
 						Shape {
 							geometry Text{
-								string ["Bàn Xịn"]
+								string ["Bàn Đẹp"]
 								fontStyle FontStyle{
             						size 1
             						family "Lucida Handwriting"

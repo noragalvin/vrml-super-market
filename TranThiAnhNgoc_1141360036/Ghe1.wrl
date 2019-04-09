@@ -1,0 +1,567 @@
+#VRML V2.0 utf8
+
+
+
+##cho ngoi
+#Transform
+#{
+#	scale 1 0.1 0.7
+#	children
+#	[
+#		Shape
+#		{
+#			geometry Sphere
+#			{
+#				radius 0.25
+#			}
+#			appearance Appearance
+#			{
+#				material	Material
+#				{
+#					diffuseColor   0.25, 0.29, 0.33
+#				}
+#			} 
+			
+#		}
+#	]
+#}
+
+Transform
+{
+	scale 0.1 0.7 0.7
+	rotation 0 0 1 1.58
+	children
+	[
+		Shape
+		{
+			geometry Cylinder
+			{
+				radius 0.25
+				height 0.5
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}
+			} 
+			
+		}
+	]
+}
+
+#Transform
+#{
+#	translation	0.175 0.002 0
+#	scale 0.1 0.1 0.7
+#	children
+#	[
+#		Shape
+#		{
+#			geometry Sphere
+#			{
+#				radius 0.25
+				
+#			}
+#			appearance Appearance
+#			{
+#				material	Material
+#				{
+#					diffuseColor   0.25, 0.29, 0.33
+#				}
+#			} 
+			
+#		}
+#	]
+#}
+
+#Transform
+#{
+#	translation	-0.175 0 0
+#	scale 0.1 0.1 0.7
+#	children
+#	[
+#		Shape
+#		{
+#			geometry Sphere
+#			{
+#				radius 0.25
+				
+#			}
+#			appearance Appearance
+#			{
+#				material	Material
+#				{
+#					diffuseColor   0.25, 0.29, 0.33
+#				}
+#			} 
+			
+#		}
+#	]
+#}
+##tay cam
+#trai
+Transform
+{
+	translation	-0.20 0.01 0
+	scale 1 1 0.5
+	rotation 1  0 0 1.57
+	children
+	[
+		Shape
+		{
+			geometry Cylinder
+			{
+				radius 0.025
+				height 0.15
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}	
+			} 
+			
+		}
+	]
+}
+
+#len
+Transform
+{
+	translation	-0.20 0.05 0.08
+	scale 1 1 0.5
+	rotation 1 0 0 0.2
+	children
+	[
+		Shape
+		{
+			geometry Cylinder
+			{
+				radius 0.025
+				height 0.1
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}	
+			} 
+			
+		}
+	]
+}
+Transform
+{
+	translation	-0.20 0.05 -0.08
+	scale 1 1 0.5
+	rotation -1 0 0 0.2
+	children
+	[
+		Shape
+		{
+			geometry Cylinder
+			{
+				radius 0.025
+				height 0.1
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}	
+			} 
+			
+		}
+	]
+}
+#ngang
+Transform
+{
+	translation	-0.20 0.1 0
+	scale 1 1 0.5
+	rotation 1  0 0 1.57
+	children
+	[
+		Shape
+		{
+			geometry Cylinder
+			{
+				radius 0.025
+				height 0.3
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}	
+			} 
+			
+		}
+	]
+}
+
+
+
+#phai
+Transform
+{
+	translation	0.20 0.01 0
+	scale 1 1 0.5
+	rotation 1  0 0 1.57
+	children
+	[
+		Shape
+		{
+			geometry Cylinder
+			{
+				radius 0.025
+				height 0.15
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}	
+			} 
+			
+		}
+	]
+}
+
+#len
+Transform
+{
+	translation	0.2 0.05 0.08
+	scale 1 1 0.5
+	rotation 1 0 0 0.2
+	children
+	[
+		Shape
+		{
+			geometry Cylinder
+			{
+				radius 0.025
+				height 0.1
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}	
+			} 
+			
+		}
+	]
+}
+Transform
+{
+	translation	0.2 0.05 -0.08
+	scale 1 1 0.5
+	rotation -1 0 0 0.2
+	children
+	[
+		Shape
+		{
+			geometry Cylinder
+			{
+				radius 0.025
+				height 0.1
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}	
+			} 
+			
+		}
+	]
+}
+#ngang
+Transform
+{
+	translation	0.20 0.1 0
+	scale 1 1 0.5
+	rotation 1  0 0 1.57
+	children
+	[
+		Shape
+		{
+			geometry Cylinder
+			{
+				radius 0.025
+				height 0.3
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}	
+			} 
+			
+		}
+	]
+}
+
+
+
+#Phan tua
+#chan tua
+Transform
+{
+	translation	0 0.025 -0.15
+	scale 1 1 0.4
+	children
+	[
+		Shape
+		{
+			geometry Cylinder
+			{
+				radius 0.05
+				height 0.05
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}	
+			} 
+			
+		}
+	]
+}
+
+#tua
+#Transform
+#{
+#	translation	0 0.22 -0.18
+#	rotation -1 0 0 0.2
+#	scale 0.9 1 0.15
+#	children
+#	[
+#		Shape
+#		{
+#			geometry Sphere
+#			{
+#				radius 0.2
+#			}
+#			appearance Appearance
+#			{
+#				material	Material
+#				{
+#					diffuseColor   0.25, 0.29, 0.33
+#				}	
+#			} 
+			
+#		}
+#	]
+#}
+
+Transform
+{
+	translation	0 0.23 -0.18
+	rotation -1 0 0 0.2
+	scale 00.9 1 0.15
+	children
+	[
+		Shape
+		{
+			geometry Cylinder
+			{
+				radius 0.2
+				height 0.38
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}	
+			} 
+			
+		}
+	]
+}
+Transform
+{
+	translation	0 0.42 -0.22
+	rotation -1 0 0 0.2
+	scale 0.9 0.3 0.15
+	children
+	[
+	DEF	muot   Shape
+		{
+			geometry Sphere
+			{
+				radius 0.2
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}	
+			} 
+			
+		}
+	]
+}
+Transform
+{
+	translation	0 0.04 -0.14
+	rotation -1 0 0 0.2
+	scale 0.9 0.1 0.15
+	children
+	[
+		USE	muot
+	]
+}
+
+
+
+##tru dung
+Transform
+{
+	translation	0 -0.12 0
+	children
+	[
+		Shape
+		{
+			geometry Cylinder
+			{
+				radius 0.03
+				height 0.24
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}
+			} 
+			
+		}
+	]
+}
+Transform
+{
+	translation	0 -0.235 0
+	scale 1.5 0.6 1.5
+	children
+	[
+		Shape
+		{
+			geometry Sphere
+			{
+				radius 0.04
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}
+			} 
+			
+		}
+	]
+}
+
+
+### de ghe
+Transform {
+	rotation 0 1 0 0.628
+	children [
+	
+DEF canhde     Transform
+{
+	translation	0 -0.26 0.1
+	scale 1 1 0.7
+	rotation -1 0 0 1.2 
+	children
+	[
+		Shape
+		{
+			geometry Cylinder
+			{
+				radius 0.015
+				height 0.2
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}
+			} 
+			
+		}
+	]
+}
+ DEF lan    Transform
+{
+	translation	0 -0.302 0.19
+	rotation 0 0 1 1.57 
+	children
+	[
+		Shape
+		{
+			geometry Cylinder
+			{
+				radius 0.015
+				height 0.03
+			}
+			appearance Appearance
+			{
+				material	Material
+				{
+					diffuseColor   0.25, 0.29, 0.33
+				}
+			} 
+			
+		}
+	]
+}
+
+
+]
+}
+Transform {
+	rotation 0 1 0 -0.628
+	children [
+		USE	canhde
+		USE	lan
+	]
+}
+Transform {
+	rotation 0 1 0 -1.884
+	children [
+		USE	canhde
+		USE	lan
+	]
+}
+Transform {
+	rotation 0 1 0 1.884
+	children [
+		USE	canhde
+		USE	lan
+	]
+}
+Transform {
+	rotation 0 1 0 3.14
+	children [
+		USE	canhde
+		USE	lan
+	]
+}

@@ -1,0 +1,74 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation	-1.35 .35 0
+	children [
+		DEF ong1 Shape {
+			geometry Extrusion {
+				crossSection [ -.1 -.01, -.1 .01, .1 .01, .1 -.01, -.1 -.01]
+				spine [	   #Độ cao chia thành 4 phần
+					0 0 0,
+					.25 1 0,
+					.5 1.5 0
+				]
+				scale	[
+					1.2 1.2, 
+					1.5 1.5,
+					1.8 1.8,
+				]		
+				beginCap TRUE	 #có nhìn thấy đáy
+				endCap TRUE	 #không nhìn thấy nắp bình hoa
+				solid TRUE	 #ánh sáng ở đáy
+			}
+		}
+	]
+}
+Transform {
+	translation	0 0 0
+	children [
+		Shape {
+			geometry Extrusion {
+				crossSection [ -1 -.01, -1 .01, 1 .01, 1 -.01, -1 -.01]
+				spine [	   #Độ cao chia thành 4 phần
+					0 0 0,
+					0 .625 0,
+					0 1.25 0,
+					0 1.875 0,
+					0 1.9 0,
+					0 2.25 0,
+					0 2.5 0
+				]
+				scale	[
+					1 1,
+					0.9 0.9,
+					.925 .925,
+					.95	.95,
+					1 1,
+					0.7 0.7,
+					0.2 0.2
+				]		
+				beginCap TRUE	 #có nhìn thấy đáy
+				endCap TRUE	 #không nhìn thấy nắp bình hoa
+				solid TRUE	 #ánh sáng ở đáy
+			}
+		}
+	]
+}
+
+Transform {
+	translation	1.35 .35 0
+	rotation 0 1 0 3.14
+	children [
+		USE	ong1
+	]
+}
+
+Transform {
+	scale .5 .5 1
+	translation	-.65 2.25 0
+	children [
+		Inline {
+			url	["Mac.wrl"]
+		}
+	]
+}

@@ -1,0 +1,115 @@
+#VRML V2.0 utf8
+
+
+Transform {
+	children [
+		DEF	TS TimeSensor {	
+			startTime 0
+			stopTime 500
+			loop TRUE
+		}
+		DEF OI OrientationInterpolator {
+    		key [ 0, 0.33, 0.66, 1.0 ]
+    		keyValue [ 0 1 0 0, 0 1 0 2.09,
+	    		   0 1 0 4.18, 0 1 0 6.28 ]
+		}
+
+		DEF dequat Transform {
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+							specularColor .29 .3 .29
+							ambientIntensity 0
+							shininess .08
+						}
+						
+					}
+					geometry Cylinder {
+						radius 5
+						height 0.7
+					}
+				}
+			]
+		}
+
+		DEF thanQuat1 Transform {
+			translation	0 3.5 -1.5
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+							specularColor .29 .3 .29
+							ambientIntensity 0
+							shininess .08
+						}
+						
+					}
+					geometry Cylinder {
+						radius 1
+						height 7
+					}
+				}
+			]
+		}
+
+		DEF thanQuat2 Transform {
+			translation	0 9.5 -1.5
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0 0 0
+							specularColor .29 .3 .29
+							ambientIntensity 0
+							shininess .08
+						}
+						
+					}
+					geometry Cylinder {
+						radius 0.5
+						height 5
+					}
+				}
+			]
+		}
+
+		DEF	dauquat Transform {
+			children [
+				DEF coquat Transform {
+					translation	0 12 -1
+					rotation 1 0 0 1.57
+					children [
+						Shape {
+							appearance Appearance {
+								material Material {
+									diffuseColor 0 0 0
+									specularColor .29 .3 .29
+									ambientIntensity 0
+									shininess .08
+								}
+						
+							}
+							geometry Cylinder {
+								radius 1.5
+								height 4
+							}
+						}
+					]
+				}
+
+				DEF canhquat Transform {
+					translation	0 12 1.5
+					rotation 1 0 0 -1.57
+					children [
+						Inline {
+							url	["quattran.wrl"]
+						}
+					]
+				}
+			]
+		}
+	]
+}

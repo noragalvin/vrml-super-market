@@ -130,7 +130,7 @@ Group {
 		# quay hoa qua
 		Transform {
 			translation	3 0 0	
-			scale	1 1 1   
+			scale	0.8 0.8 0.8   
 			rotation 0 1 0 3.14159265
 			children [
 				Inline {
@@ -141,8 +141,8 @@ Group {
 
 		# quay banh keo
 		Transform {
-			translation	2 0 -4
-			scale	1 1 1	  
+			translation	2 0 -3.2
+			scale	0.8 0.8 0.8  	  
 			
 			children [
 				Inline {
@@ -154,7 +154,7 @@ Group {
 		# quay hoa qua
 		Transform {
 			translation	-2 0 0	
-			scale	1 1 1   
+			scale	0.8 0.8 0.8   
 			rotation 0 1 0 3.14159265
 			children [
 				Inline {
@@ -165,8 +165,8 @@ Group {
 
 		# quay banh keo
 		Transform {
-			translation	-3 0 -4
-			scale	1 1 1	  
+			translation	-3 0 -3.2
+			scale	0.8 0.8 0.8  	  
 			
 			children [
 				Inline {
@@ -232,9 +232,9 @@ Group {
 
 		#cau thang
 		Transform {
-			translation	0 0.5 -6.5
-			scale 0.1 0.1 0.1
-			rotation 0 0 1 0
+			translation	1.4 0.5 -6.5
+			scale 0.1 0.1 0.1 
+			rotation 0 1 0 -1.57
 			children [
 				Inline {
 					url	"cau_thang.wrl"

@@ -38,92 +38,231 @@ DEF gianHangTo Group {
 		}
 
 		
-		 #ban 1
+		 #3 ghe
 		Transform {
 			rotation 0 1 0 3.14
-			translation	-0.8 -1 -1
-			scale 0.6 0.6 0.6
+			translation	-1.75 -1 -1
+			scale 0.5 1 0.75
 			children [
 				Inline {
-					url	"Ban.wrl"
+					url	"Ghe.wrl"
+				}
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 3.14
+			translation	-1.1 -1 -1
+			scale 0.5 1 0.75
+			children [
+				Inline {
+					url	"Ghe.wrl"
 				}
 			]
 		}
 		Transform {
 			rotation 0 1 0 3.14
-			translation	-1.5 -0.9 -1
-			scale 0.5 1 1
+			translation	-0.45 -1 -1
+			scale 0.5 1 0.75
 			children [
 				Inline {
-					url	"MayTinh.wrl"
+					url	"Ghe.wrl"
+				}
+			]
+		}
+		#3 ghe
+
+		Transform {
+			rotation 0 1 0 3.14
+			translation	-1.75 -1 -2
+			scale 0.5 1 0.75
+			children [
+				Inline {
+					url	"Ghe.wrl"
+				}
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 3.14
+			translation	-1.1 -1 -2
+			scale 0.5 1 0.75
+			children [
+				Inline {
+					url	"Ghe.wrl"
 				}
 			]
 		}
 		Transform {
 			rotation 0 1 0 3.14
-			translation	-0.3 -0.9 -1
-			scale 0.5 1 1
+			translation	-0.45 -1 -2
+			scale 0.5 1 0.75
 			children [
 				Inline {
-					url	"MayTinh.wrl"
+					url	"Ghe.wrl"
+				}
+			]
+		}
+
+		#3 ghe
+		Transform {
+			rotation 0 1 0 3.14
+			translation	-1.75 -1 -3
+			scale 0.5 1 0.75
+			children [
+				Inline {
+					url	"Ghe.wrl"
+				}
+			]
+		}
+
+		Transform {
+			rotation 0 1 0 3.14
+			translation	-1.1 -1 -3
+			scale 0.5 1 0.75
+			children [
+				Inline {
+					url	"Ghe.wrl"
+				}
+			]
+		}
+		Transform {
+			rotation 0 1 0 3.14
+			translation	-0.45 -1 -3
+			scale 0.5 1 0.75
+			children [
+				Inline {
+					url	"Ghe.wrl"
+				}
+			]
+		}
+
+		#3 ghe 1
+		Transform {
+			rotation 0 1 0 3.14
+			translation	2 -1.5 -1
+			scale 1 1.5 1.5
+			children [
+				Inline {
+					url	"Ghe1.wrl"
 				}
 			]
 		}	
-		#ban 2
 		Transform {
 			rotation 0 1 0 3.14
-			translation	1.3 -1 -1
-			scale 0.4 0.6 0.6
+			translation	1.5 -1.5 -1
+			scale 1 1.5 1.5
 			children [
 				Inline {
-					url	"Ban.wrl"
+					url	"Ghe1.wrl"
+				}
+			]
+		}	
+		Transform {
+			rotation 0 1 0 3.14
+			translation	1 -1.5 -1
+			scale 1 1.5 1.5
+			children [
+				Inline {
+					url	"Ghe1.wrl"
+				}
+			]
+		}
+		#3 ghe 1
+		Transform {
+			rotation 0 1 0 3.14
+			translation	2 -1.5 -2
+			scale 1 1.5 1.5
+			children [
+				Inline {
+					url	"Ghe1.wrl"
+				}
+			]
+		}	
+		Transform {
+			rotation 0 1 0 3.14
+			translation	1.5 -1.5 -2
+			scale 1 1.5 1.5
+			children [
+				Inline {
+					url	"Ghe1.wrl"
+				}
+			]
+		}	
+		Transform {
+			rotation 0 1 0 3.14
+			translation	1 -1.5 -2
+			scale 1 1.5 1.5
+			children [
+				Inline {
+					url	"Ghe1.wrl"
+				}
+			]
+		}
+		#3 ghe 1
+		Transform {
+			rotation 0 1 0 3.14
+			translation	2 -1.5 -3
+			scale 1 1.5 1.5
+			children [
+				Inline {
+					url	"Ghe1.wrl"
+				}
+			]
+		}	
+		Transform {
+			rotation 0 1 0 3.14
+			translation	1.5 -1.5 -3
+			scale 1 1.5 1.5
+			children [
+				Inline {
+					url	"Ghe1.wrl"
+				}
+			]
+		}	
+		Transform {
+			rotation 0 1 0 3.14
+			translation	1 -1.5 -3
+			scale 1 1.5 1.5
+			children [
+				Inline {
+					url	"Ghe1.wrl"
+				}
+			]
+		}
+		#3 ghe 1
+		Transform {
+			rotation 0 1 0 3.14
+			translation	2 -1.5 -4
+			scale 1 1.5 1.5
+			children [
+				Inline {
+					url	"Ghe1.wrl"
+				}
+			]
+		}	
+		Transform {
+			rotation 0 1 0 3.14
+			translation	1.5 -1.5 -4
+			scale 1 1.5 1.5
+			children [
+				Inline {
+					url	"Ghe1.wrl"
+				}
+			]
+		}	
+		Transform {
+			rotation 0 1 0 3.14
+			translation	1 -1.5 -4
+			scale 1 1.5 1.5
+			children [
+				Inline {
+					url	"Ghe1.wrl"
 				}
 			]
 		}
 		Transform {
-			rotation 0 1 0 3.14
-			translation	1.2 -0.9 -1
-			scale 0.5 1 1
-			children [
-				Inline {
-					url	"MayTinh.wrl"
-				}
-			]
-		}
-		
-		#ban 3
-		Transform {
-			rotation 0 1 0 3.14
-			translation	-0.8 -1 -3
-			scale 0.6 0.6 0.6
-			children [
-				Inline {
-					url	"Ban.wrl"
-				}
-			]
-		}
-		Transform {
-			rotation 0 1 0 3.14
-			translation	-1.5 -0.9 -3
-			scale 0.3 0.6 0.6
-			children [
-				Inline {
-					url	"Laptop.wrl"
-				}
-			]
-		}
-		Transform {
-			rotation 0 1 0 3.14
-			translation	-0.3 -0.9 -3
-			scale 0.3 0.6 0.6
-			children [
-				Inline {
-					url	"Laptop.wrl"
-				}
-			]
-		}
-		Transform {
-			translation	2 -0.4 -3
+			translation	0 -0.4 -5
 			scale 0.3 0.5 0.6
 			rotation 0 1 0 3.14
 			children [
@@ -176,7 +315,7 @@ DEF gianHangTo Group {
 					 children [
 						Shape {
 							geometry Text{
-								string ["Laptop sỉ lẻ"]
+								string ["Nội thất"]
 								fontStyle FontStyle{
             						size 1
             						family "Lucida Handwriting"

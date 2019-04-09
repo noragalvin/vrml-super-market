@@ -1,0 +1,172 @@
+#VRML V2.0 utf8
+
+DEF ThanhNgang Shape {
+	geometry Box {size 16 1 4}
+	appearance Appearance {
+		material Material {
+			diffuseColor .58 .27 .01
+			specularColor .43 .2 0
+			ambientIntensity .0733
+			shininess .07
+		}
+	}
+}
+ Transform {
+	 translation -7.5 7 0
+	 children DEF ThanhDoc Shape {
+		 	appearance Appearance {
+		material Material {
+			diffuseColor .58 .27 .01
+			specularColor .43 .2 0
+			ambientIntensity .0733
+			shininess .07
+		}
+	}
+		 geometry Box {size 1 15 4}
+	 }
+}
+ Transform {
+	 translation 7.5 7 0
+	 children USE	ThanhDoc 
+
+}
+ Transform {
+	 translation 0 7 0
+	 children USE	ThanhDoc 
+
+}
+ Transform {
+	 translation 0 5 0
+	 children USE	ThanhNgang 
+
+}
+ Transform {
+	 translation 0 10 0
+	 children USE	ThanhNgang 
+
+}
+ Transform {
+	 translation 0 15 0
+	 children USE	ThanhNgang 
+
+}
+DEF	Sach Transform {
+	children [
+	Transform {
+	translation	6.75 2 0
+	children DEF SachXanh Shape	{
+		appearance Appearance {
+			material Material {
+				diffuseColor .14 .2 .13
+				specularColor .11 .2 .11
+				emissiveColor .11 .2 .11
+				ambientIntensity .0367
+				shininess .09
+			}
+		}
+		geometry Box {size 0.5 3 3}
+	}
+}
+Transform {
+	translation	6.25 2 0
+	children DEF SachDo Shape	{
+		
+		geometry Box {size 0.5 3 3}
+		appearance Appearance {
+			material Material {
+				diffuseColor .54 0 0
+				specularColor .59 0 .13
+				ambientIntensity .0467
+				shininess .06
+			}
+		}
+	}
+}
+Transform {
+	translation 5.75 2 0
+	children DEF SachTrang Shape	{
+		geometry Box {size 0.5 3 3}
+		
+	}
+}  
+Transform {
+	translation 5.25 2 0
+	children DEF SachVang Shape	{
+		geometry Box {size 0.5 3 3}
+		appearance Appearance {
+			material Material {
+				diffuseColor .8 .51 .09
+				specularColor .92 .43 .01
+				ambientIntensity .117
+				shininess .4
+			}
+		}
+		
+	}
+}
+Transform {
+	translation 4.75 2 0
+	children DEF SachTim Shape	{
+		geometry Box {size 0.5 3 3}
+		appearance Appearance {
+			material Material {
+				diffuseColor .6 .13 .41
+				specularColor .28 .04 .04
+				ambientIntensity .0433
+				shininess .13
+			}
+		}
+		
+		
+	}
+}
+	]
+}
+Transform {
+translation	-2.5 0 0
+children USE Sach
+}
+Transform {
+translation	-2.5 5 0
+children USE Sach
+} 
+Transform {
+translation	0 5 0
+children USE Sach
+}
+Transform {
+translation	-5 0 0
+children USE Sach
+}
+Transform {
+translation	-7.5 5 0
+children USE Sach
+} 
+Transform {
+translation	-7.5 0 0
+children USE Sach
+} 
+Transform {
+translation	-10 0 0
+children USE Sach
+}
+Transform {
+translation	-10 5 0
+children USE Sach
+}
+Transform {
+translation	-12 10 0
+children USE Sach
+}
+Transform {
+translation	-9.5 10 0
+children USE Sach
+}
+Transform {
+translation	0 10 0
+children USE Sach
+}
+Transform {
+translation	-2.5 10 0
+children USE Sach
+}
