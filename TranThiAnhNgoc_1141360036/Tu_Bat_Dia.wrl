@@ -1,0 +1,349 @@
+#VRML V2.0 utf8
+
+Transform {
+	translation	0 0 0
+	children [
+		Transform {
+			translation	0 0 0
+			children [
+				Shape {
+					geometry Box {
+						size 10 7 0.2
+					}
+					appearance Appearance {
+						texture	ImageTexture {
+							url	"images/mauao.png"
+						}
+					}
+				}
+
+				#tang 1	   
+				Transform {
+					translation	0 2.5 1
+					children [
+						Shape {
+							geometry Box {
+								size 10 0.2 2
+							}
+						}
+						Transform {
+							translation	-4 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"batdepne.wrl"
+								}
+							]
+						}
+						Transform {
+							translation	-2.5 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"batdepne.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation	-1 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"batdepne.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation	0.5 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"batdepne.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation	2 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"batdepne.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation	3.5 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"batdepne.wrl"
+								}
+							]
+						}
+					]
+				}
+
+
+				# tang 2
+				Transform {
+					translation	0 1 1
+					children [
+						Shape {
+							geometry Box {
+								size 10 0.2 2
+							}
+						}
+
+						Transform {
+							translation	-4 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"batto.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation	-2 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"batto.wrl"
+								}
+							]
+						}
+						Transform {
+							translation	0 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"batto.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation	2 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"batto.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation	4 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"batto.wrl"
+								}
+							]
+						}
+					]
+				}
+
+
+				#tang 3
+				Transform {
+					translation	0 -0.5 1
+					children [
+						Shape {
+							geometry Box {
+								size 10 0.2 2
+							}
+						}
+
+						Transform {
+							translation	-4 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"battodep.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation	-2 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"battodep.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation	0 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"battodep.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation	2 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"battodep.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation 4 0.15 0
+							scale 0.5 0.5 0.5
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"battodep.wrl"
+								}
+							]
+						}
+							 
+					]
+				}
+
+
+				#tang 4
+				Transform {
+					translation	0 -2 1
+					children [
+						Shape {
+							geometry Box {
+								size 10 0.2 2
+							}
+						}
+
+						Transform {
+							translation	-4 0.35 0
+							scale 0.2 0.2 0.2
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"caicoc.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation	-3 0.35 0
+							scale 0.2 0.2 0.2
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"caicoc.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation	-2 0.35 0
+							scale 0.2 0.2 0.2
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"caicoc.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation	-1 0.35 0
+							scale 0.2 0.2 0.2
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"caicoc.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation	0 0.35 0
+							scale 0.2 0.2 0.2
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"caicoc.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation	1 0.35 0
+							scale 0.2 0.2 0.2
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"caicoc.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation 2 0.35 0
+							scale 0.2 0.2 0.2
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"caicoc.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation 3 0.35 0
+							scale 0.2 0.2 0.2
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"caicoc.wrl"
+								}
+							]
+						}
+
+						Transform {
+							translation 4 0.35 0
+							scale 0.2 0.2 0.2
+							rotation 0 0 1 0
+							children [
+								Inline {
+									url	"caicoc.wrl"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+
+
+		
+	]
+}

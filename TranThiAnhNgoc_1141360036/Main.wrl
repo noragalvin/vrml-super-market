@@ -1,6 +1,12 @@
 #VRML V2.0 utf8
 
-
+DirectionalLight {
+	on TRUE
+	intensity 1
+	ambientIntensity 0.2
+	color 1 1 1
+	direction 0.5 0.84 0.21
+}
 
 Group {
 	children [
@@ -19,6 +25,537 @@ Group {
 							geometry Box {
 								size 2.5 0.2 15
 							}
+						}
+
+						#trai
+
+						DEF ConTien Transform {
+							translation	1.2 0.35 -5
+							scale 0.1 0.1 0.1
+							children [
+								Shape {
+									geometry Cylinder {
+										radius 0.25
+										height 4
+									}	
+									appearance Appearance {
+										material Material {
+											diffuseColor .88 .15 .01
+											specularColor .19 .03 .03
+											ambientIntensity .0833
+											shininess .08
+										}
+									}
+								}
+							]
+						}
+
+						Transform {
+							translation	0 0 0.3
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 0.6
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 0.9
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 1.2
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 1.5
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 1.8
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 2.1
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 2.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 2.7
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 3.0
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 3.3
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 3.6
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 3.9
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 4.2
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 4.5
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 4.8
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 5.1
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 5.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 5.7
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 6.0
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 6.3
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 6.6
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 6.9
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 7.2
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 7.5
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 7.8
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 8.1
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 8.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 8.7
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 9
+							children USE ConTien
+						}
+
+
+						Transform {
+							translation	0 0 9.3
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 9.6
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 9.9
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0 0 10.2
+							children USE ConTien
+						}
+						#ngang
+						Transform {
+							translation	0.2 0 10.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0.5 0 10.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	0.8 0 10.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	1.1 0 10.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	1.4 0 10.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	1.7 0 10.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	2 0 10.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	2.3 0 10.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	2.6 0 10.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	2.9 0 10.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	3.2 0 10.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	3.5 0 10.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	3.8 0 10.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	4.1 0 10.4
+							children USE ConTien
+						}
+						Transform {
+							translation	4.4 0 10.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	4.7 0 10.4
+							children USE ConTien
+						}
+						Transform {
+							translation	4.9 0 10.4
+							children USE ConTien
+						}
+
+						#phai
+						Transform {
+							translation	5.2 0 -2.1
+							children USE ConTien
+						}
+						Transform {
+							translation	5.2 0 -1.8
+							children USE ConTien
+						}
+						Transform {
+							translation	5.2 0 -1.5
+							children USE ConTien
+						}
+						Transform {
+							translation	5.2 0 -1.2
+							children USE ConTien
+						}
+						Transform {
+							translation	5.2 0 -0.9
+							children USE ConTien
+						}
+						Transform {
+							translation	5.2 0 -0.6
+							children USE ConTien
+						}
+						Transform {
+							translation	5.2 0 -0.3
+							children USE ConTien
+						}
+						Transform {
+							translation	5.2 0 0
+							children USE ConTien
+						}
+						Transform {
+							translation	5.2 0 0.3
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 0.6
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 0.9
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 1.2
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 1.5
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 1.8
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 2.1
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 2.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 2.7
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 3.0
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 3.3
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 3.6
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 3.9
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 4.2
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 4.5
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 4.8
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 5.1
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 5.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 5.7
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 6.0
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 6.3
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 6.6
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 6.9
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 7.2
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 7.5
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 7.8
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 8.1
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 8.4
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 8.7
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 9
+							children USE ConTien
+						}
+
+
+						Transform {
+							translation	5.2 0 9.3
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 9.6
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 9.9
+							children USE ConTien
+						}
+
+						Transform {
+							translation	5.2 0 10.2
+							children USE ConTien
+						}
+
+
+						#thanh ngang
+						Transform {
+							translation	3.8 0.6 5.425
+							rotation 0 0 1 1.57
+							scale 0.2 0.2 0.2
+							children Shape{ 
+									appearance Appearance {
+									material Material {
+									diffuseColor .61 .61 .61
+									specularColor .77 .76 .76
+									ambientIntensity .14
+									shininess .9
+								}
+							}
+							geometry Cylinder {radius 0.25 height 26} }
+						}
+						#thanh trai
+						Transform {
+							translation	1.2 0.6 0.2
+							rotation 1 0 0 1.57
+							scale 0.2 0.2 0.2
+							children Shape{ 
+									appearance Appearance {
+									material Material {
+									diffuseColor .61 .61 .61
+									specularColor .77 .76 .76
+									ambientIntensity .14
+									shininess .9
+								}
+							}
+							geometry Cylinder {radius 0.25 height 52} }
+						}
+						#thanh phai
+						Transform {
+							translation	6.425 0.6 -0.8
+							rotation 1 0 0 1.57
+							scale 0.2 0.2 0.2
+							children Shape{ 
+									appearance Appearance {
+									material Material {
+									diffuseColor .61 .61 .61
+									specularColor .77 .76 .76
+									ambientIntensity .14
+									shininess .9
+								}
+							}
+							geometry Cylinder {radius 0.25 height 62} }
 						}
 					]
 				}	

@@ -85,7 +85,7 @@ DEF	BacThangFull Transform {
 
 
 	DEF	Bac17 Transform	{
-		translation -12.5 16 -24.75
+		translation -12.5 16 -18
 		children
 			Shape {
 				appearance Appearance {
@@ -96,13 +96,29 @@ DEF	BacThangFull Transform {
 					shininess .93
 				}
 			}
-			geometry Box {size 50 1 19.5}
+			geometry Box {size 50 1 7}
 	}
 }
 Transform {
 translation	-25 15.5 -15
 rotation 1 0 0 1.57
-children USE BacThangFull
+children [
+	USE BacThangFull
+	Transform {
+	   translation 0 15.5 -15
+	   children	 Shape {
+			geometry Box {size 25 2 2}
+			appearance Appearance {
+				material Material {
+					diffuseColor .38 .38 .42
+					specularColor .53 .53 .53
+					ambientIntensity .0933
+					shininess .93
+				}
+			}
+		}
+	}
+]
 
 }
 #Transform {
@@ -282,46 +298,8 @@ DEF ConTien16-1 Transform {
    translation 24 15 -22.3
    children	USE	ConTien
 }
-DEF ConTien16-1 Transform {
-   translation 24 15 -23.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation 24 15 -24.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation 24 15 -25.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation 24 15 -26.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation 24 15 -27.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation 24 15 -28.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation 24 15 -29.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation 24 15 -30.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation 24 15 -31.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation 24 15 -32.3
-   children	USE	ConTien
-}
+
+
 #ngang doi dien
 DEF ConTien16-1 Transform {
    translation -25.5 15 -16.3
@@ -351,46 +329,8 @@ DEF ConTien16-1 Transform {
    translation -25.5 15 -22.3
    children	USE	ConTien
 }
-DEF ConTien16-1 Transform {
-   translation -25.5 15 -23.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation -25.5 15 -24.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation -25.5 15 -25.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation -25.5 15 -26.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation -25.5 15 -27.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation -25.5 15 -28.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation -25.5 15 -29.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation -25.5 15 -30.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation -25.5 15 -31.3
-   children	USE	ConTien
-}
-DEF ConTien16-1 Transform {
-   translation -25.5 15 -32.3
-   children	USE	ConTien
-}
+
+
 
 
 
@@ -407,6 +347,12 @@ DEF	TayNam Transform {
 		}
 	}
 }
+}
+Transform {
+	 translation 24 0 -.25
+	 children [
+		USE	TayNam
+	 ]
 }
 Transform {
 translation	0 10 0
@@ -519,7 +465,7 @@ translation	-1 27.5 -2
 children USE ConTien
 }
 Transform {
-translation	-1 28.5 -1
+translation	-1 29.5 0
 children USE ConTien
 }
 
@@ -584,11 +530,26 @@ translation	-25.5 27.5 -2
 children USE ConTien
 }
 Transform {
-translation	-25.5 28.5 -1
+translation	-25.5 29.5 0
 children USE ConTien
 }
 Transform {
-	translation	-12.75 27.5 -8
+	translation	-12.75 28.5 -7
+	rotation 1 0 0 0.78539816339
+	children Shape{ 
+			appearance Appearance {
+			material Material {
+			diffuseColor .61 .61 .61
+			specularColor .77 .76 .76
+			ambientIntensity .14
+			shininess .9
+		}
+	}
+		geometry Cylinder {radius 0.25 height 23} }
+}
+
+Transform {
+	translation	-37.25 28.5 -7
 	rotation 1 0 0 0.78539816339
 	children Shape{ 
 			appearance Appearance {
@@ -599,26 +560,11 @@ Transform {
 			shininess .9
 		}
 	}
-		geometry Cylinder {radius 0.25 height 21} }
+		geometry Cylinder {radius 0.25 height 23} }
 }
 
 Transform {
-	translation	-37.25 27.5 -8
-	rotation 1 0 0 0.78539816339
-	children Shape{ 
-			appearance Appearance {
-		material Material {
-			diffuseColor .61 .61 .61
-			specularColor .77 .76 .76
-			ambientIntensity .14
-			shininess .9
-		}
-	}
-		geometry Cylinder {radius 0.25 height 21} }
-}
-
-Transform {
-translation	-12.25 34.75 -.55
+translation	-12.25 36.5 1
 rotation 0 0 1 1.570796327
 children Shape {
 		appearance Appearance {

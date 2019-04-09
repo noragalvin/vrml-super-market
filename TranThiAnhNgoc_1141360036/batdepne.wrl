@@ -1,0 +1,62 @@
+#VRML V2.0 utf8
+
+Transform {
+	rotation 0 1 0 0.2
+	children [
+		Shape {
+			geometry Extrusion{
+				beginCap	TRUE
+				endCap FALSE
+				solid FALSE
+				crossSection [
+				  
+							 .383 .924,
+							 .707 .707,
+				 
+				 
+				 
+							  .924 -.383,
+							  .707 -.707,
+				  
+			   
+							  -.383 -.924,
+							  -.707 -.707,
+				 
+        		 
+							 -.924 .383,
+							 -.707 .707,
+
+							 .383 .924
+				
+				 
+						  ]
+				spine [
+
+		    			0 0 0
+						0 0.1 0
+						 0 0.5 0
+						 0 1 0
+
+
+				]
+				scale [
+					1 1
+					0.9 0.9
+					1.5 1.5
+					1.7 1.7
+				]
+		
+			}
+			appearance Appearance {
+				material Material {
+					diffuseColor .941 .349 .361
+					specularColor .68 .26 .18
+					emissiveColor .46 .34 .34
+					ambientIntensity .09
+					shininess .07
+				}
+			}
+
+		}
+	]
+}

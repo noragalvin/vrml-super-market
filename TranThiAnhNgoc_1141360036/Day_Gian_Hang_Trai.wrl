@@ -32,7 +32,7 @@ DEF  gianHang Group {
 			rotation 0 1 0 1.57
 			scale 0.3 0.2 0.2
 			translation	5 0.5 3
-			children [Inline {url "Hang_Sach2.wrl"}]
+			children [Inline {url "Hang_Bat_Dia.wrl"}]
 		}
 
 		#Gian hang to ben phai 5

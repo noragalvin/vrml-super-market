@@ -20,9 +20,9 @@ NavigationInfo {
 	avatarSize [0 0.7 0.2]	 
 }
 Viewpoint {
-#	position 0 1 10
-	position	0 6 0
-	orientation 0 1 0 -1.4 
+	position 0 1 10
+#	position	0 2 -3
+#	orientation 0 1 0 -1.4 
 }
 
 
@@ -35,7 +35,7 @@ Transform {
 	]
 }
 Transform {
-	translation	0 4 0
+	translation	0.1 3.7 0
 	children [
 		Inline {
 			url	"TranThiAnhNgoc_1141360036/Main.wrl"
