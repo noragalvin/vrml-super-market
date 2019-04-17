@@ -1,0 +1,707 @@
+#VRML V2.0 utf8
+
+
+
+Group {
+	children [
+		DEF	Dentuyp1 Transform {
+		children [
+			DEF	Khungden Transform {
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 1 0.05 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	-0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Den1 Transform {
+				rotation 0 0 1 1.56
+				translation	0 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material DEF Bong1 Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Cylinder {
+							height 0.9
+							radius 0.08
+						}
+					}
+				]
+			}
+		]
+	}
+	DEF	Dentuyp2 Transform {
+		translation	 5 0 0
+		children [
+			DEF	Khungden Transform {
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 1 0.05 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	-0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Den2 Transform {
+				rotation 0 0 1 1.56
+				translation	0 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material DEF Bong2 Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Cylinder {
+							height 0.9
+							radius 0.08
+						}
+					}
+				]
+			}
+		]
+	}
+		DEF	Dentuyp3 Transform {
+		translation	 5 0 2
+		children [
+			DEF	Khungden Transform {
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 1 0.05 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	-0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Den3 Transform {
+				rotation 0 0 1 1.56
+				translation	0 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material DEF Bong3 Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Cylinder {
+							height 0.9
+							radius 0.08
+						}
+					}
+				]
+			}
+		]
+	}
+		DEF	Dentuyp4 Transform {
+		translation	 0 0 2
+		children [
+			DEF	Khungden Transform {
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 1 0.05 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	-0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Den4 Transform {
+				rotation 0 0 1 1.56
+				translation	0 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material DEF Bong4 Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Cylinder {
+							height 0.9
+							radius 0.08
+						}
+					}
+				]
+			}
+		]
+	}
+		DEF	Dentuyp5 Transform {
+		translation	 5 0 4
+		children [
+			DEF	Khungden Transform {
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 1 0.05 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	-0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Den5 Transform {
+				rotation 0 0 1 1.56
+				translation	0 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material DEF Bong5 Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Cylinder {
+							height 0.9
+							radius 0.08
+						}
+					}
+				]
+			}
+		]
+	}
+		DEF	Dentuyp6 Transform {
+		translation	 0 0 4
+		children [
+			DEF	Khungden Transform {
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 1 0.05 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	-0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Den6 Transform {
+				rotation 0 0 1 1.56
+				translation	0 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material DEF Bong6 Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Cylinder {
+							height 0.9
+							radius 0.08
+						}
+					}
+				]
+			}
+		]
+	}
+		DEF	Dentuyp7 Transform {
+		translation	 5 0 6
+		children [
+			DEF	Khungden Transform {
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 1 0.05 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	-0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Den7 Transform {
+				rotation 0 0 1 1.56
+				translation	0 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material DEF Bong7 Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Cylinder {
+							height 0.9
+							radius 0.08
+						}
+					}
+				]
+			}
+		]
+	}
+		DEF	Dentuyp8 Transform {
+		translation	 0 0 6
+		children [
+			DEF	Khungden Transform {
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 1 0.05 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Khungden Transform {
+				translation	-0.475 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Box {
+							size 0.05 0.15 0.3
+						}
+					}
+				]
+			}
+			DEF	Den8 Transform {
+				rotation 0 0 1 1.56
+				translation	0 -0.1 0
+				children [
+					Shape {
+						appearance Appearance {
+							material DEF Bong8 Material {
+								diffuseColor .38 .38 .42
+							}
+						}
+						geometry Cylinder {
+							height 0.9
+							radius 0.08
+						}
+					}
+				]
+			}
+		]
+	}
+
+	
+
+	#Cong tac
+	DEF Congtac1 Transform {
+		translation -1.75 -1.5 -1.885
+		children [
+			Shape {
+				appearance Appearance {}
+				geometry Box {
+					size 0.2 0.2 0.1
+				}
+			}
+		]
+	}
+	DEF Nut1 Transform {
+		translation -1.75 -1.5 -1.87
+		children [
+			Shape {
+				appearance Appearance {material Material {diffuseColor 0 0 0}}
+				geometry Box {
+					size 0.05 0.16 0.1
+				}
+			}
+			DEF	tss1 TouchSensor {}
+		]
+	}
+	DEF Congtac2 Transform {
+		translation -1.4 -1.5 -1.885
+		children [
+			Shape {
+				appearance Appearance {
+				}
+				geometry Box {
+					size 0.2 0.2 0.1
+				}
+			}
+			
+		]
+	}
+	DEF Nut2 Transform {
+		translation -1.4 -1.5 -1.87
+		children [
+			Shape {
+				appearance Appearance {material Material {diffuseColor 0 0 0}}
+				geometry Box {
+					size 0.05 0.16 0.1
+				}
+			}
+			DEF	tss2 TouchSensor {}	
+		]
+	}
+	]
+}
+
+# Bat tat den
+PROTO Battatden[				
+	eventIn SFTime Trangthai
+	eventOut SFTime Bat
+	eventOut SFTime Tat
+	field SFBool Dangbat FALSE
+]
+{
+	Script {								
+		eventIn SFTime Trangthai IS Trangthai
+		eventOut SFTime Bat IS Bat
+		eventOut SFTime Tat IS Tat
+		field SFBool Dangbat IS Dangbat
+		url "vrmlscript: 
+			function Trangthai( t ) {
+				if (Dangbat) {
+					Dangbat = FALSE;
+					Tat = t;
+				} else {
+					Dangbat = TRUE;
+					Bat = t;
+				}
+			}
+		"
+	}
+}
+
+
+
+
+DEF	tg1 TimeSensor {
+	cycleInterval 0.1
+	loop FALSE
+}
+DEF	tg2	TimeSensor {
+	cycleInterval 0.1
+	loop FALSE
+}
+DEF	densang1 ColorInterpolator {
+	key	[0  1]
+	keyValue [	0.38 0.38 0.42 , 1 1 1 ]
+}
+DEF	dentoi1 ColorInterpolator {
+	key	[0  1]
+	keyValue [	1 1 1 , 0.38 0.38 0.42 ]
+}
+DEF	Battatden1 Battatden {}
+
+ROUTE tss1.touchTime TO	Battatden1.Trangthai
+ROUTE Battatden1.Bat TO	tg1.startTime
+ROUTE Battatden1.Tat TO	tg2.startTime
+
+ROUTE tg1.fraction_changed TO densang1.set_fraction
+ROUTE densang1.value_changed	TO Bong8.diffuseColor
+ROUTE tg2.fraction_changed TO dentoi1.set_fraction
+ROUTE dentoi1.value_changed TO Bong8.diffuseColor
+
+ROUTE tg1.fraction_changed TO densang1.set_fraction
+ROUTE densang1.value_changed TO Bong6.diffuseColor
+ROUTE tg2.fraction_changed TO dentoi1.set_fraction
+ROUTE dentoi1.value_changed TO Bong6.diffuseColor
+
+ROUTE tg1.fraction_changed TO densang1.set_fraction
+ROUTE densang1.value_changed	TO Bong4.diffuseColor
+ROUTE tg2.fraction_changed TO dentoi1.set_fraction
+ROUTE dentoi1.value_changed TO Bong4.diffuseColor
+
+
+ROUTE tg1.fraction_changed TO densang1.set_fraction
+ROUTE densang1.value_changed	TO Bong1.diffuseColor
+ROUTE tg2.fraction_changed TO dentoi1.set_fraction
+ROUTE dentoi1.value_changed TO Bong1.diffuseColor
+
+
+DEF	tg3 TimeSensor {
+	cycleInterval 0.1
+	loop FALSE
+}
+DEF	tg4	TimeSensor {
+	cycleInterval 0.1
+	loop FALSE
+}
+DEF	densang2 ColorInterpolator {
+	key	[0  1]
+	keyValue [	0.38 0.38 0.42 , 1 1 1 ]
+}
+DEF	dentoi2 ColorInterpolator {
+	key	[0  1]
+	keyValue [	1 1 1 , 0.38 0.38 0.42 ]
+}
+DEF	Battatden2 Battatden {}
+
+
+
+ROUTE tss2.touchTime TO	Battatden2.Trangthai
+ROUTE Battatden2.Bat TO	tg3.startTime
+ROUTE Battatden2.Tat TO	tg4.startTime
+
+ROUTE tg3.fraction_changed TO densang2.set_fraction
+ROUTE densang2.value_changed	TO Bong7.diffuseColor
+ROUTE tg4.fraction_changed TO dentoi2.set_fraction
+ROUTE dentoi2.value_changed TO Bong7.diffuseColor
+
+ROUTE tg3.fraction_changed TO densang2.set_fraction
+ROUTE densang2.value_changed	TO Bong5.diffuseColor
+ROUTE tg4.fraction_changed TO dentoi2.set_fraction
+ROUTE dentoi2.value_changed TO Bong5.diffuseColor
+
+ROUTE tg3.fraction_changed TO densang2.set_fraction
+ROUTE densang2.value_changed	TO Bong3.diffuseColor
+ROUTE tg4.fraction_changed TO dentoi2.set_fraction
+ROUTE dentoi2.value_changed TO Bong3.diffuseColor
+
+ROUTE tg3.fraction_changed TO densang2.set_fraction
+ROUTE densang2.value_changed	TO Bong2.diffuseColor
+ROUTE tg4.fraction_changed TO dentoi2.set_fraction
+ROUTE dentoi2.value_changed TO Bong2.diffuseColor
+
+

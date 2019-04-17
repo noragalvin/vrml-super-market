@@ -1,0 +1,197 @@
+#VRML V2.0 utf8
+#lồng đèn
+DEF	bongden Transform {
+	translation	0 3 0
+	children [
+		Shape {
+			geometry Cylinder{
+				height 3.5
+				radius 3
+				bottom TRUE
+				top TRUE
+				side TRUE
+			}
+			appearance Appearance {
+				material Material {
+					diffuseColor .52 .26 0
+					specularColor .97 .98 .12
+					ambientIntensity .00333
+					shininess .12
+					emissiveColor .24 0 0
+					transparency .3
+				}
+			}
+		}	
+	]
+}
+			
+DEF	daytreoden Transform {
+	translation	0 8.5 0
+	children [
+		Shape {
+			geometry Cylinder{
+			height 7.5
+			radius 0.1
+			bottom FALSE
+			top TRUE
+			side TRUE
+			}
+			appearance  DEF  mau Appearance {
+				material Material {
+					diffuseColor .47 .52 .58
+					specularColor 1 1 1
+					ambientIntensity .123
+					shininess .13
+				}
+			}
+		}	
+	]
+}
+
+			
+DEF	vede Transform {
+	translation	0 12.3 0
+	children [
+		Shape {
+			appearance USE mau
+			geometry Box {size 1 0.1 1}
+		}
+	]
+}
+DEF	bongden1 Transform {translation -20 0 0 children [USE bongden ]}
+DEF	daytreoden1 Transform {translation -20 0 0 children [USE daytreoden ]}
+DEF	vede1 Transform	{translation -20 0 0 children [USE vede ]}
+DEF	bongden2 Transform {translation -35 0 0 children [USE bongden ]}
+DEF	daytreoden2 Transform {translation -35 0 0 children [USE daytreoden ]}
+DEF	vede2 Transform	{translation -35 0 0 children [USE vede ]}
+DEF	bongden3 Transform {translation -35 0 -23 children [USE bongden ]}
+DEF	daytreoden3 Transform {translation -35 0 -23 children [USE daytreoden ]}
+DEF	vede3 Transform	{translation -35 0 -23 children [USE vede ]}
+DEF	bongden4 Transform {translation -35 0 -63 children [USE bongden ]}
+DEF	daytreoden4 Transform {translation -35 0 -63 children [USE daytreoden ]}
+DEF	vede4 Transform	{translation -35 0 -63 children [USE vede ]}
+DEF	bongden5 Transform {translation -35 0 -86 children [USE bongden ]}
+DEF	daytreoden5 Transform {translation -35 0 -86 children [USE daytreoden ]}
+DEF	vede5 Transform	{translation -35 0 -86 children [USE vede ]}
+
+DEF veden Transform{
+		  translation 0 0 0
+		  children [
+			  DEF	 den Transform{
+					translation	0 3 0
+					children[
+						Shape{
+							appearance Appearance{
+								material DEF maubongden Material{
+									diffuseColor 1 1 1
+									specularColor .29 .3 .29
+									ambientIntensity 0
+									shininess .553
+								}			
+							}
+							geometry Sphere {radius 1.0}
+						}
+					]
+				}
+				Transform {translation -20 0 0 children [USE den ]}
+				Transform {translation -35 0 0 children [USE den ]}
+				Transform {translation -35 0 -23 children [USE den ]}
+				Transform {translation -35 0 -63 children [USE den ]}
+				Transform {translation -35 0 -86 children [USE den ]}
+				
+		
+# tạo nút
+
+DEF nut Transform{
+	translation	18 -10 3.1
+	children[
+		Shape{
+			appearance Appearance{
+				material Material {
+					diffuseColor 0 .5 .46
+					specularColor .34 0 .91
+					emissiveColor 0 .1 .09
+					ambientIntensity .0467
+					shininess .12
+				}
+			}
+				geometry Box{size 1 1.5 0.2}
+		}		
+	]
+}
+DEF	Touch TouchSensor{enabled TRUE }
+
+	]
+}
+DEF diem1 PointLight {
+  intensity 0.5  #cuong do sang
+  color 1 1 1
+  location 0 3 0
+  radius 50
+}
+DEF diem2 PointLight {
+  intensity 0.5  #cuong do sang
+  color 1 1 1
+  location -20 3 0
+  radius 50
+}
+DEF diem3 PointLight {
+  intensity 0.5  #cuong do sang
+  color 1 1 1
+  location -35 3 0
+  radius 50
+}
+DEF diem4 PointLight {
+  intensity 0.5  #cuong do sang
+  color 1 1 1
+  location -35 3 -23
+  radius 50
+}
+DEF diem5 PointLight {
+  intensity 0.5  #cuong do sang
+  color 1 1 1
+  location -35 3 -63
+  radius 50
+}
+DEF diem6 PointLight {
+  intensity 0.5  #cuong do sang
+  color 1 1 1
+  location -35 3 -86
+  radius 50
+}
+DEF	SC Script{
+	url	"javascript: 
+	     function touch (t)
+		 {
+			 if(t){
+				 isopen = !isopen;
+				 if(isopen){
+					 start = TRUE;
+					 stop = FALSE;
+				 }
+				 else{
+					 start=FALSE;
+					 stop = TRUE;
+				 }
+			 }
+		 }"
+eventIn SFBool touch
+eventOut SFBool start
+eventOut SFBool stop
+field SFBool isopen FALSE
+}
+ROUTE Touch.isActive TO SC.touch
+ROUTE SC.start TO diem1.on
+ROUTE SC.stop TO diem1.on
+ROUTE SC.start TO diem2.on
+ROUTE SC.stop TO diem2.on
+ROUTE SC.start TO diem3.on
+ROUTE SC.stop TO diem3.on
+ROUTE SC.start TO diem4.on
+ROUTE SC.stop TO diem4.on
+ROUTE SC.start TO diem5.on
+ROUTE SC.stop TO diem5.on
+ROUTE SC.start TO diem6.on
+ROUTE SC.stop TO diem6.on
+
+

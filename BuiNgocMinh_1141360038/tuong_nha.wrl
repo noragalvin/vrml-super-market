@@ -1,0 +1,47 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		Transform {
+			translation	0 2 -9.9
+			children [
+				Shape {
+					geometry Box {
+						size 10 3.6 0.2
+					}
+					appearance DEF MauKinh Appearance {
+						material Material {
+							diffuseColor 1 1 1
+							specularColor 1 1 1
+							emissiveColor 1 1 1
+							transparency .5
+						}
+					}
+				}
+			]
+		}
+		Transform {
+			translation	-4.9 2 -2.5
+			children [
+				Shape {
+					geometry Box {
+						size 0.2 3.6 15
+					}
+					appearance USE MauKinh
+				}
+			]
+		}
+
+		Transform {
+			translation	4.9 2 -2.5
+			children [
+				Shape {
+					geometry Box {
+						size 0.2 3.6 15
+					}
+					appearance USE MauKinh
+				}
+			]
+		}
+	]
+}

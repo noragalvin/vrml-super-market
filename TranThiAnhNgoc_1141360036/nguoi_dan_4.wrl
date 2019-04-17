@@ -44,7 +44,7 @@ DEF Nguoi Transform {
 													}
 													appearance DEF MauAo Appearance {
 														material Material {
-															diffuseColor .54 0 0
+															diffuseColor 0.6 0.3 0
 															specularColor .59 0 .13
 															ambientIntensity .0467
 															shininess .06

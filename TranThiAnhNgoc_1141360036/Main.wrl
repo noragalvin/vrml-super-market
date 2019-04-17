@@ -36,7 +36,7 @@ Group {
 								Shape {
 									geometry Cylinder {
 										radius 0.25
-										height 4
+										height 5
 									}	
 									appearance Appearance {
 										material Material {
@@ -507,6 +507,7 @@ Group {
 							translation	5.2 0 10.2
 							children USE ConTien
 						}
+						
 
 
 						#thanh ngang
@@ -557,6 +558,60 @@ Group {
 							}
 							geometry Cylinder {radius 0.25 height 62} }
 						}
+
+
+						#trai
+						Transform {
+							translation	1.2 0.6 0.2
+								children [
+									Shape {
+										geometry Box {
+											size 0.05 1 10.5
+										}
+										appearance Appearance {
+											material Material {
+												transparency 1
+											}
+										}
+									}
+
+								]
+						}
+						#phai
+						Transform {
+							translation	6.425 0.6 -0.8
+								children [
+									Shape {
+										geometry Box {
+											size 0.05 1 12
+										}
+										appearance Appearance {
+											material Material {
+												transparency 1
+											}
+										}
+									}
+
+								]
+						}
+						#ngang
+						Transform {
+							translation	3.8 0.6 5.425
+							rotation 0 1 0 1.57
+								children [
+									Shape {
+										geometry Box {
+											size 0.05 1 5
+										}
+										appearance Appearance {
+											material Material {
+												transparency 1
+											}
+										}
+									}
+
+								]
+						}
 					]
 				}	
 		  
@@ -595,29 +650,29 @@ Group {
 		}
 		
 		#Day hang ben Phai
-#		Transform {	
-#			scale 1 1 1
-#			translation 0 0 -4.5
-#			children [
-#				Inline {url "Day_Gian_Hang_Phai.wrl"}		   
-#			]
-#		}
+		Transform {	
+			scale 1 2 1
+			translation 0 0 -4.5
+			children [
+				Inline {url "Day_Gian_Hang_Phai.wrl"}		   
+			]
+		}
 
 		#Day hang ben Trai
-#		Transform {	
-#			rotation 0 1 0 3.14159265
-#			scale 1 1 1
-#			translation 0 0 0
-#			children [Inline {url "Day_Gian_Hang_Trai.wrl"}]
-#		}
+		Transform {	
+			rotation 0 1 0 3.14159265
+			scale 1 2 1
+			translation 0 0 0
+			children [Inline {url "Day_Gian_Hang_Trai.wrl"}]
+		}
 
 		#Day hang ben truoc
-#		Transform {	
-#			rotation 0 1 0 -1.57
-#			scale 1 1 1
-#			translation -0.2 0 0.2
-#			children [Inline {url "Day_Gian_Hang_Truoc.wrl"}]
-#		}
+		Transform {	
+			rotation 0 1 0 -1.57
+			scale 1 2 1
+			translation -0.2 0 0.2
+			children [Inline {url "Day_Gian_Hang_Truoc.wrl"}]
+		}
 
 
 
@@ -631,7 +686,7 @@ Group {
 			]
 		}
 
-		# nguoi dan 4
+		# nguoi dan 5
 		Transform {
 			translation	-3 0.75 -4
 			children [
@@ -640,6 +695,37 @@ Group {
 				}
 			]
 		}
+
+		# nguoi dan 6
+		Transform {
+			translation	3 0.75 -4
+			children [
+				Inline {
+					url	"nguoi_dan_6.wrl"
+				}
+			]
+		}
+
+		#tuong nha
+		Transform {
+			children [
+				Inline {
+					url	"tuong_nha.wrl"
+				}
+			]
+		}
+		
+		#tran nha
+		Transform {
+			translation -2 -0.8 19
+			scale 1 1.5 1.4
+			children [
+				Inline {
+					url	"trannha12.wrl"
+				}
+			]
+		}
+
 		 
 	]
 }

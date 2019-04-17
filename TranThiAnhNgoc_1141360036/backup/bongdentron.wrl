@@ -1,0 +1,183 @@
+#VRML V2.0 utf8
+#bóng đèn tròn
+DEF veden Transform{
+		  translation 0 0 0
+		  children [
+
+DEF	 den Transform
+		{
+			translation	-20 -6 15
+			children
+			[
+				Shape
+				{
+					appearance Appearance
+					{
+						material DEF maubongden Material
+						{
+							diffuseColor 1 1 1
+							specularColor .29 .3 .29
+							ambientIntensity 0
+							shininess .08
+						}			
+					}
+					geometry Sphere {radius 1.2}
+				}
+			]
+		}
+Transform {translation 0 0 -15 children [USE den ]}
+Transform {translation 10 0 0 children [USE den ]}
+Transform {translation 0 0 15 children [USE den ]}
+Transform {translation 0 0 -30 children [USE den ]}
+Transform {translation 10 0 15 children [USE den ]}
+Transform {translation 10 0 -30 children [USE den ]}
+Transform {translation 10 0 -15 children [USE den ]}
+Transform {translation -45 0 15 children [USE den ]}
+Transform {translation -45 0 -47 children [USE den ]}
+Transform {translation -45 0 -7.5 children [USE den ]}
+Transform {translation -45 0 -24.5 children [USE den ]}
+Transform {translation 85 0 15 children [USE den ]}
+Transform {translation 85 0 15 children [USE den ]}
+Transform {translation 85 0 -10.75 children [USE den ]}
+Transform {translation 85 0 -30 children [USE den ]}
+Transform {translation 24 0 -30 children [USE den ]}
+Transform {translation 45 0 -30 children [USE den ]}
+Transform {translation 64 0 -30 children [USE den ]}
+Transform {translation 24 -3 -23 scale 0.5 0.5 0.5 children [USE den ]}
+Transform {translation 23 -3 -23 scale 0.5 0.5 0.5 children [USE den ]}
+Transform {translation 22 -3 -23 scale 0.5 0.5 0.5 children [USE den ]}
+Transform {translation 8 -3 -23 scale 0.5 0.5 0.5 children [USE den ]}
+Transform {translation 9 -3 -23 scale 0.5 0.5 0.5 children [USE den ]}
+Transform {translation 7 -3 -23 scale 0.5 0.5 0.5 children [USE den ]}
+Transform {translation 44 -3 -23 scale 0.5 0.5 0.5 children [USE den ]}
+Transform {translation 45 -3 -23 scale 0.5 0.5 0.5 children [USE den ]}
+Transform {translation 43 -3 -23 scale 0.5 0.5 0.5 children [USE den ]}
+Transform {translation 65 -3 -23 scale 0.5 0.5 0.5 children [USE den ]}
+Transform {translation 64 -3 -23 scale 0.5 0.5 0.5 children [USE den ]}
+Transform {translation 63 -3 -23 scale 0.5 0.5 0.5 children [USE den ]}
+Transform {translation -10 5.5 0 children [USE den ]}
+Transform {translation -20 5.5 0 children [USE den ]}
+Transform {translation -30 5.5 0 children [USE den ]}
+Transform {translation -20 5.5 -18 children [USE den ]}
+Transform {translation -20 5.5 -36 children [USE den ]}
+Transform {translation -30 5.5 -18 children [USE den ]}
+Transform {translation -30 5.5 -36 children [USE den ]}
+Transform {translation -10 5.5 -18 children [USE den ]}
+Transform {translation -10 5.5 -36 children [USE den ]}
+Transform {translation 20 5.5 0 children [USE den ]}
+Transform {translation 35 5.5 0 children [USE den ]}
+Transform {translation 50 5.5 0 children [USE den ]}
+Transform {translation 65 5.5 0 children [USE den ]}
+Transform {translation 20 5.5 -18 children [USE den ]}
+Transform {translation 35 5.5 -18 children [USE den ]}
+Transform {translation 50 5.5 -18 children [USE den ]}
+Transform {translation 65 5.5 -18 children [USE den ]}
+Transform {translation 20 0 27 children [USE den ]}
+Transform {translation 35 0 27 children [USE den ]}
+Transform {translation 50 0 27 children [USE den ]}
+Transform {translation 65 0 27 children [USE den ]}
+Transform {translation 85 0 27 children [USE den ]}
+#tạo nút
+
+DEF nut Transform{
+		translation	-12 -26 46.3
+		children[
+				Shape{
+					appearance Appearance{
+						material Material{
+							diffuseColor .23 .39 .19
+							specularColor .2 .3 .29
+							ambientIntensity .06
+							shininess .39
+						}
+					}
+					geometry Box
+					{
+						size 1 1.5 0.2
+					}
+				}
+			
+			]
+		
+		}
+DEF	Touch TouchSensor{ enabled TRUE	}
+	]
+
+}
+DEF diem1 PointLight {
+  intensity 0.5  #cuong do sang
+  color 1 1 1
+  location -15 -6 7.5
+  radius 50
+}
+DEF diem2 PointLight {
+  intensity 0.5
+  color 1 1 1
+  location -65 -6 7.5
+  on FALSE
+  radius 50
+}
+DEF diem3 PointLight {
+  intensity 0.5
+  color 1 1 1
+  location 65 -6 7.5
+  on FALSE
+  radius 50
+}
+DEF diem4 PointLight {
+  intensity 0.5
+  color 1 1 1
+  location 3 -9 -0.5
+  on FALSE
+  radius 50
+}
+DEF diem5 PointLight {
+  intensity 0.5
+  color 1 1 1
+  location -40 -6 12
+  on FALSE
+  radius 50
+}
+DEF diem6 PointLight {
+  intensity 0.5
+  color 1 1 1
+  location 65 0.5 12
+  on FALSE
+  radius 50
+}
+
+
+DEF	SC Script{
+	url	"javascript: 
+	     function touch (t)
+		 {
+			 if(t){
+				 isopen = !isopen;
+				 if(isopen){
+					 start = TRUE;
+					 stop = FALSE;
+				 }
+				 else{
+					 start=FALSE;
+					 stop = TRUE;
+				 }
+			 }
+		 }"
+eventIn SFBool touch
+eventOut SFBool start
+eventOut SFBool stop
+field SFBool isopen FALSE
+}
+ROUTE Touch.isActive TO SC.touch
+ROUTE SC.start TO diem1.on
+ROUTE SC.start TO diem2.on
+ROUTE SC.stop TO diem1.on
+ROUTE SC.stop TO diem2.on
+ROUTE SC.start TO diem3.on
+ROUTE SC.stop TO diem3.on
+ROUTE SC.start TO diem4.on
+ROUTE SC.stop TO diem4.on
+ROUTE SC.start	TO diem5.on
+ROUTE SC.stop TO diem5.on
+ROUTE SC.start TO diem6.on
+ROUTE SC.stop TO diem6.on

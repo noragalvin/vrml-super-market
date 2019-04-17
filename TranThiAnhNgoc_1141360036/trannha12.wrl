@@ -1,0 +1,90 @@
+#VRML V2.0 utf8
+
+Group {
+	children [
+		#Ve tran nha
+		DEF	Trannha1 Transform {
+			  translation 2.5 2.9 -15.25	
+			  children [
+				  Shape {
+					  appearance Appearance {}
+					  geometry Box {
+						size 0.3 0.15 10.5
+					  }
+				  }
+			  ]
+		}
+		DEF	Trannha2 Transform {
+			  translation 2.2 2.9 -18.3	
+			  children [
+				  Shape {
+					  appearance Appearance {}
+					  geometry Box {
+						size 9.3 0.15 0.3
+					  }
+				  }
+			  ]
+		}
+		DEF	Trannha3 Transform {
+			  translation 2.2 2.9 -16.3	
+			  children [
+				  Shape {
+					  appearance Appearance {}
+					  geometry Box {
+						size 9.3 0.15 0.3
+					  }
+				  }
+			  ]
+		}
+		DEF	Trannha4 Transform {
+			  translation 2.2 2.9 -14.3	
+			  children [
+				  Shape {
+					  appearance Appearance {}
+					  geometry Box {
+						size 9.3 0.15 0.3
+					  }
+				  }
+			  ]
+		}
+		DEF	Trannha5 Transform {
+			  translation 2.2 2.9 -12.3	
+			  children [
+				  Shape {
+					  appearance Appearance {}
+					  geometry Box {
+						size 9.3 0.15 0.3
+					  }
+				  }
+			  ]
+		}
+  
+			  
+
+
+	]
+}
+
+#Bat tat quat
+DEF	tg1 TimeSensor {
+	cycleInterval 1
+	loop TRUE
+}
+									   
+
+DEF	tg2	TimeSensor {
+	cycleInterval 1
+	loop TRUE
+}
+
+										
+
+#Ve den
+		DEF	Den Transform {
+			translation	0 2.8 -18.3
+			children [
+				DEF	Den1 Inline {
+					url	["Den12.wrl"]
+				}
+			]
+		}

@@ -1,0 +1,194 @@
+#VRML V2.0 utf8
+ 
+DEF quat Transform{
+			 children[
+				 Transform{
+					 children[
+						 Shape{
+							 appearance DEF mau	Appearance{
+								 material Material {
+									 diffuseColor .75 .75 .75
+									 specularColor .5 .5 .5
+									 ambientIntensity 0
+									 emissiveColor .15 .15 .15
+								 }
+							 }
+							 geometry Cylinder {
+									height 0.5
+
+									radius 1.0
+
+									bottom TRUE
+
+									top TRUE
+
+									side TRUE
+							 }
+						 }
+						 
+					 ]
+				 },
+				 DEF canh Transform{
+					 translation -2.9 0.15 0.0
+					 children[
+						 Transform{
+							 children[
+								  Shape {
+									 appearance	USE	mau
+									 geometry Box{
+										 size 3.5 0.075 1.0
+									 }
+								 }
+							 ]
+						 },
+						 Transform{
+							 translation 1.85 0.0 -0.0
+							 rotation 0.0 0.0 1.0 1.57
+							 children[
+								 Shape{
+									 appearance	USE	mau
+									 geometry Cylinder{
+										 height	0.25
+										 radius	0.075
+									 }
+								 }
+							 ]
+						 }
+					 ]
+				 },
+				 Transform{
+					 rotation 0.0 1.0 0.0 2.05
+					 translation 0.0 0.0 -0.0
+					 children USE canh
+				 },
+				 Transform{
+					 rotation 0.0 1.0 0.0 -2.05
+					 children USE canh
+				 }
+				 
+			 ]
+		 },
+		  DEF truc Transform{
+			 translation 0.0 1.25 0.0
+			 children[
+				 Shape{
+					 appearance	USE	mau
+					 geometry Cylinder{
+						 height	2.5
+						 radius	0.1
+					 }
+				 }
+			 ]
+		 }
+		 DEF  Chuoi Transform {
+			 translation 0 2 0
+			 rotation 1 0 0 3.14
+			 children [
+				 Shape { 
+					 appearance	 USE  mau
+					 geometry Cone {
+						height 1
+
+					   	bottomRadius 0.50
+
+						bottom TRUE
+
+						side TRUE
+
+					}
+				}
+			 ]
+		 },
+		 DEF hop Transform{
+			 translation 0.0 0.3 0.0
+			 children[
+				 Shape
+				 {
+					 appearance	USE	mau
+					 geometry Cylinder {
+							height 0.5
+
+							radius 0.5
+
+							bottom TRUE
+
+							top TRUE
+
+							side TRUE
+					}
+				 }
+			 ]
+		 },
+Transform{
+	translation -8.0 -3.0 5.0
+	rotation 0.0 1.0 0.0 1.57
+	children[	 
+		DEF bang Transform{
+			translation -5.7 -4 20 
+			children [
+				Shape {
+					appearance	Appearance {
+						material Material {}
+					 }
+					 geometry Box {size 0.35 0.85 0.6}
+				 }
+			]
+		}
+		DEF congtac Transform{
+			translation -5.5 -4 20
+			children[
+				Shape{
+					appearance	Appearance {
+						material Material{
+							diffuseColor 0.95 0.95 0.95
+						}
+					}
+					geometry Box{size 0.1 0.1 0.35}
+				}
+			]
+		}
+		DEF touch TouchSensor {}
+	]
+}
+ DEF  Sc Script{
+	 url "javascript:
+	      function touch(t)
+		  {
+			if(t){
+			  isopen = !isopen;
+			  if(isopen)
+			  {
+				  start=TRUE;
+				  stop=FALSE;
+			  }
+			  else
+			  {
+				  start=FALSE;
+				  stop=TRUE;
+			  }
+		  }
+		  }"
+	eventIn SFBool touch
+	eventOut SFBool	start
+	eventOut SFBool	stop
+	field SFBool isopen FALSE 
+ }
+ DEF Timeclock TimeSensor{	 
+	 cycleInterval 0.5
+	 enabled FALSE
+	 loop TRUE
+ }
+ DEF path OrientationInterpolator{
+	 key[0.0, 0.50, 1.0]
+	 keyValue[
+		 0.0 1.0 0.0 0.0,
+		 0.0 1.0 0.0 3.14,
+		 0.0 1.0 0.0 6.28
+	 ]
+	}
+ ROUTE touch.isActive TO Sc.touch
+ ROUTE Sc.start	TO Timeclock.enabled
+ ROUTE touch.touchTime TO Timeclock.startTime
+ ROUTE Timeclock.fraction_changed TO path.set_fraction
+ ROUTE path.value_changed TO quat.rotation
+

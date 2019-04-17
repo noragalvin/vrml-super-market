@@ -280,6 +280,17 @@ Group {
 				}
 			]
 		}
+
+
+		#tuonog nha
+		Transform {
+			translation	0 0 0
+			children [
+				Inline {
+					url	"tuong_nha.wrl"
+				}
+			]
+		}
 	   
 
 	]

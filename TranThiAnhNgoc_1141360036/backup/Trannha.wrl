@@ -1,0 +1,111 @@
+#VRML V2.0 utf8
+
+DEF	Trannha Transform 
+{
+	translation	 0 0 0
+	children [
+		Shape	
+		{
+			appearance DEF  mau Appearance {
+				material Material {
+					diffuseColor .95 .6 .2
+					specularColor .43 .14 0
+					ambientIntensity .123
+					shininess .83
+				}
+			}
+			geometry Box {size  150 1.5 100}
+			
+		}
+	]
+}
+DEF	a Transform	 {
+translation	0 -3.25 42.5 
+children [
+	Shape {
+		appearance DEF  maudo Appearance {
+			material  Material {
+				diffuseColor .8 0 0
+				specularColor .5 .5 .5
+				emissiveColor .15 0 0
+				ambientIntensity 0
+			}
+
+		}
+		geometry  Box {size 150 5 15 }
+		}
+	]
+}
+DEF	b Transform	 {
+translation	67.5 -3.25 0 
+children [
+	Shape {
+		appearance Appearance {
+			material  Material {
+				diffuseColor .8 0 0
+				specularColor .5 .5 .5
+				emissiveColor .15 0 0
+				ambientIntensity 0
+			}
+
+		}
+		geometry  Box {size 15 5 100 }
+		}
+	]
+}
+DEF	c Transform	{translation	-34.5 -3.25 -42.5 
+children [
+	Shape {
+		appearance USE maudo 
+
+		
+		geometry  Box {size 53 5 15 }
+		}
+	]
+}
+DEF	d Transform	{translation -135 0 0 children [USE b ]}
+DEF	e Transform	 {
+translation	-15.5 -3.25 0 
+children [
+	Shape {
+		appearance USE  mau  
+
+		
+		geometry  Box {size 15 5 70 }
+		}
+	]
+}
+DEF	f Transform	 {
+translation	-15.5 -6 0 
+children [
+	Shape {
+		appearance USE  maudo  
+
+		
+		geometry  Box {size 15 1 70 }
+		}
+	]
+}
+DEF	g Transform	{translation 26 -3.25 -30
+	children [
+		Shape {
+		appearance USE mau
+		geometry Box {size 68 5 40}
+		}
+	]
+}
+
+Transform { translation	0 0 0 children [Inline {url ["bongdentron.wrl"]}]}
+DEF	bong Transform { translation  -30 -18.3 43.2 children [Inline {url["denlong.wrl"]}]}
+Transform {	translation	10 -5 25
+	scale 2 2 2
+	children Inline {url ["quat1.wrl"]}
+}
+Transform {	translation	-40 -5 25
+	scale 2 2 2
+	children Inline {url ["quat1.wrl"]}
+}
+Transform {	translation	40 -5 25
+	scale 2 2 2
+	children Inline {url ["quat2.wrl"]}
+}
