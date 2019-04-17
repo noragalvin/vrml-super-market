@@ -247,6 +247,39 @@ Group {
 				}
 			]
 		}
+
+		#nguoi dan 1
+		Transform {
+			translation	0 1.15 0
+			scale 1 1 1
+			children [
+				Inline {
+					url	"nguoi_dan_1.wrl"
+				}
+			]
+		}
+
+		#nguoi dan 2
+		Transform {
+			translation	-1.5 1.15 -2
+			scale 1 1 1
+			children [
+				Inline {
+					url	"nguoi_dan_2.wrl"
+				}
+			]
+		}
+
+		#nguoi dan 3
+		Transform {
+			translation	1.5 1.15 -2
+			scale 1 1 1
+			children [
+				Inline {
+					url	"nguoi_dan_3.wrl"
+				}
+			]
+		}
 	   
 
 	]

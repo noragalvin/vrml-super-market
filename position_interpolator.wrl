@@ -1,0 +1,39 @@
+#VRML V2.0 utf8
+
+Group {
+	children [
+		DEF	PI PositionInterpolator	{
+			key	[0.0, .1, .4, .7, .9, 1.0]
+			keyValue [-3 0 0, 0 0 0, 0 20 -50, 0 0 -100, 0 0 0, -3 0 0]
+		}
+		DEF	T Transform	{
+			translation	-3 0 0
+			children Shape {
+				geometry Cone {
+
+				}
+				appearance Appearance {
+					material Material {
+						diffuseColor 1 1 1
+					}
+				}
+			}
+		}
+		DEF	TOS TouchSensor	   {
+
+		}
+		DEF	 TS TimeSensor {
+			cycleInterval 3.0
+		}
+		Background {
+			skyColor 1 1 1
+		}
+		NavigationInfo {
+			type "EXAMINE"
+		}
+	]
+}
+
+ROUTE PI.value_changed TO T.translation
+ROUTE TOS.touchTime	 TO	TS.startTime
+ROUTE TS.fraction_changed  TO PI.set_fraction
