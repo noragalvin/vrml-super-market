@@ -536,7 +536,7 @@ Group {
 
 	#Cong tac
 	DEF Congtac1 Transform {
-		translation -1.75 -1.5 -1.885
+		translation -1.75 -1.5 -2.3
 		children [
 			Shape {
 				appearance Appearance {}
@@ -547,7 +547,7 @@ Group {
 		]
 	}
 	DEF Nut1 Transform {
-		translation -1.75 -1.5 -1.87
+		translation -1.75 -1.5 -2.27
 		children [
 			Shape {
 				appearance Appearance {material Material {diffuseColor 0 0 0}}
@@ -559,7 +559,7 @@ Group {
 		]
 	}
 	DEF Congtac2 Transform {
-		translation -1.4 -1.5 -1.885
+		translation -1.4 -1.5 -2.3
 		children [
 			Shape {
 				appearance Appearance {
@@ -572,7 +572,7 @@ Group {
 		]
 	}
 	DEF Nut2 Transform {
-		translation -1.4 -1.5 -1.87
+		translation -1.4 -1.5 -2.27
 		children [
 			Shape {
 				appearance Appearance {material Material {diffuseColor 0 0 0}}

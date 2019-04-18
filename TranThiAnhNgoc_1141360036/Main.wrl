@@ -562,11 +562,11 @@ Group {
 
 						#trai
 						Transform {
-							translation	1.2 0.6 0.2
+							translation	1.2 0.375 0.2
 								children [
 									Shape {
 										geometry Box {
-											size 0.05 1 10.5
+											size 0.05 0.75 10.5
 										}
 										appearance Appearance {
 											material Material {
@@ -579,11 +579,11 @@ Group {
 						}
 						#phai
 						Transform {
-							translation	6.425 0.6 -0.8
+							translation	6.425 0.375 -0.8
 								children [
 									Shape {
 										geometry Box {
-											size 0.05 1 12
+											size 0.05 0.75 12
 										}
 										appearance Appearance {
 											material Material {
@@ -596,12 +596,12 @@ Group {
 						}
 						#ngang
 						Transform {
-							translation	3.8 0.6 5.425
+							translation	3.8 0.375 5.425
 							rotation 0 1 0 1.57
 								children [
 									Shape {
 										geometry Box {
-											size 0.05 1 5
+											size 0.05 0.75 5
 										}
 										appearance Appearance {
 											material Material {
@@ -651,7 +651,7 @@ Group {
 		
 		#Day hang ben Phai
 		Transform {	
-			scale 1 2 1
+			scale 1 1.6 1
 			translation 0 0 -4.5
 			children [
 				Inline {url "Day_Gian_Hang_Phai.wrl"}		   
@@ -661,7 +661,7 @@ Group {
 		#Day hang ben Trai
 		Transform {	
 			rotation 0 1 0 3.14159265
-			scale 1 2 1
+			scale 1 1.6 1
 			translation 0 0 0
 			children [Inline {url "Day_Gian_Hang_Trai.wrl"}]
 		}
@@ -669,7 +669,7 @@ Group {
 		#Day hang ben truoc
 		Transform {	
 			rotation 0 1 0 -1.57
-			scale 1 2 1
+			scale 1 1.6 1
 			translation -0.2 0 0.2
 			children [Inline {url "Day_Gian_Hang_Truoc.wrl"}]
 		}

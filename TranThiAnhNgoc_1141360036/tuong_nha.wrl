@@ -51,7 +51,11 @@ Transform {
 					geometry Box {
 						size 10 0.2 15
 					}
-					appearance USE MauKinh
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 1 0.4
+						}
+					}
 				}
 			]
 		}

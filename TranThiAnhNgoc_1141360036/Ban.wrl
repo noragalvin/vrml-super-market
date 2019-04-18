@@ -79,5 +79,5 @@ DEF	thanhngang1 Shape {
 
 ]}
   ]
-   ROUTE  dichchuyenban.translation_changed	TO BanFull.translation
+#   ROUTE  dichchuyenban.translation_changed	TO BanFull.translation
 }
