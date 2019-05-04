@@ -96,7 +96,7 @@ DEF	BacThangFull Transform {
 					shininess .93
 				}
 			}
-			geometry Box {size 50 1 7}
+			geometry Box {size 50 1 9.5}
 	}
 }
 Transform {
@@ -577,6 +577,37 @@ children Shape {
 	}
 	geometry Cylinder {height 1.5 radius 0.25}
 }
+}
+Transform {		
+	translation	12.4 21 -19
+	rotation 1 0 0 1.56
+	children Shape {
+		appearance Appearance {
+		material Material {
+			diffuseColor .61 .61 .61
+			specularColor .77 .76 .76
+			ambientIntensity .14
+			shininess .9
+		}
+	}
+		geometry Cylinder {radius 0.25 height 7}
+	}	
+}
+
+Transform {		
+	translation	-37 21 -19
+	rotation 1 0 0 1.56
+	children Shape {
+		appearance Appearance {
+		material Material {
+			diffuseColor .61 .61 .61
+			specularColor .77 .76 .76
+			ambientIntensity .14
+			shininess .9
+		}
+	}
+		geometry Cylinder {radius 0.25 height 7}
+	}	
 }
 ]}
 #

@@ -1,9 +1,5 @@
 #VRML V2.0 utf8
 
-#VRML V2.0 utf8
-
-#VRML V2.0 utf8
-
 Transform {	
 	rotation 1 0 0 0
 	children [
@@ -17,22 +13,397 @@ Transform {
 				}	  
 			}
 		}
+
+		#tang 1
 		Transform {
-			
-			translation	0 0 0.5
+			translation	0 1.7 1
 			children [
 				Shape {
 					geometry Box {
-						size 5 5 0.001
+						size 5 0.2 1
 					}
-					appearance Appearance {	  
-						texture	ImageTexture {
-							url	"images/banh_keo1.jpg"
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.8 0.8 0.8
+						}	  
+					}
+				}
+				Transform {
+					translation	-2 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/bim1.wrl"
 						}
-					}
+					]
+				}
+
+				Transform {
+					translation	-1.5 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/bim1.wrl"
+						}
+					]
+				}
+
+				Transform {
+					translation	-1 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/bim2.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	-0.5 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/bim2.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	0 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/bim3.wrl"
+						}
+					]
+				}
+
+				Transform {
+					translation	0.5 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/bim3.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	1 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/bim4.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	1.5 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/bim4.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	2 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/bim4.wrl"
+						}
+					]
 				}
 			]
 		}
+
+
+		#tang 2
+		Transform {
+			translation	0 0.8 1
+			children [
+				Shape {
+					geometry Box {
+						size 5 0.2 1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.8 0.8 0.8
+						}	  
+					}
+				}
+				Transform {
+					translation	-2 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/ca1.wrl"
+						}
+					]
+				}
+
+				Transform {
+					translation	-1 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/ca2.wrl"
+						}
+					]
+				}
+
+				Transform {
+					translation	0 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/ca3.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	1 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/ca4.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	2 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/ca1.wrl"
+						}
+					]
+				}
 			   
+			]
+		}
+
+		
+		#tang 3
+		Transform {
+			translation	0 -0.1 1
+			children [
+				Shape {
+					geometry Box {
+						size 5 0.2 1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.8 0.8 0.8
+						}	  
+					}
+				}
+				Transform {
+					translation	-2 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/daysua1.wrl"
+						}
+					]
+				}
+
+				Transform {
+					translation	-1 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/daysua2.wrl"
+						}
+					]
+				}
+
+				Transform {
+					translation	0 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/daysua1.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	1 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/daysua2.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	2 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/daysua2.wrl"
+						}
+					]
+				}
+			   
+			]
+		}	
+	 
+	    #tang 4
+		Transform {
+			translation	0 -1 1
+			children [
+				Shape {
+					geometry Box {
+						size 5 0.2 1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.8 0.8 0.8
+						}	  
+					}
+				}
+				Transform {
+					translation	-2 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/hopbanh1.wrl"
+						}
+					]
+				}
+
+				Transform {
+					translation	-1 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/hopbanh2.wrl"
+						}
+					]
+				}
+
+				Transform {
+					translation	0 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/hopbanh3.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	1 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/hopbanh4.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	2 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/hopbanh5.wrl"
+						}
+					]
+				}
+			   
+			]
+		}
+
+		#tang 5
+		Transform {
+			translation	0 -1.9 1
+			children [
+				Shape {
+					geometry Box {
+						size 5 0.2 1
+					}
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.8 0.8 0.8
+						}	  
+					}
+				}
+				Transform {
+					translation	-2 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/muc1.wrl"
+						}
+					]
+				}
+
+				Transform {
+					translation	-1 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/thit1.wrl"
+						}
+					]
+				}
+
+				Transform {
+					translation	0 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/tom1.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	1 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/xucxich1.wrl"
+						}
+					]
+				}
+				Transform {
+					translation	2 0.3 0
+					scale 0.8 0.8 0.8
+					rotation 1 0 0 -0.78
+					children [
+						Inline {
+							url	"box-tang1/box-hang/hopbanh5.wrl"
+						}
+					]
+				}
+			   
+			]
+		}
 	]		   
 }

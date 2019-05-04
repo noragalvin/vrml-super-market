@@ -1,0 +1,561 @@
+#VRML V2.0 utf8
+
+Transform {
+	children [
+		Transform {				
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 0.97 1 0.62
+						}
+					}
+					geometry Box {
+						size 6 0.2 10
+					}
+				}
+				Transform {
+					translation	0 3 0
+					children  Shape {
+						appearance Appearance {
+							material Material {
+								diffuseColor 0.97 1 0.62
+							}
+						}
+						geometry Box {
+							size 6 0.2 10
+						}
+					}
+				}
+				Transform {
+					translation	3 1.5 5
+					children DEF ThanhDoc Shape {
+						geometry   Cylinder	{
+							height 3
+							radius 0.05
+						}
+						appearance Appearance {
+							material Material {
+								diffuseColor .61 .61 .61
+								specularColor .77 .76 .76
+								ambientIntensity .14
+								shininess .9
+							}
+						}
+					}
+				}
+
+				Transform {
+					translation	3 1.5 -5
+					children USE ThanhDoc
+				}
+
+				Transform {
+					translation	-3 1.5 -5
+					children USE ThanhDoc
+				}
+
+				Transform {
+					translation	-3 1.5 5
+					children USE ThanhDoc
+				}
+
+				Transform {
+					translation	2.25 1 5
+					rotation 0 0 1 1.56
+					children DEF ThanhNgang1 Shape {
+						geometry   Cylinder	{
+							height 1.5
+							radius 0.05
+						}
+						appearance Appearance {
+							material Material {
+								diffuseColor .61 .61 .61
+								specularColor .77 .76 .76
+								ambientIntensity .14
+								shininess .9
+							}
+						}
+
+					}
+				}
+
+				Transform {
+					translation	-2.25 1 5
+					rotation 0 0 1 1.56
+					children USE ThanhNgang1
+				}
+
+				Transform {
+					translation	3 1 0
+					rotation 1 0 0 1.56
+					children DEF ThanhNgang2 Shape {
+						geometry   Cylinder	{
+							height 10
+							radius 0.05
+						}
+						appearance Appearance {
+							material Material {
+								diffuseColor .61 .61 .61
+								specularColor .77 .76 .76
+								ambientIntensity .14
+								shininess .9
+							}
+						}
+
+					}
+				}
+				Transform {
+					translation	-3 1 0
+					rotation 1 0 0 1.56
+					children USE ThanhNgang2
+				}
+
+				# thanh ngang dang sau
+				Transform {
+					translation	0 1 -5
+					rotation 0 0 1 1.56
+					children Shape {
+						geometry   Cylinder	{
+							height 6
+							radius 0.05
+						}
+						appearance Appearance {
+							material Material {
+								diffuseColor .61 .61 .61
+								specularColor .77 .76 .76
+								ambientIntensity .14
+								shininess .9
+							}
+						}
+
+					}
+				}
+
+				Transform {
+					translation	-2.5 0.55 5
+					children DEF CotNho Shape {
+						geometry   Cylinder	{
+							height 0.9
+							radius 0.05
+						}
+						appearance Appearance {
+							material Material {
+								diffuseColor .61 .61 .61
+								specularColor .77 .76 .76
+								ambientIntensity .14
+								shininess .9
+							}
+						}
+					}
+				}
+
+				Transform {
+					translation	-2 0.55 5
+					children USE CotNho
+				}
+				Transform {
+					translation	-1.5 0.55 5
+					children USE CotNho
+				}
+
+				Transform {
+					translation	1.5 0.55 5
+					children USE CotNho
+				}
+				Transform {
+					translation	2 0.55 5
+					children USE CotNho
+				}
+				Transform {
+					translation	2.5 0.55 5
+					children USE CotNho
+				}
+
+
+				#phai
+				Transform {
+					translation	3 0.55 4.5
+					children USE CotNho
+				}
+
+				Transform {
+					translation	3 0.55 4
+					children USE CotNho
+				}
+				Transform {
+					translation	3 0.55 3.5
+					children USE CotNho
+				}
+				Transform {
+					translation	3 0.55 3
+					children USE CotNho
+				}
+				Transform {
+					translation	3 0.55 2.5
+					children USE CotNho
+				}
+				Transform {
+					translation	3 0.55 2
+					children USE CotNho
+				}
+				Transform {
+					translation	3 0.55 1.5
+					children USE CotNho
+				}
+
+				Transform {
+					translation	3 0.55 1
+					children USE CotNho
+				}
+				Transform {
+					translation	3 0.55 0.5
+					children USE CotNho
+				}
+				Transform {
+					translation	3 0.55 0
+					children USE CotNho
+				}	
+				Transform {
+					translation	3 0.55 -4.5
+					children USE CotNho
+				}
+
+				Transform {
+					translation	3 0.55 -4
+					children USE CotNho
+				}
+				Transform {
+					translation	3 0.55 -3.5
+					children USE CotNho
+				}
+				Transform {
+					translation	3 0.55 -3
+					children USE CotNho
+				}
+				Transform {
+					translation	3 0.55 -2.5
+					children USE CotNho
+				}
+				Transform {
+					translation	3 0.55 -2
+					children USE CotNho
+				}
+				Transform {
+					translation	3 0.55 -1.5
+					children USE CotNho
+				}
+
+				Transform {
+					translation	3 0.55 -1
+					children USE CotNho
+				}
+				Transform {
+					translation	3 0.55 -0.5
+					children USE CotNho
+				}	
+
+
+				#trai					
+				Transform {
+					translation	-3 0.55 4.5
+					children USE CotNho
+				}
+
+				Transform {
+					translation	-3 0.55 4
+					children USE CotNho
+				}
+				Transform {
+					translation	-3 0.55 3.5
+					children USE CotNho
+				}
+				Transform {
+					translation	-3 0.55 3
+					children USE CotNho
+				}
+				Transform {
+					translation	-3 0.55 2.5
+					children USE CotNho
+				}
+				Transform {
+					translation	-3 0.55 2
+					children USE CotNho
+				}
+				Transform {
+					translation	-3 0.55 1.5
+					children USE CotNho
+				}
+
+				Transform {
+					translation	-3 0.55 1
+					children USE CotNho
+				}
+				Transform {		
+					translation	-3 0.55 0.5
+					children USE CotNho
+				}
+				Transform {
+					translation	-3 0.55 0
+					children USE CotNho
+				}	
+				Transform {
+					translation	-3 0.55 -4.5
+					children USE CotNho
+				}
+
+				Transform {
+					translation	-3 0.55 -4
+					children USE CotNho
+				}
+				Transform {
+					translation	-3 0.55 -3.5
+					children USE CotNho
+				}
+				Transform {
+					translation	-3 0.55 -3
+					children USE CotNho
+				}
+				Transform {
+					translation	-3 0.55 -2.5
+					children USE CotNho
+				}
+				Transform {
+					translation	-3 0.55 -2
+					children USE CotNho
+				}
+				Transform {
+					translation	-3 0.55 -1.5
+					children USE CotNho
+				}
+
+				Transform {
+					translation	-3 0.55 -1
+					children USE CotNho
+				}
+				Transform {		
+					translation	-3 0.55 -0.5
+					children USE CotNho
+				}
+
+				#sau
+				Transform {		
+					translation	2.5 0.55 -5
+					children USE CotNho
+				}
+				Transform {		
+					translation	2 0.55 -5
+					children USE CotNho
+				}
+				Transform {		
+					translation	1.5 0.55 -5
+					children USE CotNho
+				}
+				Transform {		
+					translation	1 0.55 -5
+					children USE CotNho
+				}
+				Transform {		
+					translation	0.5 0.55 -5
+					children USE CotNho
+				}
+				Transform {		
+					translation	0 0.55 -5
+					children USE CotNho
+				}
+				Transform {		
+					translation	-2.5 0.55 -5
+					children USE CotNho
+				}
+				Transform {		
+					translation	-2 0.55 -5
+					children USE CotNho
+				}
+				Transform {		
+					translation	-1.5 0.55 -5
+					children USE CotNho
+				}
+				Transform {		
+					translation	-1 0.55 -5
+					children USE CotNho
+				}
+				Transform {		
+					translation	-0.5 0.55 -5
+					children USE CotNho
+				}
+
+				#phai
+
+				Transform {
+					translation	1.8 0.7 4.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 1.57
+					children Inline	{
+						url	"xemay.wrl"
+					}
+				}
+
+				Transform {
+					translation	1.8 0.7 3.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 1.57
+					children Inline	{
+						url	"xemay.wrl"
+					}
+				}
+				Transform {
+					translation	1.8 0.7 2.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 1.57
+					children Inline	{
+						url	"xemay2.wrl"
+					}
+				}
+				Transform {
+					translation	1.8 0.7 1.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 1.57
+					children Inline	{
+						url	"xemay2.wrl"
+					}
+				}
+				Transform {
+					translation	1.8 0.7 0.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 1.57
+					children Inline	{
+						url	"xemay3.wrl"
+					}
+				}
+				Transform {
+					translation	1.8 0.7 -4.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 1.57
+					children Inline	{
+						url	"xemay2.wrl"
+					}
+				}
+
+				Transform {
+					translation	1.8 0.7 -3.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 1.57
+					children Inline	{
+						url	"xemay.wrl"
+					}
+				}
+				Transform {
+					translation	1.8 0.7 -2.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 1.57
+					children Inline	{
+						url	"xemay2.wrl"
+					}
+				}
+				Transform {
+					translation	1.8 0.7 -1.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 1.57
+					children Inline	{
+						url	"xemay2.wrl"
+					}
+				}
+				Transform {
+					translation	1.8 0.7 -0.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 1.57
+					children Inline	{
+						url	"xemay3.wrl"
+					}
+				}
+
+				#trai
+
+				Transform {
+					translation	-1.8 0.7 4.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 -1.57
+					children Inline	{
+						url	"xemay2.wrl"
+					}
+				}
+
+				Transform {
+					translation	-1.8 0.7 3.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 -1.57
+					children Inline	{
+						url	"xemay3.wrl"
+					}
+				}
+				Transform {
+					translation	-1.8 0.7 2.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 -1.57
+					children Inline	{
+						url	"xemay3.wrl"
+					}
+				}
+				Transform {
+					translation	-1.8 0.7 1.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 -1.57
+					children Inline	{
+						url	"xemay.wrl"
+					}
+				}
+				Transform {
+					translation	-1.8 0.7 0.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 -1.57
+					children Inline	{
+						url	"xemay3.wrl"
+					}
+				}
+				Transform {
+					translation	-1.8 0.7 -4.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 -1.57
+					children Inline	{
+						url	"xemay3.wrl"
+					}
+				}
+
+				Transform {
+					translation	-1.8 0.7 -3.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 -1.57
+					children Inline	{
+						url	"xemay2.wrl"
+					}
+				}
+				Transform {
+					translation	-1.8 0.7 -2.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 -1.57
+					children Inline	{
+						url	"xemay.wrl"
+					}
+				}
+				Transform {
+					translation	-1.8 0.7 -1.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 -1.57
+					children Inline	{
+						url	"xemay2.wrl"
+					}
+				}
+				Transform {
+					translation	-1.8 0.7 -0.5
+					scale 0.3 0.3 0.3	
+					rotation 0 1 0 -1.57
+					children Inline	{
+						url	"xemay2.wrl"
+					}
+				}
+			]
+
+		}
+		
+	]
+}

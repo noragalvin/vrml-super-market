@@ -20,7 +20,7 @@ NavigationInfo {
 	avatarSize [0 0.7 0.2]	 
 }
 Viewpoint {
-	position 0 1 10
+	position 0 1 30
 #	position	0 2 -3
 #	orientation 0 1 0 -1.4 
 }
@@ -39,6 +39,15 @@ Transform {
 	children [
 		Inline {
 			url	"TranThiAnhNgoc_1141360036/Main.wrl"
+		}
+	]
+}
+
+Transform {
+	translation	-9 -0.25 0
+	children [
+		Inline {
+			url	"BuiNgocMinh_1141360038/nha_de_xe.wrl"
 		}
 	]
 }
