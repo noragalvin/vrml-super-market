@@ -17,7 +17,7 @@ DirectionalLight {
 }
 
 NavigationInfo {
-	avatarSize [0 0.7 0.2]	 
+	avatarSize [0 1 0.2]	 
 }
 Viewpoint {
 	position 0 1 30

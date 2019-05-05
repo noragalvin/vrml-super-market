@@ -1,4 +1,0 @@
-﻿Siêu thị gồm 2 tầng: mỗi tầng có người đi lại
-- tầng 1: (Minh) các gian hàng thực rau củ quả, đồ đông lạnh, bánh kẹo,
-quầy thu ngân
-- tầng 2: (Ngọc) các gian hàng quần áo, đồ gia dụng, bãi gửi xe

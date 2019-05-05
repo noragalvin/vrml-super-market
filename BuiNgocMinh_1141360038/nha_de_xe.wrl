@@ -14,6 +14,79 @@ Transform {
 						size 6 0.2 10
 					}
 				}
+				DEF banghieu Transform {
+					translation 0 3.5 5.1
+					rotation 1 0 0 3.14
+					 children [
+						 Transform {
+							 translation 0 0 0
+							 rotation 0 0 1 .3
+							 children [
+								Shape {
+									geometry Box {
+										size .01 .8 .005
+									}
+									appearance Appearance {
+										material Material {
+											diffuseColor 0 0 0
+										}
+									}
+								}
+							 ]
+						 }
+						Transform {
+							 translation 0 0 0
+							 scale 1.2 1 .01
+							 children [
+								Shape {
+									geometry Box {
+										size 2 0.75 2
+									}
+									appearance Appearance {
+										material Material {
+											diffuseColor 0 0.8 0.9	
+										}
+		#								texture	ImageTexture {
+		#									url	"../TranThiAnhNgoc_1141360036/images/nia.jpg"
+		#								}
+									}
+								}
+							 ]
+						 }
+
+						 # Tên quán
+						 Transform {
+							 translation 0 0.1 -0.1
+							 scale 1.2 .5 1
+							 rotation 1 0 0 3.14
+							 children [
+								Shape {
+									geometry Text{
+										string ["Bãi đỗ xe"]
+										fontStyle FontStyle{
+            								size 1
+            								family "Lucida Handwriting"
+            								style "BOLD"
+            								spacing .8
+            								justify "MIDDLE"
+            								horizontal TRUE
+            								leftToRight TRUE
+            								topToBottom TRUE
+            							}
+										length [5]
+										maxExtent 1.2
+									}
+									appearance Appearance {
+										material Material {
+											diffuseColor 1 1 1
+										}
+									}
+								}
+							 ]
+						 }
+
+					 ]
+				 }
 				Transform {
 					translation	0 3 0
 					children  Shape {
