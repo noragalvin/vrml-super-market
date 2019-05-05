@@ -51,3 +51,59 @@ Transform {
 		}
 	]
 }
+
+Transform {
+	translation	-12 2 12
+	scale 0.2 0.3 0.2
+	children Inline	{
+		url	"Cong.wrl"
+	}
+}
+
+
+# hang rao
+Transform {
+	translation	0 0.75 0
+	children [	 
+		Transform {
+			translation	-17.5 0 0
+			scale 1 1 1
+			rotation 0 1 0 1.57
+			children Inline	{
+			   url "hang_rao.wrl"
+			}
+		}
+		Transform {
+			translation	17.5 0 0
+			scale 1 1 1
+			rotation 0 1 0 1.57
+			children Inline	{
+			   url "hang_rao.wrl"
+			}
+		}
+		Transform {
+			translation	0 0 -15
+			scale 1 1 1
+	
+			children Inline	{
+			   url "hang_rao_ngang.wrl"
+			}
+		}
+		Transform {
+			translation	15 0 15
+			scale 1 1 1
+	
+			children Inline	{
+			   url "hang_rao_truoc.wrl"
+			}
+		}
+		Transform {
+			translation	-15 0 15
+			scale 1 1 1
+	
+			children Inline	{
+			   url "hang_rao_truoc.wrl"
+			}
+		}
+	]
+}

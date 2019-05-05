@@ -1,0 +1,247 @@
+#VRML V2.0 utf8
+
+DEF	congtrao Transform
+{
+	children
+	[
+		#---------------------------------------------------------------------------------#
+				DEF	cot Transform
+				{
+					children 
+					[
+						Shape {	appearance Appearance {
+
+            					material Material {}
+
+            					texture ImageTexture {
+
+								url "pic\cot.png"
+
+								repeatS TRUE
+
+								repeatT TRUE
+
+								}
+
+								  }
+								geometry Cylinder{
+
+								height 20.0
+
+								radius 1.5
+
+								bottom TRUE
+
+								top TRUE
+
+								side TRUE
+
+								}
+
+								}
+
+
+					]
+				} 
+				#----------------------------------------------------------------------------------------------#
+				DEF	cot2	Transform
+				{
+					translation	0 0 15
+					children [ USE cot ]
+				}
+					#----------------------------------------------------------------------------------------------#
+				DEF	cot3	Transform
+				{
+					translation	40 0 15
+					children [ USE cot ]
+				}
+					#----------------------------------------------------------------------------------------------#
+				DEF	cot4	Transform
+				{
+					translation 40 0 0
+					children [ USE cot ]
+				}
+					#----------------------------------------------------------------------------------------------#
+				DEF	cot5	Transform
+				{
+					translation 80 0 0
+					children [ USE cot ]
+				}
+					#----------------------------------------------------------------------------------------------#
+				DEF	cot6	Transform
+				{
+					translation 120 0 0
+					children [ USE cot ]
+				}
+					#----------------------------------------------------------------------------------------------#
+				DEF	cot7	Transform
+				{
+					translation 80 0 15
+					children [ USE cot ]
+				}
+					#----------------------------------------------------------------------------------------------#
+				DEF	cot8	Transform
+				{
+					translation 120 0 15
+					children [ USE cot ]
+				}
+					#----------------------------------------------------------------------------------------------#
+			
+				DEF tran Transform
+				{
+					translation	60 12 8
+					children
+					[
+						Shape 
+						{
+								appearance Appearance {
+
+            					material Material {}
+
+            					texture ImageTexture {
+
+								url "pic\tam.png"
+
+								repeatS TRUE
+
+								repeatT TRUE
+
+								}
+
+								  }
+							geometry Box {size 126 4 25}
+						}
+					]				
+				}
+				#------------------------------------------------------------------------------------------------------#
+			DEF	chu Transform
+			{
+				translation	60 14.1 20
+				children 
+				[
+					Shape {
+									appearance Appearance {
+									material Material {
+									diffuseColor .82 0 .098
+									specularColor .81 .77 .75
+									ambientIntensity .487
+									shininess .83
+								}
+							}
+
+							geometry Text{
+
+							string ["TRUNG TÂM THƯƠNG MẠI SIÊU THỊ MINH NGỌC"]
+
+							fontStyle FontStyle{
+
+            							size 10
+
+            							family "ARIAL"
+
+            							style "BOLD"
+
+            							spacing 1
+
+            							 justify "MIDDLE"
+
+            							 horizontal TRUE
+
+            							 leftToRight TRUE
+
+            							 topToBottom TRUE
+
+            							 }
+
+							length [100 100]
+
+							maxExtent 100
+
+							}
+							
+
+							}
+
+
+				]
+			}
+			#---------------------------------------------------------------------
+			DEF	cabin Transform
+			{	  rotation  0 1 0 3.14
+				translation 40 -8.5 7
+				children 
+				[
+				  DEF b1 Transform
+				  {
+					  
+					children
+					[
+						
+						Shape
+						{
+								appearance Appearance {
+								material Material {
+									diffuseColor .39 .46 .42
+									specularColor .53 .53 .53
+									ambientIntensity .103
+									shininess .93
+								}
+							}
+							geometry Box{size 11 3 11}
+							
+						}
+					]
+				  }
+				  Transform
+				  {
+					  translation  0 5 5 
+					  children [Inline {url ["cabin.wrl"]}]
+				  }
+				 DEF vongcung1 Transform
+				  {
+					  rotation  0 1 0 3.14
+					translation	 0 -1.5 4.4
+					children [Inline {url ["vongcung.wrl"]}]
+				  }
+			
+				  Transform
+				  {
+					translation	0 12 8.7	
+					scale 1 1 0
+					rotation 0 1 0 3.14
+					children 
+					[
+						Inline {url ["vongtron.wrl"]}   
+					]
+				  }
+				  Transform	{
+					  rotation 0 1 0 3.14
+					  children [USE vongcung1 ]
+				  }
+				  
+				]
+				
+			}
+			#--------------------------------------------------------------------------
+			DEF	cabin2 Transform
+			{	 
+				rotation  0 1 0 3.14
+				translation	120 0 15 
+				children
+				[
+					Transform {
+						
+						children [USE	cabin]}
+					
+				]
+			}
+			#----------------------------------------------------------------------------
+			DEF	den1 Transform
+			{
+				rotation  0 1 0 1.57
+				translation	 80 8 22
+				children [Inline {url ["den.wrl"]}]
+			}
+		
+	]
+}			   

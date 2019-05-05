@@ -1,0 +1,138 @@
+#VRML V2.0 utf8
+Transform {
+	scale 0.5 1 1
+	rotation 0 0 1 1.57
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 0.4 0.165 0.1
+				}
+			}
+			geometry Cylinder {
+				radius 0.2
+				height 30
+			}
+		}
+	]
+}
+DEF	nhom Group {
+	children [
+		Transform {
+			translation 0 -1 0
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 1 1
+						}
+					}
+					geometry Box {
+						size 0.1 1.5 0.1
+					}	
+				}
+			]
+		}
+		Transform {
+			translation 0 -0.15 0.05
+			children [
+				Shape {
+					appearance Appearance {
+						material Material {
+							diffuseColor 1 1 1
+						}
+					}
+					geometry Box {
+						size 0.05 0.3 0.05
+					}	
+				}
+			]
+		}
+	]
+}
+Transform {
+	translation	2 0 0
+	children [USE nhom ]
+}
+Transform {
+	translation	-2 0 0
+	children [USE nhom ]
+}
+Transform {
+	translation	4 0 0
+	children [USE nhom ]
+}
+Transform {
+	translation	-4 0 0
+	children [USE nhom ]
+}
+
+Transform {
+	translation	6 0 0
+	children [USE nhom ]
+}
+
+Transform {
+	translation	-6 0 0
+	children [USE nhom ]
+}
+Transform {
+	translation	8 0 0
+	children [USE nhom ]
+}
+Transform {
+	translation	-8 0 0
+	children [USE nhom ]
+}
+Transform {
+	translation	10 0 0
+	children [USE nhom ]
+}
+Transform {
+	translation	-10 0 0
+	children [USE nhom ]
+}
+Transform {
+	translation	12 0 0
+	children [USE nhom ]
+}
+Transform {
+	translation	-12 0 0
+	children [USE nhom ]
+}
+Transform {
+	translation	14 0 0
+	children [USE nhom ]
+}
+Transform {
+	translation	-14 0 0
+	children [USE nhom ]
+}
+
+DEF doc Transform {
+	translation 0 -0.5 0
+	rotation 0 0 1 1.57
+	children [
+		Shape {
+			appearance Appearance {
+				material Material {
+					diffuseColor 1 1 1
+				}
+			}
+			geometry Cylinder {
+				radius 0.01
+				height 30
+			}	
+		}
+	]
+}
+Transform {
+	translation	0 -0.5 0
+	children [USE doc ]
+}
+
+Transform {
+	translation	0 -1 0
+	children [USE doc ]
+}
+

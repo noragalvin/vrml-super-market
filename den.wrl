@@ -1,0 +1,95 @@
+#VRML V2.0 utf8
+
+																					 Transform { 
+children [
+	DEF anhsang PointLight {
+		intensity 0.1
+		color 10 10 10 
+		location 0.125 -0.2 0	
+		on TRUE  
+		radius 100
+} ]
+}
+Transform {
+translation -0.5 0 0
+children [
+DEF congtac TouchSensor {enabled TRUE }
+
+	Transform {
+		rotation 1 0 0 1.57
+		children [
+			DEF den1 Shape { 
+
+					appearance Appearance {
+					material Material {
+					ambientIntensity 0
+					shininess 0
+					}
+					}
+				geometry Cylinder { height 4
+					radius 0.1
+				}
+			} 
+			Transform {
+				translation	0.25 0 0
+				children [
+					DEF	den2 Shape {
+						appearance Appearance {
+						material Material {
+						ambientIntensity 0
+						shininess 0
+							}
+						}
+					geometry Cylinder { height 4
+								radius 0.1
+						}
+					}
+				]
+			}
+			Transform {		
+				translation	0.125 0 -0.1
+				rotation 1 0 0 1.57
+				children [
+					DEF	khay Shape {
+						appearance Appearance {
+						material Material {
+						ambientIntensity 0
+						shininess 0
+							}
+					}
+				geometry Box {
+					size 0.5 0.1 4
+					}
+			}]
+	}
+	
+		]
+	}
+] 
+} 
+
+DEF ma Script {
+eventIn SFBool turnOn
+eventOut SFBool On
+field SFBool turn FALSE
+url ["javascript:
+function turnOn(val){
+		if(val){
+			turn = !turn;
+			if(turn)
+			{
+			On= FALSE;
+			}
+			else
+			{
+			On=TRUE;
+			}
+		}
+
+	}
+"]
+}
+
+ROUTE congtac.isActive TO ma.turnOn
+ROUTE ma.On TO anhsang.on
+

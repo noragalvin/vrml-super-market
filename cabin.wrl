@@ -1,0 +1,1057 @@
+#VRML V2.0 utf8
+
+DEF	cabin Transform
+{
+	children 
+	[
+		Transform 
+		{
+			translation	0 0 0 
+			children 
+			[
+		    	Shape 
+				{
+				
+					appearance Appearance {
+						material Material {
+							diffuseColor .39 .46 .42
+							specularColor .53 .53 .53
+							ambientIntensity .103
+							shininess .93
+						}
+					}
+						geometry Box { size 3.33 11 0.5}
+				}
+
+				
+			]
+			
+
+		}
+			Transform 
+		{
+			translation	3.33 -3 0 
+			children 
+			[
+		    	Shape 
+				{
+					
+					appearance Appearance {
+						material Material {
+							diffuseColor .39 .46 .42
+							specularColor .53 .53 .53
+							ambientIntensity .103
+							shininess .93
+						}
+					}
+					geometry Box { size 3.33 5 0.5}
+				}
+				#-------------------------------------
+													Transform 
+											{
+														translation	 -0  5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																diffuseColor .36 .36 .36
+																specularColor .94 .94 .94
+																ambientIntensity 0
+																shininess .23
+																emissiveColor 0 .36 .27
+																transparency .68
+															}
+														}
+														geometry Box { size 1.5 3 0.5}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0.75  5 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 0.1 3 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 -0.75  5 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 0.1 3 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  6.45 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 1.5 0.1 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  3.55 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 1.5 0.1 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  3 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 3.33 1 0.5}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  7.5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 3.33 2 0.5}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 -1.23  5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 0.86 3 0.5}
+													}
+												]
+											}
+	#---------------------------------
+															Transform 
+											{
+														translation	 1.23  5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 0.86 3 0.5}
+													}
+												]
+											}
+			]
+		}
+					Transform 
+		{
+			translation	-3.33 -3 0 
+			children 
+			[
+		    	Shape 
+				{
+					
+					appearance Appearance {
+						material Material {
+							diffuseColor .39 .46 .42
+							specularColor .53 .53 .53
+							ambientIntensity .103
+							shininess .93
+						}
+					}
+					geometry Box { size 3.33 5 0.5}
+				}
+				#-------------------------------------
+													Transform 
+											{
+														translation	 -0  5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																diffuseColor .36 .36 .36
+																specularColor .94 .94 .94
+																ambientIntensity 0
+																shininess .23
+																emissiveColor 0 .36 .27
+																transparency .68
+															}
+														}
+														geometry Box { size 1.5 3 0.5}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0.75  5 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 0.1 3 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 -0.75  5 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 0.1 3 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  6.45 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 1.5 0.1 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  3.55 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 1.5 0.1 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  3 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 3.33 1 0.5}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  7.5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 3.33 2 0.5}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 -1.23  5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 0.86 3 0.5}
+													}
+												]
+											}
+	#---------------------------------
+															Transform 
+											{
+														translation	 1.23  5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 0.86 3 0.5}
+													}
+												]
+											}
+			]
+		}
+		#--------------------------------------------------
+		Transform
+		
+		{
+			rotation 0 1 0 1.57
+			translation	4.75 -5 -5 
+			children
+			[
+				Transform 
+											{
+														translation	 -0  5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																diffuseColor .36 .36 .36
+																specularColor .94 .94 .94
+																ambientIntensity 0
+																shininess .23
+																emissiveColor 0 .36 .27
+																transparency .68
+															}
+														}
+														geometry Box { size 1.5 3 0.5}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0.75  5 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 0.1 3 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 -0.75  5 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 0.1 3 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  6.45 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 1.5 0.1 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  3.55 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 1.5 0.1 0}
+													}
+												]
+											}
+				#---------------------------------	canh  duoi
+															Transform 
+											{
+														translation	 0  1.5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 10 4 0.5}
+													}
+												]
+											}
+				#---------------------------------	   canh tren
+															Transform 
+											{
+														translation	 0  8.5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 10 4 0.5}
+													}
+												]
+											}
+				#---------------------------------		 canh  trai
+															Transform 
+											{
+														translation	 -2.75  5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 4 3 0.5}
+													}
+												]
+											}
+	#---------------------------------			   canh phai
+															Transform 
+											{
+														translation	 2.85 5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 4.3 3 0.5}
+													}
+												]
+											}
+			]
+		}
+		#_____________________________________________________________________________________________________________________________________-
+							Transform 
+		{
+			translation	-3.33 -3 0 
+			children 
+			[
+		    	Shape 
+				{
+					
+					appearance Appearance {
+						material Material {
+							diffuseColor .39 .46 .42
+							specularColor .53 .53 .53
+							ambientIntensity .103
+							shininess .93
+						}
+					}
+					geometry Box { size 3.33 5 0.5}
+				}
+				#-------------------------------------
+													Transform 
+											{
+														translation	 -0  5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																diffuseColor .36 .36 .36
+																specularColor .94 .94 .94
+																ambientIntensity 0
+																shininess .23
+																emissiveColor 0 .36 .27
+																transparency .68
+															}
+														}
+														geometry Box { size 1.5 3 0.5}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0.75  5 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 0.1 3 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 -0.75  5 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 0.1 3 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  6.45 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 1.5 0.1 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  3.55 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 1.5 0.1 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  3 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 3.33 1 0.5}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  7.5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 3.33 2 0.5}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 -1.23  5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 0.86 3 0.5}
+													}
+												]
+											}
+	#---------------------------------
+															Transform 
+											{
+														translation	 1.23  5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 0.86 3 0.5}
+													}
+												]
+											}
+			]
+		}
+		#--------------------------------------------------
+		Transform
+		
+		{
+			rotation 0 1 0 1.57
+			translation	-4.75 -5 -5 
+			children
+			[
+				Transform 
+											{
+														translation	 -0  5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																diffuseColor .36 .36 .36
+																specularColor .94 .94 .94
+																ambientIntensity 0
+																shininess .23
+																emissiveColor 0 .36 .27
+																transparency .68
+															}
+														}
+														geometry Box { size 1.5 3 0.5}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0.75  5 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 0.1 3 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 -0.75  5 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 0.1 3 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  6.45 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 1.5 0.1 0}
+													}
+												]
+											}
+				#---------------------------------
+															Transform 
+											{
+														translation	 0  3.55 0.25
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity 0
+															}
+														}
+														geometry Box { size 1.5 0.1 0}
+													}
+												]
+											}
+				#---------------------------------	canh  duoi
+															Transform 
+											{
+														translation	 0  1.5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 10 4 0.5}
+													}
+												]
+											}
+				#---------------------------------	   canh tren
+															Transform 
+											{
+														translation	 0  8.5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 10 4 0.5}
+													}
+												]
+											}
+				#---------------------------------		 canh  trai
+															Transform 
+											{
+														translation	 -2.75  5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 4 3 0.5}
+													}
+												]
+											}
+	#---------------------------------			   canh phai
+															Transform 
+											{
+														translation	 2.85 5 0
+												children 
+												[
+		    										Shape 
+													{
+					
+														appearance Appearance {
+															material Material {
+																ambientIntensity .103
+																diffuseColor .39 .46 .42
+																specularColor .53 .53 .53
+																shininess .93
+															}
+														}
+														geometry Box { size 4.3 3 0.5}
+													}
+												]
+											}
+			]
+		}
+		#__________________________________________________________________________________________________________________________________________________
+		Transform
+		{
+			translation	0 0 -10
+			children 
+			[
+				Shape
+				{
+				
+					appearance Appearance {
+						material Material {
+							diffuseColor .39 .46 .42
+							specularColor .53 .53 .53
+							ambientIntensity .103
+							shininess .93
+						}
+					}
+					geometry Box
+					{size 10 11 0.5}
+				}
+				
+			]
+		}
+		# noc
+
+		Transform
+		{
+			translation	0 5.5 -5
+			children 
+			[
+				Shape
+				{
+				
+					appearance Appearance {
+						material Material {
+							diffuseColor .39 .46 .42
+							specularColor .53 .53 .53
+							ambientIntensity .103
+							shininess .93
+						}
+					}
+					geometry Box
+					{size 11 0.5 11}
+				}
+				
+			]
+		}
+			
+	]
+
+
+
+}
