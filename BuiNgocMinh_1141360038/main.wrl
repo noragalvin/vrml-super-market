@@ -340,7 +340,7 @@ Group {
 					 children [
 						Shape {
 							geometry Text{
-								string ["Siêu thị Minh Ngọc"]
+								string ["Siêu thị Media Mart"]
 								fontStyle FontStyle{
             						size 1
             						family "Lucida Handwriting"
